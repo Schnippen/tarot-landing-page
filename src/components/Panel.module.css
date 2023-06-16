@@ -1,0 +1,66 @@
+.card_container {
+  height: 480px;
+  width: 280px;
+  background-color: #e7d6b8;
+  list-style: none;
+  user-select: none;
+  position: relative;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transform-origin: center;
+  cursor: pointer;
+  margin: 16px 32px;
+  border-radius: 8px;
+}
+
+.card_back,
+.card_front {
+  user-select: none;
+  background-color: #e7d6b8;
+  height: 480px;
+  width: 280px;
+  padding: 12px;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card_back {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.card_front {
+  transform: rotateY(-180deg);
+}
+
+.CardClosed {
+  transform: rotateY(0deg);
+}
+.CardOpen {
+  transform: rotateY(-180deg);
+}
+#card {
+  transition: 0.3s ease-in-out;
+}
+.panel_container {
+  width: 100%;
+  padding: 16;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  height: 100%;
+}
+.panel_container > h2 {
+  font-family: "Cinzel";
+  text-align: center;
+  height: 80px;
+}
+.panel_container > p {
+  font-family: "Lora";
+  text-align: left;
+  margin: 24px 8px 0 8px;
+}

@@ -1,0 +1,124 @@
+:root {
+  --navbarmargin: 120px;
+}
+
+.App {
+  background-color: #edede9;
+}
+
+.header {
+  width: 100%;
+  height: var(--navbarmargin);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edede9;
+  font-size: 1.8em;
+}
+.header_title {
+  font-family: "Cinzel";
+}
+
+.main {
+  margin-top: var(--navbarmargin);
+  background-color: #edede9;
+  width: 100%;
+}
+.exposition {
+  color: #ffffff;
+  flex-wrap: unset;
+  font-weight: 400;
+  height: 100%;
+  font-family: "Lora";
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../src/images/tile1.png);
+}
+
+.exposition_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.exposition_left {
+  grid-column: 1/2;
+}
+.exposition_right {
+  grid-column: 2/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.exposition_right > h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.exposition_right > p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.exposition_right > span {
+  font-weight: bold;
+}
+
+.exposition_right > img {
+  margin-top: 20px;
+}
+
+.article_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article {
+  width: 100%;
+  padding: 24px 40px;
+  max-width: 50em;
+  margin-top: 32px;
+  background-color: #e7d6b8;
+  border-radius: 24px;
+}
+.article_title {
+  text-align: center;
+  font-family: "Cinzel";
+}
+.ArticleItem_title {
+  font-family: "Cinzel";
+}
+.ArticleItem_paragraph {
+  font-family: "Lora";
+  list-style: armenian;
+}
+
+.panels_container {
+  display: flex;
+  flex-direction: column;
+}
+.panels_container_title {
+  font-family: "Cinzel";
+  text-align: center;
+}
+
+.panels_wrapper {
+  display: flex;
+  background-color: #00bda5;
+  padding: 24px 0;
+}
+
+.panel {
+  width: 300px;
+  height: 600px;
+  background-color: purple;
+  margin: 0px 12px 0px 12px;
+}
