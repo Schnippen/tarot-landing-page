@@ -57,7 +57,25 @@
 .exposition_left {
   grid-column: 1/2;
   background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.PhotoGallery {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.PhotoGallery > img {
+  width: 200px;
+  height: 420px;
+  object-fit: fill;
+}
+
 .exposition_right {
   grid-column: 2/2;
   display: flex;
