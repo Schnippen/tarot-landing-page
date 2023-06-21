@@ -48,7 +48,7 @@
 .panel_container {
   width: 100%;
   padding: 16;
-  background-color: white;
+  background-color: var(--header);
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -58,9 +58,11 @@
   font-family: "Cinzel";
   text-align: center;
   height: 80px;
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
 }
 .panel_container > p {
   font-family: "Lora";
   text-align: left;
   margin: 24px 8px 0 8px;
+  font-size: large;
 }

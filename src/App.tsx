@@ -1,8 +1,29 @@
 import React from "react";
 import styles from "./App.module.css";
 import ArticleItem from "./components/ArticleItem";
-import googlePlayImage from "./images/google-play.webp";
+import Exposition from "./components/Exposition";
 import Panel from "./components/Panel";
+
+const Separator = () => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "40px 0",
+      }}
+    >
+      <div
+        style={{
+          height: "1px",
+          backgroundColor: "#000",
+          width: "90%",
+        }}
+      ></div>
+    </div>
+  );
+};
 
 function App() {
   return (
@@ -11,27 +32,7 @@ function App() {
         <h1 className={styles.header_title}>Tarot Reader</h1>
       </header>
       <main className={styles.main}>
-        <div className={styles.exposition}>
-          <div className={styles.exposition_wrapper}>
-            <div className={styles.exposition_left}>AAAAa</div>
-            <div className={styles.exposition_right}>
-              <h2>
-                Uncover insights, gain clarity, and explore the mysteries of
-                your life through the ancient art of Tarot reading.
-              </h2>
-              Get Started Today: - Download our Tarot Reader app now and embark
-              on a journey of self-discovery, wisdom, and empowerment. - Sign up
-              to unlock the secrets of the Tarot and gain valuable insights into
-              your life's questions.
-              <img
-                src={googlePlayImage}
-                alt="Get on Google Play"
-                height="80"
-                width="206.7"
-              ></img>
-            </div>
-          </div>
-        </div>
+        <Exposition />
         <div className={styles.article_container}>
           <article className={styles.panels_container}>
             <h2 className={styles.panels_container_title}>
@@ -55,27 +56,32 @@ function App() {
             </div>
           </article>
           <article className={styles.article}>
-            <h2 className={styles.article_title}>Key Features:</h2>
-            <ArticleItem
-              paragraphText="Experience authentic Tarot readings tailored to your specific
+            <div className={styles.article_wrapper}>
+              <h2 className={styles.article_title}>Key Features:</h2>
+              <ArticleItem
+                paragraphText="Experience authentic Tarot readings tailored to your specific
             questions and concerns."
-              headerTitle="Accurate and Personalized Tarot Readings:"
-            />
-            <ArticleItem
-              paragraphText="Our user-friendly app makes it easy to ask questions and receive
+                headerTitle="Accurate and Personalized Tarot Readings:"
+              />
+              <Separator />
+              <ArticleItem
+                paragraphText="Our user-friendly app makes it easy to ask questions and receive
             insightful interpretations of the Tarot cards."
-              headerTitle="Intuitive Interface:"
-            />
-            <ArticleItem
-              headerTitle="Multiple Tarot Spreads:"
-              paragraphText="Choose from various Tarot spreads designed to provide different
+                headerTitle="Intuitive Interface:"
+              />
+              <Separator />
+              <ArticleItem
+                headerTitle="Multiple Tarot Spreads:"
+                paragraphText="Choose from various Tarot spreads designed to provide different
             perspectives and depth to your readings."
-            />
-            <ArticleItem
-              headerTitle="Detailed Card Descriptions:"
-              paragraphText="Gain a deeper understanding of each Tarot card's symbolism and
+              />
+              <Separator />
+              <ArticleItem
+                headerTitle="Detailed Card Descriptions:"
+                paragraphText="Gain a deeper understanding of each Tarot card's symbolism and
             meaning through our comprehensive card descriptions."
-            />
+              />
+            </div>
           </article>
         </div>
       </main>

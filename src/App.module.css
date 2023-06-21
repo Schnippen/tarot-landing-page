@@ -1,7 +1,14 @@
 :root {
   --navbarmargin: 120px;
+  --header: #9a846b;
+  --fontColor: #f5f5f5;
+  --textShadow: black;
+  --goldText: #fab442;
+  --brown: #3c3434;
+  --beige: #d3bcab;
+  --lightbeige: #f9e0cf;
+  --textShadowOpacity: 3px 4px 7px rgba(14, 12, 9, 0.8);
 }
-
 .App {
   background-color: #edede9;
 }
@@ -14,11 +21,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #edede9;
+  background-color: var(--header);
   font-size: 1.8em;
 }
 .header_title {
   font-family: "Cinzel";
+  cursor: pointer;
+  user-select: none;
 }
 
 .main {
@@ -81,20 +90,29 @@
   align-items: center;
 }
 
+.article_wrapper {
+  padding: 8px;
+  background-color: var(--beige);
+  padding: 24px 40px;
+  border-radius: 24px;
+}
+
 .article {
   width: 100%;
-  padding: 24px 40px;
+  padding: 32px;
   max-width: 50em;
   margin-top: 32px;
-  background-color: #e7d6b8;
+  background-color: var(--brown);
   border-radius: 24px;
 }
 .article_title {
   text-align: center;
   font-family: "Cinzel";
+  font-size: 2em;
 }
 .ArticleItem_title {
   font-family: "Cinzel";
+  text-align: center;
 }
 .ArticleItem_paragraph {
   font-family: "Lora";
@@ -108,6 +126,7 @@
 .panels_container_title {
   font-family: "Cinzel";
   text-align: center;
+  font-size: 2em;
 }
 
 .panels_wrapper {
