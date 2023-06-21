@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import CardBack from "../images/CardBack.jpg";
 import styles from "../components/Panel.module.css";
+import Separator from "./Separator";
+
 type PanelTypes = {
   title?: string;
   text?: string;
@@ -32,6 +34,7 @@ function Panel({ title, text, hue }: PanelTypes) {
       <div className={styles.card_front}>
         <div className={styles.panel_container}>
           <h2>{title}</h2>
+          <Separator marginHeight={20} />
           <p>{text}</p>
         </div>
       </div>

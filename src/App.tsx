@@ -3,27 +3,7 @@ import styles from "./App.module.css";
 import ArticleItem from "./components/ArticleItem";
 import Exposition from "./components/Exposition";
 import Panel from "./components/Panel";
-
-const Separator = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        margin: "40px 0",
-      }}
-    >
-      <div
-        style={{
-          height: "1px",
-          backgroundColor: "#000",
-          width: "90%",
-        }}
-      ></div>
-    </div>
-  );
-};
+import Separator from "./components/Separator";
 
 function App() {
   return (
@@ -57,7 +37,7 @@ function App() {
           </article>
           <article className={styles.article}>
             <div className={styles.article_wrapper}>
-              <h2 className={styles.article_title}>Key Features:</h2>
+              <h2 className={styles.article_title}>Key Features</h2>
               <ArticleItem
                 paragraphText="Experience authentic Tarot readings tailored to your specific
             questions and concerns."
@@ -80,6 +60,30 @@ function App() {
                 headerTitle="Detailed Card Descriptions:"
                 paragraphText="Gain a deeper understanding of each Tarot card's symbolism and
             meaning through our comprehensive card descriptions."
+              />
+            </div>
+          </article>
+          <article className={styles.article}>
+            <div className={styles.article_wrapper}>
+              <h2 className={styles.article_title}>How it Works</h2>
+              <ArticleItem
+                headerTitle="Ask Your Question:"
+                paragraphText="Formulate your question or focus on the area of your life you want to explore."
+              />
+              <Separator />
+              <ArticleItem
+                headerTitle="Select a Tarot Spread:"
+                paragraphText="Choose a Tarot spread that resonates with your question or situation."
+              />
+              <Separator />
+              <ArticleItem
+                headerTitle="Receive Your Reading:"
+                paragraphText="The Tarot Reader app will generate a personalized reading based on the cards drawn and their interpretations."
+              />
+              <Separator />
+              <ArticleItem
+                headerTitle="Interpretation and Guidance:"
+                paragraphText="Delve into the interpretations of each card in your reading and reflect on the guidance provided to gain insights and inspiration."
               />
             </div>
           </article>

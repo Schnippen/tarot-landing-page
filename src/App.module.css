@@ -7,7 +7,8 @@
   --brown: #3c3434;
   --beige: #d3bcab;
   --lightbeige: #f9e0cf;
-  --textShadowOpacity: 3px 4px 7px rgba(14, 12, 9, 0.8);
+  --textShadowOpacity: 1px 1px 5px rgb(48, 43, 43);
+  --BoxShadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .App {
   background-color: #edede9;
@@ -39,9 +40,8 @@
   color: #ffffff;
   flex-wrap: unset;
   font-weight: 400;
-  height: 100%;
+  height: 500px;
   font-family: "Lora";
-
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -56,6 +56,7 @@
 
 .exposition_left {
   grid-column: 1/2;
+  background-color: blue;
 }
 .exposition_right {
   grid-column: 2/2;
@@ -63,7 +64,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 40px;
+  background-color: red;
+  margin-right: 10em;
 }
 
 .exposition_right > h2 {
@@ -93,7 +95,7 @@
 .article_wrapper {
   padding: 8px;
   background-color: var(--beige);
-  padding: 24px 40px;
+  padding: 24px 40px 48px 40px;
   border-radius: 24px;
 }
 
@@ -104,13 +106,16 @@
   margin-top: 32px;
   background-color: var(--brown);
   border-radius: 24px;
+  box-shadow: var(--BoxShadow);
 }
 .article_title {
   text-align: center;
   font-family: "Cinzel";
   font-size: 2em;
+  text-shadow: var(--textShadowOpacity);
 }
 .ArticleItem_title {
+  font-size: 1.4em;
   font-family: "Cinzel";
   text-align: center;
 }
