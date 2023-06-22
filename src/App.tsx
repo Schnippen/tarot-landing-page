@@ -88,8 +88,8 @@ function App() {
             </div>
           </article>
         </div>
+        <Footer />
       </main>
-      <Footer />
     </body>
   );
 }
