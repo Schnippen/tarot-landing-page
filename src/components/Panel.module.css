@@ -32,6 +32,10 @@
   z-index: 2;
   transform: rotateY(0deg);
 }
+.card_back > img {
+  border: black solid 1px;
+  border-radius: 8px;
+}
 .card_front {
   transform: rotateY(-180deg);
 }
@@ -51,8 +55,9 @@
   background-color: var(--header);
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
   height: 100%;
+  border: black solid 1px;
+  border-radius: 8px;
 }
 .panel_container > h2 {
   font-family: "Cinzel";
@@ -65,4 +70,5 @@
   text-align: left;
   margin: 24px 8px 0 8px;
   font-size: large;
+  padding: 8px;
 }

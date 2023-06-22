@@ -4,6 +4,7 @@ import ArticleItem from "./components/ArticleItem";
 import Exposition from "./components/Exposition";
 import Panel from "./components/Panel";
 import Separator from "./components/Separator";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -51,9 +52,8 @@ function App() {
               />
               <Separator />
               <ArticleItem
-                headerTitle="Multiple Tarot Spreads:"
-                paragraphText="Choose from various Tarot spreads designed to provide different
-            perspectives and depth to your readings."
+                headerTitle="Selecting the Best Tarot Spread:"
+                paragraphText="Our special algorithm will choose the most suitable Tarot spread for your question or situation."
               />
               <Separator />
               <ArticleItem
@@ -89,18 +89,14 @@ function App() {
           </article>
         </div>
       </main>
+      <Footer />
     </body>
   );
 }
 
 export default App;
 
-/*   background: linear-gradient(45deg, #00a4bd, #00bda5);
-  margin-top: 128px;
-  padding-left: 16px;
-  margin-bottom: 80px;
-  padding-right: 16px;
-import React from "react";
+/*  import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./Home";
@@ -124,26 +120,6 @@ export default AppRouter; */
 
 **Heading/Title:**
 - Discover Your Fate with Tarot Readings
-
-**Introduction:**
-- Welcome to our Tarot Reader app, where you can uncover insights, gain clarity, and explore the mysteries of your life through the ancient art of Tarot reading.
-- Are you seeking answers to burning questions about love, career, or personal growth? Our Tarot Reader app is here to guide you on your journey.
-
-
-**How it Works:**
-- Ask Your Question: Formulate your question or focus on the area of your life you want to explore.
-- Select a Tarot Spread: Choose a Tarot spread that resonates with your question or situation.
-- Receive Your Reading: The Tarot Reader app will generate a personalized reading based on the cards drawn and their interpretations.
-- Interpretation and Guidance: Delve into the interpretations of each card in your reading and reflect on the guidance provided to gain insights and inspiration.
-
-**Why Choose our Tarot Reader App:**
-- Trusted Expertise: Our app is developed by experienced Tarot readers who have a deep understanding of the Tarot's symbolism and meanings.
-- Confidential and Secure: Your privacy is important to us. Rest assured that all your readings and personal information are kept confidential and secure.
-- Accessible Anywhere, Anytime: Whether you're at home or on the go, our Tarot Reader app is available to provide guidance whenever you need it.
-
-**Get Started Today:**
-- Download our Tarot Reader app now and embark on a journey of self-discovery, wisdom, and empowerment.
-- Sign up to unlock the secrets of the Tarot and gain valuable insights into your life's questions.
 
 **Testimonials:**
 - "This app has been my go-to for Tarot readings. The accuracy and depth of the interpretations never fail to amaze me." - Jane Doe
