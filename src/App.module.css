@@ -216,10 +216,24 @@
 }
 .footer_container a {
   text-decoration: none;
+  color: #2196f3;
 }
 
 .footer_container a:hover {
   text-decoration: underline;
+}
+.footer_container a:visited {
+  color: #2196f3;
+}
+.Link {
+  text-decoration: none;
+  color: #2196f3;
+}
+.Link:hover {
+  text-decoration: underline;
+}
+.Link:visited {
+  color: #2196f3;
 }
 
 @media (max-width: 1800px) {

@@ -2,8 +2,16 @@ import React from "react";
 import styles from "../App.module.css";
 import { HiOutlineMail } from "react-icons/hi";
 import Separator from "./Separator";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+
+  const navigateToPrivacyPolicy = () => {
+    navigate("/privacy-policy");
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_container}>
@@ -52,12 +60,12 @@ function Footer() {
           educational purposes only.
         </p>
         <div style={{ display: "flex" }}>
-          <a href="/terms-of-service" style={{ marginRight: "10px" }}>
-            Terms of Service
-          </a>
-          <a href="/privacy-policy" style={{ marginLeft: "10px" }}>
+          <Link to="terms-of-service" style={{ marginRight: "10px" }}>
+           Terms of Service
+          </Link>
+          <Link to="/privacy-policy" style={{ marginLeft: "10px" }}>
             Privacy policy
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
