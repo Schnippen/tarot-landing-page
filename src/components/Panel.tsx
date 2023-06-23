@@ -8,8 +8,9 @@ type PanelTypes = {
   title?: string;
   text?: string;
   hue?: string | number;
+  onClick?: () => any;
 };
-function Panel({ title, text, hue }: PanelTypes) {
+function Panel({ title, text, hue, ...props }: PanelTypes) {
   const [isFlipped, setIsFlipped] = useState(false);
   return (
     <li
@@ -19,6 +20,7 @@ function Panel({ title, text, hue }: PanelTypes) {
       `}
       onClick={(e) => setIsFlipped(!isFlipped)}
       id={"card"}
+      {...props}
     >
       <div className={styles.card_back}>
         <img

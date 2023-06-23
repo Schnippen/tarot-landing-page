@@ -5,10 +5,10 @@ import Footer from "../components/Footer";
 import Panel from "../components/Panel";
 import Separator from "../components/Separator";
 import styles from "../App.module.css";
+import { analytics } from "../utils/mixpanel";
+import { AnalyticsEvent } from "../utils/constants";
 
 function Home() {
-
-    
   return (
     <main className={styles.main}>
       <Exposition />
@@ -19,15 +19,20 @@ function Home() {
           </h2>
           <div className={styles.panels_wrapper}>
             <Panel
+              onClick={() => analytics.event(AnalyticsEvent.first_card_pressed)}
               title="Trusted Expertise:"
               text="Our app is developed by experienced Tarot readers who have a deep understanding of the Tarot's symbolism and meanings."
             />
             <Panel
+              onClick={() =>
+                analytics.event(AnalyticsEvent.second_card_pressed)
+              }
               hue={"0.16turn"}
               title="Confidential and Secure:"
               text="Your privacy is important to us. Rest assured that all your readings and personal information are kept confidential and secure."
             />
             <Panel
+              onClick={() => analytics.event(AnalyticsEvent.third_card_pressed)}
               hue={"-0.25turn"}
               title="Accessible Anywhere, Anytime:"
               text="Whether you're at home or on the go, our Tarot Reader app is available to provide guidance whenever you need it."

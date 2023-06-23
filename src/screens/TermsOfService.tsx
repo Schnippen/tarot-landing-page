@@ -1,23 +1,19 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import styles from "../App.module.css";
 import { Link } from "react-router-dom";
+import { AnalyticsEvent } from "../utils/constants";
+import { analytics } from "../utils/mixpanel";
 
 function TermsOfService() {
   const CompanyName = "Tarot Reader App";
   const COMPANYNAME = "TAROT READER APP";
 
-  //    margin-top: 40px;
-
-  /*   //    font-size: 1rem;
-    font-family: Helvetica, sans-serif;
-    font-weight: 400;
-    line-height: 1.5; */
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
     scrollToTop();
-  }, []); 
+  }, []);
 
   const paragraphHeader = { marginTop: "40px", lineHeight: 1.5 };
 
@@ -50,7 +46,13 @@ function TermsOfService() {
               lineHeight: 1.5,
             }}
           >
-            <Link to="/" className={styles.Link}>
+            <Link
+              to="/"
+              className={styles.Link}
+              onClick={() =>
+                analytics.event(AnalyticsEvent.go_to_home_page_pressed)
+              }
+            >
               Go to home page
             </Link>
             <h1

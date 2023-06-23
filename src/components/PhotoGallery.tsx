@@ -27,13 +27,11 @@ const PhotoGallery = ({ photos, delay }: any) => {
 
   return (
     <div className={styles.PhotoGallery}>
-      <a href="">
-        <img
-          src={photos[currentPhotoIndex]}
-          alt="Gallery"
-          style={currentPhotoStyle}
-        />
-      </a>
+      <img
+        src={photos[currentPhotoIndex]}
+        alt="Gallery"
+        style={currentPhotoStyle}
+      />
     </div>
   );
 };

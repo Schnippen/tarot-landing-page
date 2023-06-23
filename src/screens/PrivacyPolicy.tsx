@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import styles from "../App.module.css";
 import { Link } from "react-router-dom";
+import { analytics } from "../utils/mixpanel";
+import { AnalyticsEvent } from "../utils/constants";
 function PrivacyPolicy() {
   const CompanyName = "Tarot Reader App";
-  const COMPANYNAME = "TAROT READER APP";
+  //const COMPANYNAME = "TAROT READER APP";
 
   useEffect(() => {
     const scrollToTop = () => {
@@ -42,7 +44,7 @@ function PrivacyPolicy() {
               lineHeight: 1.5,
             }}
           >
-            <Link to="/" className={styles.Link}>
+            <Link to="/" className={styles.Link} onClick={()=>analytics.event(AnalyticsEvent.go_to_home_page_pressed)}>
               Go to home page
             </Link>
             <h1

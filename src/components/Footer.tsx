@@ -1,17 +1,11 @@
 import React from "react";
 import styles from "../App.module.css";
 import { HiOutlineMail } from "react-icons/hi";
-import Separator from "./Separator";
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { analytics } from "../utils/mixpanel";
+import { AnalyticsEvent } from "../utils/constants";
 
 function Footer() {
-  const navigate = useNavigate();
-
-  const navigateToPrivacyPolicy = () => {
-    navigate("/privacy-policy");
-  };
-
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_container}>
@@ -28,6 +22,7 @@ function Footer() {
           }}
         >
           <button
+            onClick={() => analytics.event(AnalyticsEvent.join_mailing_list)}
             style={{
               height: 60,
               backgroundColor: "#ab6b2c",
@@ -51,7 +46,12 @@ function Footer() {
         </div>
         <p>
           Do you have any feedback? <br /> Drop us a line at <span> </span>
-          <a href="mailto:hello@tarotreaderapp.com">hello@tarotreaderapp.com</a>
+          <a
+            href="mailto:hello@tarotreaderapp.com"
+            onClick={() => analytics.event(AnalyticsEvent.email_write_pressed)}
+          >
+            hello@tarotreaderapp.com
+          </a>
           <span> </span>🙌
         </p>
         <p style={{ maxWidth: "500px", textAlign: "center" }}>
@@ -60,10 +60,22 @@ function Footer() {
           educational purposes only.
         </p>
         <div style={{ display: "flex" }}>
-          <Link to="terms-of-service" style={{ marginRight: "10px" }}>
-           Terms of Service
+          <Link
+            to="terms-of-service"
+            style={{ marginRight: "10px" }}
+            onClick={() =>
+              analytics.event(AnalyticsEvent.terms_of_service_pressed)
+            }
+          >
+            Terms of Service
           </Link>
-          <Link to="/privacy-policy" style={{ marginLeft: "10px" }}>
+          <Link
+            to="/privacy-policy"
+            style={{ marginLeft: "10px" }}
+            onClick={() =>
+              analytics.event(AnalyticsEvent.privacy_policy_pressed)
+            }
+          >
             Privacy policy
           </Link>
         </div>

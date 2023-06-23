@@ -7,6 +7,8 @@ import screen4 from "../images/screens/screen4.jpg";
 import styles from "../App.module.css";
 import PhotoGallery from "./PhotoGallery";
 import Separator from "./Separator";
+import { AnalyticsEvent } from "../utils/constants";
+import { analytics } from "../utils/mixpanel";
 
 const photos = [screen1, screen2, screen3, screen4];
 
@@ -32,7 +34,12 @@ function Exposition() {
                 insights into your life's questions.
               </li>
             </ul>
-            <a href="blank">
+            <a
+              href="blank"
+              onClick={() =>
+                analytics.event(AnalyticsEvent.google_play_pressed)
+              }
+            >
               <img
                 src={googlePlayImage}
                 alt="Get on Google Play"
