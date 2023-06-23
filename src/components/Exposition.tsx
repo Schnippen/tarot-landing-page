@@ -13,12 +13,10 @@ const photos = [screen1, screen2, screen3, screen4];
 function Exposition() {
   return (
     <div className={styles.exposition}>
-      <div className={styles.exposition_wrapper}>
-        <div className={styles.exposition_left}>
-          <PhotoGallery photos={photos} delay={5000} />
-        </div>
-        <div className={styles.exposition_right}>
-          <div className={styles.exposition_right_wrapper}>
+      <div className={styles.exposition_container}>
+        <article className={styles.exposition_article}>
+          <PhotoGallery photos={photos} delay={4000} />
+          <div className={styles.exposition_right}>
             <h2>
               Uncover insights, gain clarity, and explore the mysteries of your
               life through the ancient art of Tarot reading.
@@ -34,17 +32,25 @@ function Exposition() {
                 insights into your life's questions.
               </li>
             </ul>
-            <img
-              src={googlePlayImage}
-              alt="Get on Google Play"
-              height="80"
-              width="206.7"
-            ></img>
+            <a href="blank">
+              <img
+                src={googlePlayImage}
+                alt="Get on Google Play"
+                height="80"
+                width="206.7"
+              ></img>
+            </a>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   );
 }
 
 export default Exposition;
+
+/* 
+
+          <div className={styles.exposition_right_wrapper}>
+            
+          </div> */

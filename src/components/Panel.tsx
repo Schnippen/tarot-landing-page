@@ -34,7 +34,7 @@ function Panel({ title, text, hue }: PanelTypes) {
       <div className={styles.card_front}>
         <div className={styles.panel_container}>
           <h2>{title}</h2>
-          <Separator marginHeight={20} />
+          <Separator marginHeight={0} />
           <p>{text}</p>
         </div>
       </div>
