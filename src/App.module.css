@@ -164,6 +164,7 @@
 .ArticleItem_paragraph {
   font-family: "Lora";
   list-style: armenian;
+  list-style-position: outside;
 }
 
 .panels_container {

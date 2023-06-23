@@ -9,8 +9,10 @@ type ArticleItemTypes = {
 function ArticleItem({ paragraphText, headerTitle }: ArticleItemTypes) {
   return (
     <>
-      <h3 className={styles.ArticleItem_title}>{headerTitle}</h3>
-      <li className={styles.ArticleItem_paragraph}>{paragraphText}</li>
+      <ul>
+        <h3 className={styles.ArticleItem_title}>{headerTitle}</h3>
+        <li className={styles.ArticleItem_paragraph}>{paragraphText}</li>
+      </ul>
     </>
   );
 }
