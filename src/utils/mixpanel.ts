@@ -1,8 +1,8 @@
 import mixpanel from "mixpanel-browser";
 
-import API_KEY
 
-mixpanel.init(API_KEY, {
+
+mixpanel.init("dsad", {
   debug: true,
   track_pageview: true,
 });

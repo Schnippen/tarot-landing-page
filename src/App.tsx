@@ -15,14 +15,19 @@ function App() {
     navigate("/");
   };
 
-  const navigateToTermsOfService = () => {
-    navigate("/terms-of-service");
-  };
+  const oops = process.env.REACT_APP_API_KEY;
+  console.log(oops, "ENV VARIABLE");
 
   return (
     <body className="App">
       <header className={styles.header}>
-        <h1 className={styles.header_title} onClick={() => {navigateToHome();analytics.event(AnalyticsEvent.header_pressed)}}>
+        <h1
+          className={styles.header_title}
+          onClick={() => {
+            navigateToHome();
+            analytics.event(AnalyticsEvent.header_pressed);
+          }}
+        >
           Tarot Reader
         </h1>
       </header>
@@ -38,9 +43,6 @@ function App() {
 export default App;
 
 /*  
-
-
-/* Certainly! Here's an example of content you could use for the landing page of your Tarot Reader app:
 
 **Heading/Title:**
 - Discover Your Fate with Tarot Readings
