@@ -21,28 +21,35 @@ function Footer() {
             justifyContent: "center",
           }}
         >
-          <button
-            onClick={() => analytics.event(AnalyticsEvent.join_mailing_list)}
-            style={{
-              height: 60,
-              backgroundColor: "#ab6b2c",
-              borderRadius: 8,
-              justifyContent: "center",
-              alignItems: "center",
-              width: "300px",
-              cursor: "pointer",
-              display: "flex",
-              fontFamily: "Cinzel",
-              fontWeight: "bold",
-              color: "var(--fontColor)",
-              fontSize: "22px",
-            }}
+          <a
+            href="https://forms.gle/oBfpBRTcQfAbfMT59"
+            aria-label="join-mailing-list"
+            target="_blank"
+            rel="noreferrer"
           >
-            <HiOutlineMail
-              style={{ width: "24px", height: "24px", marginRight: "20px" }}
-            />
-            Join mailing list
-          </button>
+            <button
+              onClick={() => analytics.event(AnalyticsEvent.join_mailing_list)}
+              style={{
+                height: 60,
+                backgroundColor: "#ab6b2c",
+                borderRadius: 8,
+                justifyContent: "center",
+                alignItems: "center",
+                width: "300px",
+                cursor: "pointer",
+                display: "flex",
+                fontFamily: "Cinzel",
+                fontWeight: "bold",
+                color: "var(--fontColor)",
+                fontSize: "22px",
+              }}
+            >
+              <HiOutlineMail
+                style={{ width: "24px", height: "24px", marginRight: "20px" }}
+              />
+              Join mailing list
+            </button>
+          </a>
         </div>
         <p>
           Do you have any feedback? <br /> Drop us a line at <span> </span>

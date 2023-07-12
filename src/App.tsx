@@ -7,14 +7,15 @@ import PrivacyPolicy from "./screens/PrivacyPolicy";
 import { useNavigate } from "react-router-dom";
 import { analytics } from "./utils/mixpanel";
 import { AnalyticsEvent } from "./utils/constants";
+//import dotenv from "dotenv";
+
 
 function App() {
+  //dotenv.config();
   const navigate = useNavigate();
-
   const navigateToHome = () => {
     navigate("/");
   };
-
   const oops = process.env.REACT_APP_API_KEY;
   console.log(oops, "ENV VARIABLE");
 
