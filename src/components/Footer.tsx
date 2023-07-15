@@ -54,10 +54,10 @@ function Footer() {
         <p>
           Do you have any feedback? <br /> Drop us a line at <span> </span>
           <a
-            href="mailto:hello@tarotreaderapp.com"
+            href="mailto:hello@tarotreaderapp.app"
             onClick={() => analytics.event(AnalyticsEvent.email_write_pressed)}
           >
-            hello@tarotreaderapp.com
+            hello@tarotreader.app
           </a>
           <span> </span>🙌
         </p>

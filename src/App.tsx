@@ -7,11 +7,9 @@ import PrivacyPolicy from "./screens/PrivacyPolicy";
 import { useNavigate } from "react-router-dom";
 import { analytics } from "./utils/mixpanel";
 import { AnalyticsEvent } from "./utils/constants";
-//import dotenv from "dotenv";
-
+//import "dotenv/config";
 
 function App() {
-  //dotenv.config();
   const navigate = useNavigate();
   const navigateToHome = () => {
     navigate("/");

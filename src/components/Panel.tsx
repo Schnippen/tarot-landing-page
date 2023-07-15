@@ -22,7 +22,6 @@ function Panel({ title, text, hue, analyticsNumber, ...props }: PanelTypes) {
     AnalyticsEvent.third_card_pressed,
   ];
   const [isFlipped, setIsFlipped] = useState(false);
-  console.log("isFlipped", isFlipped);
   return (
     <li
       className={`${styles.card_container} ${
