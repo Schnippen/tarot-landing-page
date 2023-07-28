@@ -25,26 +25,15 @@ function PrivacyPolicy() {
           padding: "32px 0",
         }}
       >
-        <div
-          style={{
-            backgroundColor: "var(--brown)",
-            padding: "32px",
-            borderRadius: "24px",
-            boxShadow: "var(--BoxShadow)",
-          }}
-        >
-          <article
-            style={{
-              maxWidth: "700px",
-              minWidth: "40%",
-              backgroundColor: "var(--beige)",
-              fontFamily: "Lora",
-              borderRadius: "24px",
-              padding: "24px",
-              lineHeight: 1.5,
-            }}
-          >
-            <Link to="/" className={styles.Link} onClick={()=>analytics.event(AnalyticsEvent.go_to_home_page_pressed)}>
+        <div className={styles.privacy_policy_div_container}>
+          <article className={styles.privacy_policy_div}>
+            <Link
+              to="/"
+              className={styles.Link}
+              onClick={() =>
+                analytics.event(AnalyticsEvent.go_to_home_page_pressed)
+              }
+            >
               Go to home page
             </Link>
             <h1

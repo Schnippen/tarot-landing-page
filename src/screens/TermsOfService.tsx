@@ -27,25 +27,8 @@ function TermsOfService() {
           padding: "32px 0",
         }}
       >
-        <div
-          style={{
-            backgroundColor: "var(--brown)",
-            padding: "32px",
-            borderRadius: "24px",
-            boxShadow: "var(--BoxShadow)",
-          }}
-        >
-          <article
-            style={{
-              maxWidth: "700px",
-              minWidth: "40%",
-              backgroundColor: "var(--beige)",
-              fontFamily: "Lora",
-              borderRadius: "24px",
-              padding: "24px",
-              lineHeight: 1.5,
-            }}
-          >
+        <div className={styles.terms_of_service_div_container}>
+          <article className={styles.terms_of_service_div}>
             <Link
               to="/"
               className={styles.Link}
@@ -67,7 +50,13 @@ function TermsOfService() {
             <p>Last updated: June 23, 2023</p>
             <p>
               {`Please read these Terms of Service ("Terms", "Terms of Service")
-          carefully before using the https://${CompanyName}.app website and/or the
+          carefully before using the`}
+              <br />
+              <a href="https://www.tarotreader.app">
+                https://www.tarotreader.app
+              </a>
+              <br />
+              {`website and/or the
           ${CompanyName} application operated by ${CompanyName} ("us", "we", or "our").`}
             </p>
             <p>
@@ -76,12 +65,16 @@ function TermsOfService() {
               to all visitors, users and others who access or use the Service.
             </p>
             <p>
-              <strong>
+              <strong style={{ wordBreak: "break-word" }}>
                 By accessing or using the Service you agree to be bound by these
                 Terms and by our Privacy policy that can be found at
-                https://www.whatsvegan.app/privacy-policy. If you disagree with
-                any part of the Terms or the Privacy Policy then you may not
-                access the Service.
+                <br />
+                <a href="https://www.tarotreader.app/privacy-policy">
+                  https://www.tarotreader.app/privacy-policy
+                </a>
+                <br />
+                If you disagree with any part of the Terms or the Privacy Policy
+                then you may not access the Service.
               </strong>
             </p>
             <p style={paragraphHeader}>
@@ -134,17 +127,7 @@ function TermsOfService() {
               <strong>The Application</strong>
             </p>
             <p>
-              {`${CompanyName} application analyses pictures of ingredient lists in
-              products provided by users to determine the origin of the
-              ingredients in these products (either "vegan", "not vegan", or
-              "potentially vegan"), and the origin of the whole products (either
-              "vegan", "not vegan", or "potentially vegan"). The origins
-              determined by the application are for general information purposes
-              only and are not intended to be nutritional advice. The origins
-              may be determined incorrectly due to misprintings, bad picture
-              quality, user error, or other technical or non-technical reasons.
-              ${CompanyName} is not responsible for incorrect results of the
-              pictures analysis.`}
+              {`${CompanyName} is a mobile application that provides users with a virtual Tarot card reading and interpretation. The app allows users to ask a question and receive a Tarot card interpretation in response. It is important to note that the readings provided by the app are for entertainment and guidance purposes only and should not be considered a substitute for professional advice or counseling. `}
             </p>
             <p style={paragraphHeader}>
               <strong>Your Content</strong>
