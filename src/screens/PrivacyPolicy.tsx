@@ -171,7 +171,7 @@ function PrivacyPolicy() {
               We use some standard third-party subprocessors like Google Cloud
               to help run our applications and provide the Services to you. We
               can provide a detailed list of third-party subprocessors at{" "}
-              <strong>hello@whatsvegan.app</strong>.<br />
+              <strong>biuro@dfproperties.consulting</strong>.<br />
               <strong>
                 To help you troubleshoot or squash a software bug.
               </strong>{" "}
@@ -215,7 +215,7 @@ function PrivacyPolicy() {
               no longer work. In such cases, a data deletion request may result
               in closing your account. To exercise this right, please contact us
               at
-              <strong> hello@ TAROT .app.</strong>
+              <strong>biuro@dfproperties.consulting</strong>
               <br />
               <strong>• Right to Complain. </strong> You have the right to make
               a complaint regarding our handling of your personal information
@@ -254,10 +254,10 @@ function PrivacyPolicy() {
             </p>
             <p>
               If you have questions about exercising these rights or need
-              assistance, please contact us at hello@whatsvegan.app. If an
-              authorized agent is corresponding on your behalf, we will need
-              written consent with a signature from the account holder before
-              proceeding.
+              assistance, please contact us at biuro@dfproperties.consulting .
+              If an authorized agent is corresponding on your behalf, we will
+              need written consent with a signature from the account holder
+              before proceeding.
             </p>
             <p>
               If you are in the EU or UK, you can contact your data protection
@@ -285,7 +285,8 @@ function PrivacyPolicy() {
               Have any questions, comments, or concerns about this privacy
               policy, your data, or your rights with respect to your
               information? Please get in touch by emailing us at
-              hello@whatsvegan.app and we’ll be happy to try to answer them!
+              biuro@dfproperties.consulting and we’ll be happy to try to answer
+              them!
             </p>
           </article>
         </div>
