@@ -7,6 +7,8 @@ import PrivacyPolicy from "./screens/PrivacyPolicy";
 import { useNavigate } from "react-router-dom";
 import { analytics } from "./utils/mixpanel";
 import { AnalyticsEvent } from "./utils/constants";
+import { BrowserRouter } from "react-router-dom";
+
 //import "dotenv/config";
 
 function App() {
@@ -30,24 +32,15 @@ function App() {
           Tarot Reader
         </h1>
       </header>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-of-service" element={<TermsOfService />} />
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+        </Routes>
+      </BrowserRouter>
     </body>
   );
 }
 
 export default App;
-
-/*  
-
-**Heading/Title:**
-- Discover Your Fate with Tarot Readings
-
-**Testimonials:**
-- "This app has been my go-to for Tarot readings. The accuracy and depth of the interpretations never fail to amaze me." - Jane Doe
-- "I've found answers and guidance through the Tarot Reader app. It's like having a trusted Tarot reader at my fingertips." - John Smith
-
-Remember to customize and adapt the content to fit the tone and branding of your Tarot Reader app. */
