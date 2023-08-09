@@ -29,7 +29,7 @@ const PhotoGallery = ({ photos, delay }: any) => {
     <div className={styles.PhotoGallery}>
       <img
         src={photos[currentPhotoIndex]}
-        alt="Gallery"
+        alt="Screenshot of Tarot Reader App"
         style={currentPhotoStyle}
       />
     </div>

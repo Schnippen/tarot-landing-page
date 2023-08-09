@@ -19,9 +19,6 @@ exports.addmessage = onRequest(async (req, res) => {
   res.json({ result: `Random number is ${original}` });
 });
 
-/* firebase functions:config:set mixpanel.api_key="85e826ac0fd9c22738774a63ba6bd839"
- */
-
 // Start writing functions
 // https://firebase.google.com/docs/functions/typescript
 
