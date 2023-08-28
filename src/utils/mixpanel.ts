@@ -1,4 +1,4 @@
-/* import mixpanel from "mixpanel-browser";
+import mixpanel from "mixpanel-browser";
 
 const api = process.env.REACT_APP_API_KEY;
 let api2 = "";
@@ -19,4 +19,3 @@ export const analytics = {
     mixpanel.track(name, params);
   },
 };
- */

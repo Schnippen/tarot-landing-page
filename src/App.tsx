@@ -16,7 +16,6 @@ function App() {
   const navigateToHome = () => {
     navigate("/");
   };
-  
 
   return (
     <body className="App">
