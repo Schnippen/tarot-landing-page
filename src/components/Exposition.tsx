@@ -35,7 +35,7 @@ function Exposition() {
               </li>
             </ul>
             <a
-              href="blank"
+              href="https://play.google.com/store/apps/details?id=com.mobiletarotandroid"
               onClick={() =>
                 analytics.event(AnalyticsEvent.google_play_pressed)
               }
