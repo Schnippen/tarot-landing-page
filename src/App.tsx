@@ -16,8 +16,7 @@ function App() {
   const navigateToHome = () => {
     navigate("/");
   };
-  const oops = process.env.REACT_APP_API_KEY;
-  console.log(oops, "ENV VARIABLE");
+  
 
   return (
     <body className="App">

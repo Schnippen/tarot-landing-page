@@ -1,7 +1,15 @@
 import mixpanel from "mixpanel-browser";
 
-mixpanel.init("ssd", {
-  debug: true,
+const api = process.env.REACT_APP_API_KEY;
+let api2 = "";
+if (typeof api === "string") {
+  api2 = api;
+} else {
+  api2 = "";
+}
+
+mixpanel.init(api2, {
+  debug: false,
   track_pageview: true,
 });
 
