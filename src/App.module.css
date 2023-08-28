@@ -89,7 +89,8 @@
   height: 440px;
   object-fit: fill;
   border-radius: 29px;
-  box-shadow: rgba(0, 0, 0, 29.35) 0px 5px 15px;
+  -webkit-filter: drop-shadow(0px 0px 15px #222);
+  filter: drop-shadow(0px 0px 15px #222);
 }
 
 .exposition_right {

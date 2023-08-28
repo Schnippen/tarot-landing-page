@@ -1,23 +1,18 @@
 import React from "react";
 import googlePlayImage from "../images/google-play.webp";
-import screen1 from "../images/screens/screen1.png";
-import screen2 from "../images/screens/screen2.png";
-import screen3 from "../images/screens/screen3.png";
-import screen4 from "../images/screens/screen4.png";
 import styles from "../App.module.css";
 import PhotoGallery from "./PhotoGallery";
 import Separator from "./Separator";
 import { AnalyticsEvent } from "../utils/constants";
 import { analytics } from "../utils/mixpanel";
-
-const photos = [screen1, screen2, screen3, screen4];
+import { ScreenshotArray } from "./ScreensArray";
 
 function Exposition() {
   return (
     <div className={styles.exposition}>
       <div className={styles.exposition_container}>
         <article className={styles.exposition_article}>
-          <PhotoGallery photos={photos} delay={4000} />
+          <PhotoGallery photos={ScreenshotArray} delay={4000} />
           <div className={styles.exposition_right}>
             <h2>
               Uncover insights, gain clarity, and explore the mysteries of your
