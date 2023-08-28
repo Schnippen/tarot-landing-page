@@ -22,7 +22,7 @@ jobs:
         
 
     - name: Deploy
-      uses: github-pages-deploy-action@releases/v3
+      uses: actions/@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
