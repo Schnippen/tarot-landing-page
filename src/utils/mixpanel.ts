@@ -15,14 +15,6 @@ for (let i = 0; i < lettersToFind.length; i++) {
   }
 }
 
-for (const letter in indexes) {
-  console.log(`${letter}: ${indexes[letter].join(", ")}`);
-}
-
-for (const letter in indexes) {
-  console.log(`${letter}: ${indexes[letter].join(", ")}`);
-}
-
 const सम3 = 839;
 
 mixpanel.init(
