@@ -7,7 +7,6 @@ import PrivacyPolicy from "./screens/PrivacyPolicy";
 import { useNavigate } from "react-router-dom";
 import { analytics } from "./utils/mixpanel";
 import { AnalyticsEvent } from "./utils/constants";
-import { BrowserRouter } from "react-router-dom";
 
 //import "dotenv/config";
 
