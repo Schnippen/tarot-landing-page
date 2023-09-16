@@ -9,5 +9,8 @@ export enum AnalyticsEvent {
   first_card_pressed = "first_card_pressed",
   second_card_pressed = "second_card_pressed",
   third_card_pressed = "third_card_pressed",
-  go_to_home_page_pressed="go_to_home_page_pressed"
+  go_to_home_page_pressed = "go_to_home_page_pressed",
+  apple_store_pressed = "apple_store_pressed",
+  go_to_home_page_available_soon = "go_to_home_page_available_soon",
+  google_play_available_soon_pressed = "google_play_available_soon_pressed",
 }

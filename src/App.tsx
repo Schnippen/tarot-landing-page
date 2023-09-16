@@ -7,6 +7,7 @@ import PrivacyPolicy from "./screens/PrivacyPolicy";
 import { useNavigate } from "react-router-dom";
 import { analytics } from "./utils/mixpanel";
 import { AnalyticsEvent } from "./utils/constants";
+import AvailableSoon from "./screens/AvailableSoon";
 
 //import "dotenv/config";
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/available-soon" element={<AvailableSoon />} />
       </Routes>
     </body>
   );
