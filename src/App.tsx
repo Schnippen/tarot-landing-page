@@ -8,6 +8,9 @@ import { useNavigate } from "react-router-dom";
 import { analytics } from "./utils/mixpanel";
 import { AnalyticsEvent } from "./utils/constants";
 import AvailableSoon from "./screens/AvailableSoon";
+import TarotMeanings from "./screens/TarotMeanings";
+import TarotMajorArcana from "./screens/TarotMajorArcana";
+import TarotMinorArcana from "./screens/TarotMinorArcana";
 
 //import "dotenv/config";
 
@@ -35,6 +38,15 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/available-soon" element={<AvailableSoon />} />
+        <Route path="/tarot-card-meanings" element={<TarotMeanings />} />
+        <Route
+          path="/major-arcana-tarot-card-meanings"
+          element={<TarotMajorArcana />}
+        />
+        <Route
+          path="/minor arcana-tarot-card-meanings"
+          element={<TarotMinorArcana />}
+        />
       </Routes>
     </body>
   );
