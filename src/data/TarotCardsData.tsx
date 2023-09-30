@@ -5,6 +5,7 @@ import { RoutesSuitMinorArcana } from "./TarotRoutesData";
 import {
   TarotCardsMinorArcanaSuitsAces,
   MajorArcanaCards,
+  TarotCardsPhotosAll,
 } from "../images/cards/TarotCardPhotos";
 
 const TarotCardNamesCard = [
@@ -1037,6 +1038,907 @@ export const TarotCardsDataAll: {
         to={TarotRoutes[21]}
         className={styles.Link}
         title={TarotCardsMeaningSymbolism[21]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 22,
+    name: "Ace of Wands: Inspiration and New Beginnings",
+    image: TarotCardsPhotosAll[22],
+    route: TarotRoutes[22],
+    alt: TarotCardNamesCard[22],
+    tooltip: TarotCardNamesCard[22],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[22]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[22]}
+        >
+          Ace of Wands
+        </Link>
+        , represents the spark of inspiration and the start of new ventures.
+        It's a card of creativity and potential, urging us to seize
+        opportunities and channel our passions.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[22]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[22]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 23,
+    name: "Two of Wands: Planning and Vision",
+    image: TarotCardsPhotosAll[23],
+    route: TarotRoutes[23],
+    alt: TarotCardNamesCard[23],
+    tooltip: TarotCardNamesCard[23],
+    description: (
+      <p className={styles.paragraph}>
+        Next, we encounter the{" "}
+        <Link
+          to={TarotRoutes[23]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[23]}
+        >
+          Two of Wands
+        </Link>
+        , a card that signifies planning, vision, and foresight. It encourages
+        us to take a step back, assess our long-term goals, and make strategic
+        decisions.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[23]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[23]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 24,
+    name: "Three of Wands: Expansion and Exploration",
+    image: TarotCardsPhotosAll[24],
+    route: TarotRoutes[24],
+    alt: TarotCardNamesCard[24],
+    tooltip: TarotCardNamesCard[24],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[24]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[24]}
+        >
+          Three of Wands
+        </Link>
+        , represents expansion and exploration. It suggests that our efforts are
+        paying off, and it's time to broaden our horizons. This card reminds us
+        to embrace opportunities for growth and adventure.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[24]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[24]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 25,
+    name: "Four of Wands: Celebration and Harmony",
+    image: TarotCardsPhotosAll[25],
+    route: TarotRoutes[25],
+    alt: TarotCardNamesCard[25],
+    tooltip: TarotCardNamesCard[25],
+    description: (
+      <p className={styles.paragraph}>
+        Moving on to the{" "}
+        <Link
+          to={TarotRoutes[25]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[25]}
+        >
+          Four of Wands
+        </Link>
+        , it symbolizes celebration, harmony, and achievement. This card
+        signifies a moment of joy and unity, encouraging us to savor our
+        accomplishments and connect with loved ones.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[25]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[25]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 26,
+    name: "Five of Wands: Conflict and Competition",
+    image: TarotCardsPhotosAll[26],
+    route: TarotRoutes[26],
+    alt: TarotCardNamesCard[26],
+    tooltip: TarotCardNamesCard[26],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[26]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[26]}
+        >
+          Five of Wands
+        </Link>
+        , symbolizes conflict, competition, and challenges. It's a card that
+        reminds us to navigate conflicts with integrity and consider different
+        perspectives to find resolution.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[26]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[26]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 27,
+    name: "Six of Wands: Victory and Recognition",
+    image: TarotCardsPhotosAll[27],
+    route: TarotRoutes[27],
+    alt: TarotCardNamesCard[27],
+    tooltip: TarotCardNamesCard[27],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[27]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[27]}
+        >
+          Six of Wands
+        </Link>
+        represents victory, recognition, and public acclaim. It signifies a time
+        when your efforts are acknowledged and celebrated. This card encourages
+        you to bask in your achievements while remaining humble.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[27]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[27]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 28,
+    name: "Seven of Wands: Defensiveness and Courage",
+    image: TarotCardsPhotosAll[28],
+    route: TarotRoutes[28],
+    alt: TarotCardNamesCard[28],
+    tooltip: TarotCardNamesCard[28],
+    description: (
+      <p className={styles.paragraph}>
+        Moving forward, the{" "}
+        <Link
+          to={TarotRoutes[28]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[28]}
+        >
+          Seven of Wands
+        </Link>
+        signifies defensiveness, courage, and standing your ground. It reminds
+        you to defend your beliefs and principles, even when facing opposition.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[28]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[28]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 29,
+    name: "Eight of Wands: Swiftness and Progress",
+    image: TarotCardsPhotosAll[29],
+    route: TarotRoutes[29],
+    alt: TarotCardNamesCard[29],
+    tooltip: TarotCardNamesCard[29],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[29]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[29]}
+        >
+          Eight of Wands
+        </Link>
+        represents swiftness, progress, and forward momentum. This card suggests
+        that things are moving quickly, and it's a good time to take action and
+        make the most of opportunities.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[29]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[29]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 30,
+    name: "Nine of Wands: Resilience and Endurance",
+    image: TarotCardsPhotosAll[30],
+    route: TarotRoutes[30],
+    alt: TarotCardNamesCard[30],
+    tooltip: TarotCardNamesCard[30],
+    description: (
+      <p className={styles.paragraph}>
+        Next, we have the{" "}
+        <Link
+          to={TarotRoutes[30]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[30]}
+        >
+          Nine of Wands
+        </Link>
+        symbolizing resilience, endurance, and determination. It encourages you
+        to persevere in the face of challenges and trust that you have the
+        strength to overcome obstacles.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[30]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[30]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 31,
+    name: "Ten of Wands: Burden and Responsibility",
+    image: TarotCardsPhotosAll[31],
+    route: TarotRoutes[31],
+    alt: TarotCardNamesCard[31],
+    tooltip: TarotCardNamesCard[31],
+    description: (
+      <p className={styles.paragraph}>
+        Coming the,{" "}
+        <Link
+          to={TarotRoutes[31]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[31]}
+        >
+          Ten of Wands
+        </Link>
+        signifies burden, responsibility, and carrying a heavy load. It reminds
+        you to assess your commitments and consider whether it's time to
+        delegate or let go of some responsibilities.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[31]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[31]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 32,
+    name: "Page of Wands: Exploration and Enthusiasm",
+    image: TarotCardsPhotosAll[32],
+    route: TarotRoutes[32],
+    alt: TarotCardNamesCard[32],
+    tooltip: TarotCardNamesCard[32],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[32]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[32]}
+        >
+          Page of Wands
+        </Link>
+        represents youthful enthusiasm, exploration, and the pursuit of new
+        interests. It encourages you to embrace your curiosity and approach life
+        with a sense of adventure.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[32]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[32]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 33,
+    name: "Knight of Wands: Action and Ambition",
+    image: TarotCardsPhotosAll[33],
+    route: TarotRoutes[33],
+    alt: TarotCardNamesCard[33],
+    tooltip: TarotCardNamesCard[33],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[33]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[33]}
+        >
+          Knight of Wands
+        </Link>
+        embodies action, ambition, and a fearless spirit. This card signifies a
+        time when you're ready to charge forward with your goals and pursue your
+        passions with vigor.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[33]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[33]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 34,
+    name: "Queen of Wands: Confidence and Leadership",
+    image: TarotCardsPhotosAll[34],
+    route: TarotRoutes[34],
+    alt: TarotCardNamesCard[34],
+    tooltip: TarotCardNamesCard[34],
+    description: (
+      <p className={styles.paragraph}>
+        Next, we have the{" "}
+        <Link
+          to={TarotRoutes[34]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[34]}
+        >
+          Queen of Wands
+        </Link>
+        , symbolizing confidence, leadership, and charisma. This card represents
+        a person who is strong-willed, creative, and able to inspire others to
+        follow their vision.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[34]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[34]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 35,
+    name: "King of Wands: Vision and Influence",
+    image: TarotCardsPhotosAll[35],
+    route: TarotRoutes[35],
+    alt: TarotCardNamesCard[35],
+    tooltip: TarotCardNamesCard[35],
+    description: (
+      <p className={styles.paragraph}>
+        Finally, the{" "}
+        <Link
+          to={TarotRoutes[35]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[35]}
+        >
+          King of Wands
+        </Link>
+        embodies vision, influence, and mastery. This card signifies someone who
+        has achieved a high level of expertise in their field and can make
+        significant positive changes through their leadership and creativity.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[35]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[35]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 36,
+    name: "Ace of Cups: Emotions and New Beginnings",
+    image: TarotCardsPhotosAll[36],
+    route: TarotRoutes[36],
+    alt: TarotCardNamesCard[36],
+    tooltip: TarotCardNamesCard[36],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[36]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[36]}
+        >
+          Ace of Cups
+        </Link>
+        represents the wellspring of emotions and new beginnings in matters of
+        the heart. It signifies the start of a deep emotional connection,
+        whether in a relationship or a newfound sense of self-love.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[36]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[36]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 37,
+    name: "Two of Cups: Connection and Partnership",
+    image: TarotCardsPhotosAll[37],
+    route: TarotRoutes[37],
+    alt: TarotCardNamesCard[37],
+    tooltip: TarotCardNamesCard[37],
+    description: (
+      <p className={styles.paragraph}>
+        Next, we have the{" "}
+        <Link
+          to={TarotRoutes[37]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[37]}
+        >
+          Two of Cups
+        </Link>
+        , which symbolizes deep emotional connections, love, and partnerships.
+        This card encourages you to explore the bonds you share with others and
+        nurture your relationships.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[37]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[37]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 38,
+    name: "Three of Cups: Celebration and Joy",
+    image: TarotCardsPhotosAll[38],
+    route: TarotRoutes[38],
+    alt: TarotCardNamesCard[38],
+    tooltip: TarotCardNamesCard[38],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[38]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[38]}
+        >
+          Three of Cups
+        </Link>
+        signifies celebration, joy, and gatherings with friends and loved ones.
+        It encourages you to embrace moments of happiness, unity, and shared
+        experiences.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[38]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[38]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 39,
+    name: "Four of Cups: Contemplation and Restlessness",
+    image: TarotCardsPhotosAll[39],
+    route: TarotRoutes[39],
+    alt: TarotCardNamesCard[39],
+    tooltip: TarotCardNamesCard[39],
+    description: (
+      <p className={styles.paragraph}>
+        Coming{" "}
+        <Link
+          to={TarotRoutes[39]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[39]}
+        >
+          Four of Cups
+        </Link>
+        is a card of introspection, contemplation, and a sense of restlessness.
+        It reminds you to reevaluate your emotions, be open to new experiences,
+        and not take your blessings for granted.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[39]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[39]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 40,
+    name: "Five of Cups: Loss and Grief",
+    image: TarotCardsPhotosAll[40],
+    route: TarotRoutes[40],
+    alt: TarotCardNamesCard[40],
+    tooltip: TarotCardNamesCard[40],
+    description: (
+      <p className={styles.paragraph}>
+        Moving on to the{" "}
+        <Link
+          to={TarotRoutes[40]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[40]}
+        >
+          Five of Cups
+        </Link>
+        , it symbolizes feelings of loss, grief, and disappointment. This card
+        encourages you to process your emotions, acknowledge your pain, and seek
+        a silver lining in challenging situations.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[40]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[40]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 41,
+    name: "Six of Cups: Nostalgia and Reunion",
+    image: TarotCardsPhotosAll[41],
+    route: TarotRoutes[41],
+    alt: TarotCardNamesCard[41],
+    tooltip: TarotCardNamesCard[41],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[41]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[41]}
+        >
+          Six of Cups
+        </Link>
+        brings a wave of nostalgia, childhood memories, and innocence. It
+        prompts you to reflect on your past, reconnect with the people who
+        shaped your life, and find comfort in cherished memories.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[41]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[41]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 42,
+    name: "Seven of Cups: Choices and Illusions",
+    image: TarotCardsPhotosAll[42],
+    route: TarotRoutes[42],
+    alt: TarotCardNamesCard[42],
+    tooltip: TarotCardNamesCard[42],
+    description: (
+      <p className={styles.paragraph}>
+        Next, we have the{" "}
+        <Link
+          to={TarotRoutes[42]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[42]}
+        >
+          Seven of Cups
+        </Link>
+        , which represents choices, dreams, and illusions. It advises you to
+        carefully consider your options and discern between realistic
+        aspirations and fanciful fantasies.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[42]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[42]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 43,
+    name: "Eight of Cups: Seeking Fulfillment and Change",
+    image: TarotCardsPhotosAll[43],
+    route: TarotRoutes[43],
+    alt: TarotCardNamesCard[43],
+    tooltip: TarotCardNamesCard[43],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[43]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[43]}
+        >
+          Eight of Cups
+        </Link>
+        signifies a journey of seeking fulfillment and emotional growth. It
+        encourages you to leave behind what no longer serves you and embark on a
+        quest for deeper meaning and satisfaction.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[43]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[43]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 44,
+    name: "Nine of Cups: Contentment and Wishes Fulfilled",
+    image: TarotCardsPhotosAll[44],
+    route: TarotRoutes[44],
+    alt: TarotCardNamesCard[44],
+    tooltip: TarotCardNamesCard[44],
+    description: (
+      <p className={styles.paragraph}>
+        Subsequent{" "}
+        <Link
+          to={TarotRoutes[44]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[44]}
+        >
+          Nine of Cups
+        </Link>
+        is often called the "
+        <Link
+          to={TarotRoutes[44]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[44]}
+        >
+          Wish Card
+        </Link>
+        " symbolizing contentment, emotional abundance, and wishes coming true.
+        It reminds you to savor the moments of joy and gratitude in your life.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[44]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[44]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 45,
+    name: "Ten of Cups: Harmony and Family",
+    image: TarotCardsPhotosAll[45],
+    route: TarotRoutes[45],
+    alt: TarotCardNamesCard[45],
+    tooltip: TarotCardNamesCard[45],
+    description: (
+      <p className={styles.paragraph}>
+        Succeeding, the{" "}
+        <Link
+          to={TarotRoutes[45]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[45]}
+        >
+          Ten of Cups
+        </Link>
+        represents ultimate emotional fulfillment, harmony, and happy family
+        life. It signifies a deep sense of love, unity, and domestic bliss.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[45]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[45]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 46,
+    name: "Page of Cups: Creativity and Intuition",
+    image: TarotCardsPhotosAll[46],
+    route: TarotRoutes[46],
+    alt: TarotCardNamesCard[46],
+    tooltip: TarotCardNamesCard[46],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[46]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[46]}
+        >
+          Page of Cups
+        </Link>
+        exhibit creativity, intuition, and a gentle, imaginative spirit. This
+        card encourages you to explore your artistic and emotional side, and to
+        trust your instincts.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[46]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[46]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 47,
+    name: "Knight of Cups: Romance and Idealism",
+    image: TarotCardsPhotosAll[47],
+    route: TarotRoutes[47],
+    alt: TarotCardNamesCard[47],
+    tooltip: TarotCardNamesCard[47],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[47]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[47]}
+        >
+          Page of Cups
+        </Link>
+        personify romantic ideals, emotional pursuit, and the quest for love.
+        This card signifies a period when you may be driven by your emotions and
+        passions, seeking love or creative inspiration.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[47]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[47]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 48,
+    name: "Queen of Cups: Compassion and Intuition",
+    image: TarotCardsPhotosAll[48],
+    route: TarotRoutes[48],
+    alt: TarotCardNamesCard[48],
+    tooltip: TarotCardNamesCard[48],
+    description: (
+      <p className={styles.paragraph}>
+        The{" "}
+        <Link
+          to={TarotRoutes[48]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[48]}
+        >
+          Queen of Cups
+        </Link>
+        embodies compassion, intuition, and deep emotional understanding. This
+        card represents a person who is nurturing, empathetic, and deeply
+        connected to their feelings.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[48]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[48]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 49,
+    name: "King of Cups: Emotional Mastery and Wisdom",
+    image: TarotCardsPhotosAll[49],
+    route: TarotRoutes[49],
+    alt: TarotCardNamesCard[49],
+    tooltip: TarotCardNamesCard[49],
+    description: (
+      <p className={styles.paragraph}>
+        Finally, the{" "}
+        <Link
+          to={TarotRoutes[49]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[49]}
+        >
+          Queen of Cups
+        </Link>
+        symbolizes emotional mastery, wisdom, and emotional leadership. This
+        card represents a person who is emotionally balanced, empathetic, and
+        able to provide guidance and support to others.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[49]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[49]}
       >
         Full Tarot Meaning & Symbolism
       </Link>
