@@ -14,9 +14,9 @@ function TarotMeanings() {
           <p className={styles.paragraph}>
             The Tarot,{" "}
             <Link
-              to="/tarot-cards-history"
+              to="/the-fool-meaning-major-arcana-tarot-card-meanings"
               className={styles.Link}
-              title="Tarot History"
+              title="The Fool"
             >
               a centuries-old system of divination
             </Link>

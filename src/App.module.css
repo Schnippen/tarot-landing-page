@@ -291,7 +291,6 @@
   line-height: 1.4rem;
 }
 
-
 @media (max-width: 1800px) {
   .exposition_container {
     margin: 0 10em;
@@ -361,6 +360,9 @@
 
   .article {
     margin: 48px 24px;
+  }
+  .title {
+    text-align: center;
   }
 }
 

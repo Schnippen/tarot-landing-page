@@ -24,6 +24,7 @@ function TarotMinorArcana() {
             <li className={styles.paragraph}>dadasdasd</li>
           </ul>
         </Article>
+
         <span style={{ width: "100%", margin: "24px" }}></span>
         <TarotMeaningsExpositionContainer />
       </div>
