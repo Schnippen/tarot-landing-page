@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 import styles from "../App.module.css";
 import DisplayStyles from "./CardDisplayItem.module.css";
-import { Link,} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CardDisplayItem = ({
   alt,
@@ -13,8 +13,8 @@ const CardDisplayItem = ({
   name,
   href,
 }: {
-  alt?: string;
-  tooltip?: string;
+  alt: string;
+  tooltip: string;
   paragraphElement: JSX.Element;
   img: string;
   index: number;
@@ -23,11 +23,10 @@ const CardDisplayItem = ({
 }) => {
   return (
     <li
-      style={{
-        listStyle: "none",
-        flexDirection: index % 2 === 1 ? "row-reverse" : "row",
-      }}
-      className={DisplayStyles.item_container}
+      className={
+        DisplayStyles.item_container +
+        (index % 2 === 1 ? " " + DisplayStyles.container_position : "")
+      }
     >
       <div className={DisplayStyles.left_container}>
         <Card alt={alt} tooltip={tooltip} img={img} />

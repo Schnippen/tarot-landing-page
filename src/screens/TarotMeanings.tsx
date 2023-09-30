@@ -36,11 +36,11 @@ function TarotMeanings() {
           <h3 className={styles.title}>Unlocking the Secrets</h3>
           <p className={styles.paragraph}>
             Each Tarot card is a visual representation of a unique concept,
-            emotion, or situation. The deck is divided into two main categories:
+            emotion, or situation. The deck is divided into two main categories:{" "}
             <Link
               to="/major-arcana-tarot-card-meanings"
               className={styles.Link}
-              title="Major Arcana"
+              title="Major Arcana Cards List"
             >
               The Major Arcana{" "}
             </Link>
@@ -48,7 +48,7 @@ function TarotMeanings() {
             <Link
               to="/minor arcana-tarot-card-meanings"
               className={styles.Link}
-              title="Minor Arcana"
+              title="Minor Arcana Cards List"
             >
               The Minor Arcana
             </Link>
@@ -60,21 +60,28 @@ function TarotMeanings() {
               <Link
                 to="/major-arcana-tarot-card-meanings"
                 className={styles.Link}
-                title="Major Arcana"
+                title="Major Arcana Cards List"
               >
                 The Major Arcana{" "}
               </Link>
               cards are the stars of the Tarot deck. They represent significant
               life events, spiritual lessons, and transformative journeys. Each
-              Major Arcana card is imbued with a powerful message and carries an
-              archetype that resonates with our collective human experiences.
+              <Link
+                to="/major-arcana-tarot-card-meanings"
+                className={styles.Link}
+                title="Major Arcana Cards List"
+              >
+                The Major Arcana{" "}
+              </Link>{" "}
+              card is imbued with a powerful message and carries an archetype
+              that resonates with our collective human experiences.
             </li>
             <div style={{ width: "100%", margin: "12px 0" }}></div>
             <li className={styles.paragraph}>
               <Link
                 to="/minor arcana-tarot-card-meanings"
                 className={styles.Link}
-                title="Minor Arcana"
+                title="Minor Arcana Cards List"
               >
                 The Minor Arcana{" "}
               </Link>

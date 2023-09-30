@@ -80,15 +80,15 @@ export const TarotRoutes = [
 ];
 
 //tarot history "/tarot-cards-history"
-export const TarotDecks=[
-"/major-arcana-tarot-card-meanings",
-"/minor arcana-tarot-card-meanings"]
-
+export const TarotDecks = [
+  "/major-arcana-tarot-card-meanings",
+  "/minor arcana-tarot-card-meanings",
+];
 
 ///suit of four
-export const SuitMinorArcana = [
-  "/suit-of-cups-meaning-minor-arcana-tarot-card-meanings",
+export const RoutesSuitMinorArcana = [
   "/suit-of-wands-meaning-minor-arcana-tarot-card-meanings",
+  "/suit-of-cups-meaning-minor-arcana-tarot-card-meanings",
   "/suit-of-swords-meaning-minor-arcana-tarot-card-meanings",
   "/suit-of-pentacles-meaning-minor-arcana-tarot-card-meanings",
 ];

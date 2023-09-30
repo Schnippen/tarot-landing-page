@@ -1,18 +1,11 @@
 import { Link } from "react-router-dom";
 import { TarotRoutes } from "./TarotRoutesData";
 import styles from "../App.module.css";
-import MajorArcanaCards from "../images/cards/TarotCardPhotos";
-
-//import TarotCardPhotos
-const MajorArcanaData = [{}];
-
-const SuitOfCups = [];
-
-const SuitOfWands = [];
-
-const SuitOfSords = [];
-
-const SuitOfPentacles = [];
+import { RoutesSuitMinorArcana } from "./TarotRoutesData";
+import {
+  TarotCardsMinorArcanaSuitsAces,
+  MajorArcanaCards,
+} from "../images/cards/TarotCardPhotos";
 
 const TarotCardNamesCard = [
   "The Fool Card",
@@ -174,6 +167,142 @@ const TarotCardsMeaningSymbolism = [
   "Knight of Pentacles - Meaning & Symbolism",
   "Queen of Pentacles - Meaning & Symbolism",
   "King of Pentacles - Meaning & Symbolism",
+];
+export const TarotCardsMinorArcanaSuits: {
+  number: number;
+  name: string;
+  image: string;
+  route: string;
+  alt: string;
+  tooltip: string;
+  description: JSX.Element;
+  href: JSX.Element;
+}[] = [
+  {
+    number: 0,
+    name: "Wands: The Element of Fire",
+    image: TarotCardsMinorArcanaSuitsAces[0],
+    route: RoutesSuitMinorArcana[0],
+    alt: "Read about Suit of Cups Meaning & Symbolism",
+    tooltip: "Read about Suit of Cups Meaning & Symbolism",
+    description: (
+      <p className={styles.paragraph}>
+        <Link
+          to={RoutesSuitMinorArcana[0]}
+          className={styles.Link}
+          title="Read about Suit of Cups Meaning & Symbolism"
+        >
+          Wands{" "}
+        </Link>
+        are the suit of inspiration, action, and the element of fire. They
+        represent the spark of creativity, passion, and the initiation of new
+        projects. Wands are associated with the ambitious, enthusiastic, and
+        adventurous aspects of life.
+      </p>
+    ),
+    href: (
+      <Link
+        to={RoutesSuitMinorArcana[0]}
+        className={styles.Link}
+        title="Read about Suit of Cups Meaning & Symbolism"
+      >
+        Read about Suit of Cups Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 1,
+    name: "Cups: The Element of Water",
+    image: TarotCardsMinorArcanaSuitsAces[1],
+    route: RoutesSuitMinorArcana[1],
+    alt: "Read about Suit of Cups Meaning & Symbolism",
+    tooltip: "Read about Suit of Cups Meaning & Symbolism",
+    description: (
+      <p className={styles.paragraph}>
+        <Link
+          to={RoutesSuitMinorArcana[1]}
+          className={styles.Link}
+          title="Read about Suit of Cups Meaning & Symbolism"
+        >
+          Cups{" "}
+        </Link>
+        symbolize emotions, relationships, and the element of water. They delve
+        into the realm of feelings, love, and connections with others. The Cups
+        suit invites us to explore the depths of our hearts.
+      </p>
+    ),
+    href: (
+      <Link
+        to={RoutesSuitMinorArcana[1]}
+        className={styles.Link}
+        title="Read about Suit of Cups Meaning & Symbolism"
+      >
+        Read about Suit of Cups Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 2,
+    name: "Swords: The Element of Air",
+    image: TarotCardsMinorArcanaSuitsAces[2],
+    route: RoutesSuitMinorArcana[2],
+    alt: "Read about Suit of Swords Meaning & Symbolism",
+    tooltip: "Read about Suit of Swords Meaning & Symbolism",
+    description: (
+      <p className={styles.paragraph}>
+        <Link
+          to={RoutesSuitMinorArcana[2]}
+          className={styles.Link}
+          title="Read about Suit of Swords Meaning & Symbolism"
+        >
+          Swords{" "}
+        </Link>
+        represent the intellect, thoughts, and the element of air. This suit
+        delves into the realm of the mind, addressing challenges, conflicts, and
+        the power of clarity and insight.
+      </p>
+    ),
+    href: (
+      <Link
+        to={RoutesSuitMinorArcana[2]}
+        className={styles.Link}
+        title="Read about Suit of Swords Meaning & Symbolism"
+      >
+        Read about Suit of Swords Meaning & Symbolism
+      </Link>
+    ),
+  },
+  {
+    number: 3,
+    name: "Pentacles (Coins): The Element of Earth",
+    image: TarotCardsMinorArcanaSuitsAces[3],
+    route: RoutesSuitMinorArcana[3],
+    alt: "Read about Suit of Pentacles Meaning & Symbolism",
+    tooltip: "Read about Suit of Pentacles Meaning & Symbolism",
+    description: (
+      <p className={styles.paragraph}>
+        <Link
+          to={RoutesSuitMinorArcana[3]}
+          className={styles.Link}
+          title="Read about Suit of Pentacles Meaning & Symbolism"
+        >
+          Pentacles{" "}
+        </Link>
+        are tied to the material world, finances, and the element of earth. This
+        suit emphasizes our physical existence, addressing prosperity, work, and
+        the tangible aspects of life.
+      </p>
+    ),
+    href: (
+      <Link
+        to={RoutesSuitMinorArcana[3]}
+        className={styles.Link}
+        title="Read about Suit of Pentacles Meaning & Symbolism"
+      >
+        Read about Suit of Pentacles Meaning & Symbolism
+      </Link>
+    ),
+  },
 ];
 
 export const TarotCardsDataAll: {
@@ -914,6 +1043,8 @@ export const TarotCardsDataAll: {
     ),
   },
 ];
+
+export const MajorArcanaCardsData = TarotCardsDataAll.slice(0, 22);
 /* 
   {
     number: 22,
@@ -1311,3 +1442,10 @@ export const TarotCardsDataAll: {
     description:
       "The King of Pentacles is a card in the Minor Arcana that symbolizes wealth, success, and stability. This card often represents a mature and responsible man who is financially secure and knows how to manage his resources wisely. He is practical, dependable, and focused on achieving his goals.\nThe King of Pentacles encourages the querent to take a practical approach to their financial situation, to invest their resources wisely, and to work hard towards achieving their long-term goals.\nThis card can also indicate a period of financial stability and abundance, or suggest that the querent may receive financial assistance from a succ /essful and prosperous individual.",
   },*/
+const SuitOfCups = [];
+
+const SuitOfWands = [];
+
+const SuitOfSords = [];
+
+const SuitOfPentacles = [];

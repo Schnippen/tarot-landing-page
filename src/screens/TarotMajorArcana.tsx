@@ -6,40 +6,8 @@ import Separator from "../components/Separator";
 import TarotMeaningsExpositionContainer from "../components/TarotMeaningsExpositionContainer";
 import styles from "../App.module.css";
 import CardDisplayItem from "../components/CardDisplayItem";
-import MajorArcanaCards from "../images/cards/TarotCardPhotos";
-import { TarotCardsDataAll } from "../data/TarotCardsData";
-let test = MajorArcanaCards;
+import { MajorArcanaCardsData } from "../data/TarotCardsData";
 
-const CardDisplay = () => {
-  console.log(TarotCardsDataAll[0]);
-  return (
-    <ul>
-      {/* {MajorArcanaCards.map((item, index) => (
-        <>
-          <CardDisplayItem
-            img={test[index]}
-            index={index}
-            key={item}
-            alt=""
-            tooltip=""
-          />
-          <Separator marginHeight={48} />
-        </>
-      ))} */}
-      <CardDisplayItem
-        alt={TarotCardsDataAll[0].alt}
-        tooltip={TarotCardsDataAll[0].tooltip}
-        paragraphElement={TarotCardsDataAll[0].description}
-        img={TarotCardsDataAll[0].image}
-        index={TarotCardsDataAll[0].number}
-        name={TarotCardsDataAll[0].name}
-        href={TarotCardsDataAll[0].href}
-      />
-    </ul>
-  );
-};
-
-//img title descriptive alt tag
 function TarotMajorArcana() {
   const ref = useRef(null);
 
@@ -135,17 +103,75 @@ function TarotMajorArcana() {
         </Article>
         <span style={{ width: "100%", margin: "24px" }}></span>
         <TarotMeaningsExpositionContainer />
+        <span style={{ width: "100%", margin: "24px" }}></span>
         <span ref={ref}></span>
         <Article title="Major Arcana Cards:">
-          <CardDisplayItem
-            alt={TarotCardsDataAll[0].alt}
-            tooltip={TarotCardsDataAll[0].tooltip}
-            paragraphElement={TarotCardsDataAll[0].description}
-            img={TarotCardsDataAll[0].image}
-            index={TarotCardsDataAll[0].number}
-            name={TarotCardsDataAll[0].name}
-            href={TarotCardsDataAll[0].href}
-          />
+          <ul style={{ padding: "0px" }}>
+            {MajorArcanaCardsData.slice(0, 11).map((item, index) => (
+              <>
+                <CardDisplayItem
+                  alt={item.alt}
+                  tooltip={item.tooltip}
+                  paragraphElement={item.description}
+                  img={item.image}
+                  index={item.number}
+                  name={item.name}
+                  href={item.href}
+                />
+                {MajorArcanaCardsData.length === index + 1 ? (
+                  <></>
+                ) : (
+                  <Separator marginHeight={48} />
+                )}
+              </>
+            ))}
+          </ul>
+        </Article>
+        <span style={{ width: "100%", margin: "24px" }}></span>
+        <TarotMeaningsExpositionContainer />
+        <span style={{ width: "100%", margin: "24px" }}></span>
+        <Article title="Major Arcana Cards:">
+          <ul style={{ padding: "0px" }}>
+            {MajorArcanaCardsData.slice(11, 22).map((item, index) => (
+              <>
+                <CardDisplayItem
+                  alt={item.alt}
+                  tooltip={item.tooltip}
+                  paragraphElement={item.description}
+                  img={item.image}
+                  index={item.number}
+                  name={item.name}
+                  href={item.href}
+                />
+                {console.log(MajorArcanaCardsData)}
+                {MajorArcanaCardsData.length === index + 1 ? (
+                  <></>
+                ) : (
+                  <Separator marginHeight={48} />
+                )}
+              </>
+            ))}
+            <p className={styles.paragraph} style={{ textAlign: "center" }}>
+              The end of the{" "}
+              <a
+                className={styles.Link}
+                href="/#"
+                onClick={(e) => executeScroll(e)}
+                title="Major Arcana Cards"
+              >
+                Major Arcana
+              </a>{" "}
+              marks the beginning of another journey -{" "}
+              <Link
+                to="/minor-arcana-tarot-card-meanings"
+                className={styles.Link}
+                title="Minor Arcana Cards List"
+              >
+                The Minor Arcana
+              </Link>
+              .
+            </p>
+          </ul>
         </Article>
       </div>
       <Footer />
@@ -155,36 +181,17 @@ function TarotMajorArcana() {
 
 export default TarotMajorArcana;
 
-
-/*
-{
-    number: 0,
-    name: "The Fool",
-    image: MajorArcanaCards[0],
-    route: "/the-fool-meaning-major-arcana-tarot-card-meanings",
-    alt: "The Fool Card",
-    tooltip: "The Fool Card",
-    description: (
-      <p className={styles.paragraph}>
-       
-      </p>
-    ),
-    href: (
-      <Link
-
-      </Link>
-    ),
-  },
-*/
-
+/* 
+ Stay tuned as we navigate these new waters in the next part of our series. */
+/*  
       (<p className={styles.paragraph}>
-         The balancing act continues with <Link
+        We now delve into<Link
           to={TarotRoutes[1]}
           className={styles.Link}
           title={TarotCardsMeaningSymbolism[1]}
         >
-          Temperance
-        </Link>, a card symbolizing harmony, balance, and moderation. Temperance nudges us to seek balance in our lives and to merge our unconscious and conscious selves.
+          The Lovers
+        </Link>, a card symbolizing love, relationships, and choices. The Lovers card challenges us to make decisions that align with our values and desires, ultimately leading us on a path of emotional connection and harmony.
       </p>
     ),
     href: (
@@ -195,4 +202,14 @@ export default TarotMajorArcana;
       >
         Full Tarot Meaning & Symbolism
       </Link>
-    ),
+    ),   */
+
+/*      <CardDisplayItem
+       alt={TarotCardsDataAll[0].alt}
+       tooltip={TarotCardsDataAll[0].tooltip}
+       paragraphElement={TarotCardsDataAll[0].description}
+       img={TarotCardsDataAll[0].image}
+       index={TarotCardsDataAll[0].number}
+       name={TarotCardsDataAll[0].name}
+       href={TarotCardsDataAll[0].href}
+     />; */
