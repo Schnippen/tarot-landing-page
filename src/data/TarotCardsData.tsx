@@ -176,7 +176,16 @@ const TarotCardsMeaningSymbolism = [
   "King of Pentacles - Meaning & Symbolism",
 ];
 
-export const TarotCardsDataAll = [
+export const TarotCardsDataAll: {
+  number: number;
+  name: string;
+  image: string;
+  route: string;
+  alt: string;
+  tooltip: string;
+  description: JSX.Element;
+  href: JSX.Element;
+}[] = [
   {
     number: 0,
     name: "The Fool: The Beginning of the Journey",
@@ -217,7 +226,6 @@ export const TarotCardsDataAll = [
     route: TarotRoutes[1],
     alt: TarotCardNamesCard[1],
     tooltip: TarotCardNamesCard[1],
-
     description: (
       <p className={styles.paragraph}>
         Following{" "}
@@ -321,7 +329,6 @@ export const TarotCardsDataAll = [
     route: TarotRoutes[4],
     alt: TarotCardNamesCard[4],
     tooltip: TarotCardNamesCard[4],
-
     description: (
       <p className={styles.paragraph}>
         Next up is{" "}
@@ -381,36 +388,100 @@ export const TarotCardsDataAll = [
   },
   {
     number: 6,
-    name: "The Lovers",
-    image: MajorArcanaCards[1],
-    route: TarotRoutes[1],
-    alt: TarotCardNamesCard[1],
-    tooltip: TarotCardNamesCard[1],
-    href: "",
-    descripton:
-      "ers tarot card is often associated with love, relationships, and choices. It suggests a time of decision-making and the need to weigh the options carefully. The card can also represent harmony, unity, and a deep connection with another person, either romantically or in a friendship or partnership. In some cases, it may indicate a difficult choice between two people or paths.\nThe Lovers card can also represent the balance between the masculine and feminine energies within oneself, suggesting a need for integration and wholeness.\nOverall, the card signifies the importance of relationships and the power of love in all its forms. ",
+    name: "The Lovers: Love and Choices",
+    image: MajorArcanaCards[6],
+    route: TarotRoutes[6],
+    alt: TarotCardNamesCard[6],
+    tooltip: TarotCardNamesCard[6],
+    description: (
+      <p className={styles.paragraph}>
+        We now delve into
+        <Link
+          to={TarotRoutes[6]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[6]}
+        >
+          The Lovers
+        </Link>
+        , a card symbolizing love, relationships, and choices. The Lovers card
+        challenges us to make decisions that align with our values and desires,
+        ultimately leading us on a path of emotional connection and harmony.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[6]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[6]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
   },
   {
     number: 7,
-    name: "The Chariot",
-    image: MajorArcanaCards[1],
-    route: TarotRoutes[1],
-    alt: TarotCardNamesCard[1],
-    tooltip: TarotCardNamesCard[1],
-    href: "",
-    description:
-      "The Chariot is a card of determination, focus, and control. It represents a victory over adversity through willpower and strength of character. The card often suggests a need to overcome inner conflicts or obstacles to achieve success.\nThe Chariot is about taking action and moving forward, but also about being in control of one's emotions and impulses. It can indicate a journey, both physical and mental, where one must be focused and disciplined to reach the destination.\nThe Chariot is a reminder that success is within reach, but it requires effort, focus, and the ability to navigate obstacles along the way.",
+    name: "The Chariot: Determination and Victory",
+    image: MajorArcanaCards[7],
+    route: TarotRoutes[7],
+    alt: TarotCardNamesCard[7],
+    tooltip: TarotCardNamesCard[7],
+    description: (
+      <p className={styles.paragraph}>
+        Our journey continues with{" "}
+        <Link
+          to={TarotRoutes[7]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[7]}
+        >
+          The Chariot
+        </Link>
+        , a card of determination, control, and victory. The Chariot represents
+        the triumph of willpower over obstacles, urging us to steer our lives
+        with focus and drive, leading to success and achievement.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[7]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[7]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
   },
   {
     number: 8,
-    name: "Strength",
-    image: MajorArcanaCards[1],
-    route: TarotRoutes[1],
-    alt: TarotCardNamesCard[1],
-    tooltip: TarotCardNamesCard[1],
-    href: "",
-    description:
-      "The Strength card in Tarot is a symbol of inner strength, courage, and fortitude. It suggests that you have the power to overcome obstacles and challenges with confidence, grace, and determination. It is a reminder that true strength comes from within and that you possess the inner resources to face any situation.\nThis card often represents a time of great self-discovery and personal growth, as well as a need for patience, compassion, and forgiveness.\nIn a reading, the Strength card encourages you to trust your instincts, stay focused on your goals, and draw upon your inner reserves of power and resilience to achieve success.",
+    name: "Strength: Inner Power and Courage",
+    image: MajorArcanaCards[8],
+    route: TarotRoutes[8],
+    alt: TarotCardNamesCard[8],
+    tooltip: TarotCardNamesCard[8],
+    description: (
+      <p className={styles.paragraph}>
+        As we progress, we encounter
+        <Link
+          to={TarotRoutes[8]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[8]}
+        >
+          Strength
+        </Link>
+        , a card symbolizing inner power, courage, and resilience. Strength
+        calls upon us to tap into our inner strength, showing that gentleness
+        and patience can overcome even the fiercest challenges, fostering
+        balance and inner fortitude.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[8]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[8]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
   },
   {
     number: 9,
@@ -514,7 +585,6 @@ export const TarotCardsDataAll = [
     route: TarotRoutes[12],
     alt: TarotCardNamesCard[12],
     tooltip: TarotCardNamesCard[12],
-
     description: (
       <p className={styles.paragraph}>
         Our path leads us to{" "}
@@ -607,79 +677,241 @@ export const TarotCardsDataAll = [
   {
     number: 15,
     name: "The Devil: Bondage and Materialism",
-    image: MajorArcanaCards[1],
-    route: TarotRoutes[1],
-    alt: TarotCardNamesCard[1],
-    tooltip: TarotCardNamesCard[1],
-    href: "",
-    description:
-      "The Devil card in the Tarot is often interpreted as a symbol of temptation, materialism, and bondage. It can represent negative patterns or addictions that are holding you back from reaching your full potential. It also suggests the need to confront your own fears and desires to gain control over them.\nThe card may indicate a warning to not become too obsessed or consumed with a particular person, situation, or belief system. It encourages you to break free from limiting beliefs or unhealthy attachments in order to pursue a more fulfilling path.\nUltimately, The Devil reminds you to stay aware of the consequences of your choices and to take responsibility for your own actions.",
+    image: MajorArcanaCards[15],
+    route: TarotRoutes[15],
+    alt: TarotCardNamesCard[15],
+    tooltip: TarotCardNamesCard[15],
+    description: (
+      <p className={styles.paragraph}>
+        Our journey darkens with{" "}
+        <Link
+          to={TarotRoutes[15]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[15]}
+        >
+          The Devil
+        </Link>
+        , a symbol of bondage, materialism, and temptation. However daunting,
+        The Devil teaches us about the dangers of excess and the importance of
+        breaking free from our self-imposed chains.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[15]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[15]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
   },
   {
     number: 16,
     name: "The Tower: Upheaval and Awakening",
-    image: MajorArcanaCards[1],
-    route: TarotRoutes[1],
-    alt: TarotCardNamesCard[1],
-    tooltip: TarotCardNamesCard[1],
-    href: "",
-    description:
-      "The Tower card in the Tarot deck represents upheaval, chaos, and unexpected change. It signifies that something in your life that you have built on an unstable foundation will come crumbling down. This can be a frightening experience, but it is necessary to clear the way for new growth and transformation.\nThe Tower represents the idea that sometimes we need to experience destruction in order to rebuild something stronger and more resilient. The message of this card is to surrender to the forces of change and trust in the process, even if it is uncomfortable or painful in the moment.",
+    image: MajorArcanaCards[16],
+    route: TarotRoutes[16],
+    alt: TarotCardNamesCard[16],
+    tooltip: TarotCardNamesCard[16],
+    description: (
+      <p className={styles.paragraph}>
+        Next, we face{" "}
+        <Link
+          to={TarotRoutes[16]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[16]}
+        >
+          The Tower
+        </Link>
+        , a card of upheaval, sudden change, and awakening. The Tower's
+        destruction signals an inevitable, yet necessary, change or revelation
+        that is to occur.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[16]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[16]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
   },
   {
     number: 17,
     name: "The Star: Hope and Inspiration",
-    image: MajorArcanaCards[1],
-    route: TarotRoutes[1],
-    alt: TarotCardNamesCard[1],
-    tooltip: TarotCardNamesCard[1],
-    href: "",
-    description:
-      "The Star is a tarot card representing hope, inspiration, and renewal. It signifies a time of peace and spiritual awareness, where you are connected to the universe and able to tap into your inner wisdom. It represents a bright future and a sense of calm after a difficult period.\nThe Star encourages you to trust the universe and have faith in the journey ahead. It is a reminder to stay true to your own path and to let your light shine bright, as you bring positive change to yourself and the world around you.",
+    image: MajorArcanaCards[17],
+    route: TarotRoutes[17],
+    alt: TarotCardNamesCard[17],
+    tooltip: TarotCardNamesCard[17],
+    description: (
+      <p className={styles.paragraph}>
+        From the wreckage of{" "}
+        <Link
+          to={TarotRoutes[16]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[16]}
+        >
+          The Tower
+        </Link>
+        , we find hope in{" "}
+        <Link
+          to={TarotRoutes[16]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[16]}
+        >
+          The Star
+        </Link>
+        . This card is a beacon of inspiration, hope, and faith in the future.
+        The Star encourages us to keep our faith during tough times and to
+        remain hopeful for what's to come.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[17]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[17]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
   },
   {
     number: 18,
     name: "The Moon: Illusion and Intuition",
-    image: MajorArcanaCards[1],
-    route: TarotRoutes[1],
-    alt: TarotCardNamesCard[1],
-    tooltip: TarotCardNamesCard[1],
-    href: "",
-    description:
-      "The Moon card in the Tarot represents intuition, the unconscious mind, and the unknown. It suggests that there may be hidden truths or aspects of a situation that are not immediately apparent, and encourages the querent to trust their instincts and intuition to uncover them.\nThe Moon also represents fear, anxiety, and confusion, and may indicate a time of uncertainty or emotional turmoil. It advises the querent to stay grounded and not make any hasty decisions, as clarity will eventually come to light.\nThe card can also indicate mystery, magic, and the mysteries of the night.",
+    image: MajorArcanaCards[18],
+    route: TarotRoutes[18],
+    alt: TarotCardNamesCard[18],
+    tooltip: TarotCardNamesCard[18],
+    description: (
+      <p className={styles.paragraph}>
+        We then wander under{" "}
+        <Link
+          to={TarotRoutes[18]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[18]}
+        >
+          The Moon
+        </Link>
+        , a card of illusion, intuition, and the subconscious. The Moon urges us
+        to trust our intuition and to pay attention to our dreams and
+        subconscious.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[18]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[18]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
   },
   {
     number: 19,
     name: "The Sun: Positivity and Success",
-    image: MajorArcanaCards[1],
-    route: TarotRoutes[1],
-    alt: TarotCardNamesCard[1],
-    tooltip: TarotCardNamesCard[1],
-    href: "",
-    description:
-      "The Sun is a highly positive card in the Major Arcana. It represents joy, optimism, and positivity. The card depicts a bright sun shining down on a child, symbolizing innocence and new beginnings. It also indicates success, abundance, and vitality.\nThe Sun represents a time of good fortune, where things are aligned in your favor and all seems well. This card encourages you to be open, honest, and true to yourself, and to enjoy life's simple pleasures.\nIt is a reminder to stay focused on the present and to embrace the positive energy that surrounds you.",
+    image: MajorArcanaCards[19],
+    route: TarotRoutes[19],
+    alt: TarotCardNamesCard[19],
+    tooltip: TarotCardNamesCard[19],
+    description: (
+      <p className={styles.paragraph}>
+        As we near the end,{" "}
+        <Link
+          to={TarotRoutes[19]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[19]}
+        >
+          The Sun
+        </Link>
+        , shines brightly, bringing positivity, success, and vitality.{" "}
+        <Link
+          to={TarotRoutes[19]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[19]}
+        >
+          The Sun's
+        </Link>
+        light brings clarity, truth, and the shedding of light on what was once
+        hidden.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[19]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[19]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
   },
   {
     number: 20,
     name: "Judgement: Reflection and Absolution",
-    image: MajorArcanaCards[1],
-    route: TarotRoutes[1],
-    alt: TarotCardNamesCard[1],
-    tooltip: TarotCardNamesCard[1],
-    href: "",
-    description:
-      "The Judgment card in tarot represents rebirth, rejuvenation, and self-evaluation. It signifies that a phase of your life has come to an end, and it is time for you to take stock of your accomplishments and failures before moving on to a new beginning. This card calls for self-reflection and introspection, as you may need to confront your past mistakes and address the consequences that come with them.\nThe Judgment card can also represent forgiveness, absolution, and a new sense of purpose or direction in life. It is a card of awakening and enlightenment, reminding you to embrace change and release the old in order to welcome the new.",
+    image: MajorArcanaCards[20],
+    route: TarotRoutes[20],
+    alt: TarotCardNamesCard[20],
+    tooltip: TarotCardNamesCard[20],
+    description: (
+      <p className={styles.paragraph}>
+        The final stages of our journey bring us to{" "}
+        <Link
+          to={TarotRoutes[20]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[20]}
+        >
+          Judgement
+        </Link>
+        , a card of reflection, absolution, and rebirth. Judgement calls us to
+        review our past, forgive our mistakes, and move forward with a renewed
+        sense of purpose.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[20]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[20]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
   },
   {
     number: 21,
     name: "The World: Completion and Harmony",
-    image: MajorArcanaCards[1],
-    route: TarotRoutes[1],
-    alt: TarotCardNamesCard[1],
-    tooltip: TarotCardNamesCard[1],
-    href: "",
-    description:
-      "The World is the final card of the Major Arcana and represents completion, fulfillment, and achievement. It signifies the end of a journey, and a sense of unity and wholeness. This card is often associated with the concept of enlightenment, and suggests that the querent has gained a deep understanding of themselves and the world around them.\nIt is a card of ultimate success and represents the fulfillment of one's hopes and dreams.\nThis card can also indicate travel, whether literal or metaphorical, and suggests that the querent has reached a point of global awareness and understanding.\nIt is a card of harmony, completion, and integration.",
+    image: MajorArcanaCards[21],
+    route: TarotRoutes[21],
+    alt: TarotCardNamesCard[21],
+    tooltip: TarotCardNamesCard[21],
+    description: (
+      <p className={styles.paragraph}>
+        Our Major Arcana journey concludes with{" "}
+        <Link
+          to={TarotRoutes[21]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[21]}
+        >
+          The World
+        </Link>
+        , the card of fulfillment, completion, and harmony. The World signifies
+        the end of one journey and the beginning of another, marking the
+        cyclical nature of life.
+      </p>
+    ),
+    href: (
+      <Link
+        to={TarotRoutes[21]}
+        className={styles.Link}
+        title={TarotCardsMeaningSymbolism[21]}
+      >
+        Full Tarot Meaning & Symbolism
+      </Link>
+    ),
   },
 ];
 /* 
