@@ -21,12 +21,12 @@ function TarotMinorArcana() {
 
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
-useEffect(() => {
+  /* useEffect(() => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   scrollToTop();
-}, []);
+}, []); */
 
   return (
     <main className={styles.main}>
@@ -121,7 +121,7 @@ useEffect(() => {
               title="Suit of Pentacles Cards List"
             >
               Pentacles
-            </Link>
+            </Link>{" "}
             (or Coins). Each suit represents a different facet of life and
             corresponds to one of the four classical elements—fire, water, air,
             and earth, respectively. Within each suit, there are ten numbered

@@ -29,27 +29,30 @@ function SuitOf({ SuitNumber }: { SuitNumber: number }) {
   }, []);
 
   console.log(SuitNumber);
-  console.log(SuitOfArticlesData[SuitNumber])
+  console.log(SuitOfArticlesData[SuitNumber]);
   return (
     <main className={styles.main}>
       <div className={styles.article_container}>
         <Article title={SuitOfArticlesData[SuitNumber].SuitName}>
-          {SuitOfArticlesData[SuitNumber].SuitName}
-          <p className={styles.paragraph}>SUIT OF</p>
+          {SuitOfArticlesData[SuitNumber].SuitFirstTitle}
+          {SuitOfArticlesData[SuitNumber].SuitFirstArticle}
           <div style={{ width: "100%" }}>
             <Separator marginHeight={48} />
           </div>
-          <h3 className={styles.title}>SDASD</h3>
-          <p className={styles.paragraph}>asdasdasd asdasdasdasd</p>
+          {SuitOfArticlesData[SuitNumber].SuitSecondTitle}
+          {SuitOfArticlesData[SuitNumber].SuitSecondArticle}
           <Separator marginHeight={48} />
-          <h3 className={styles.title}>QUSTIONn?</h3>
-          <p className={styles.paragraph}>LOLOLOL</p>
+          {SuitOfArticlesData[SuitNumber].SuitThirdTitle}
+          {SuitOfArticlesData[SuitNumber].SuitThirdArticle}
+          <Separator marginHeight={48} />
+          {SuitOfArticlesData[SuitNumber].SuitFourthTitle}
+          {SuitOfArticlesData[SuitNumber].SuitFourthArticle}
         </Article>
         <span style={{ width: "100%", margin: "24px" }}></span>
         <TarotMeaningsExpositionContainer />
         <span style={{ width: "100%", margin: "24px" }}></span>
         <span ref={ref}></span>
-        <Article title="SUIT OF CARDS:">
+        <Article title={SuitOfArticlesData[SuitNumber].SuitName}>
           <ul style={{ padding: "0px" }}>
             {SuitOfAllCards[SuitNumber].slice(0, 7).map((item, index) => (
               <>
@@ -111,8 +114,8 @@ function SuitOf({ SuitNumber }: { SuitNumber: number }) {
                 title="Major Arcana Cards List"
               >
                 The Major Arcana
-              </Link>
-              &
+              </Link>{" "}
+              &{" "}
               <Link
                 to={TarotDecks[1]}
                 className={styles.Link}
