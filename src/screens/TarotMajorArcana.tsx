@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Article from "../components/Article";
 import Footer from "../components/Footer";
@@ -7,6 +7,7 @@ import TarotMeaningsExpositionContainer from "../components/TarotMeaningsExposit
 import styles from "../App.module.css";
 import CardDisplayItem from "../components/CardDisplayItem";
 import { MajorArcanaCardsData } from "../data/TarotCardsData";
+import { TarotDecks } from "../data/TarotRoutesData";
 
 function TarotMajorArcana() {
   const ref = useRef(null);
@@ -19,6 +20,13 @@ function TarotMajorArcana() {
 
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    scrollToTop();
+  }, []);
+
   return (
     <main className={styles.main}>
       <div className={styles.article_container}>
@@ -118,7 +126,7 @@ function TarotMajorArcana() {
                   name={item.name}
                   href={item.href}
                 />
-                {MajorArcanaCardsData.length === index + 1 ? (
+                {MajorArcanaCardsData.length / 2 === index + 1 ? (
                   <></>
                 ) : (
                   <Separator marginHeight={48} />
@@ -130,7 +138,7 @@ function TarotMajorArcana() {
         <span style={{ width: "100%", margin: "24px" }}></span>
         <TarotMeaningsExpositionContainer />
         <span style={{ width: "100%", margin: "24px" }}></span>
-        <Article title="Major Arcana Cards:">
+        <Article title="">
           <ul style={{ padding: "0px" }}>
             {MajorArcanaCardsData.slice(11, 22).map((item, index) => (
               <>
@@ -143,7 +151,6 @@ function TarotMajorArcana() {
                   name={item.name}
                   href={item.href}
                 />
-                {console.log(MajorArcanaCardsData)}
                 {MajorArcanaCardsData.length === index + 1 ? (
                   <></>
                 ) : (
@@ -163,7 +170,7 @@ function TarotMajorArcana() {
               </a>{" "}
               marks the beginning of another journey -{" "}
               <Link
-                to="/minor-arcana-tarot-card-meanings"
+                to={TarotDecks[1]}
                 className={styles.Link}
                 title="Minor Arcana Cards List"
               >

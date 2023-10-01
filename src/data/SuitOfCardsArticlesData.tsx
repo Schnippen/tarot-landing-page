@@ -1,4 +1,4 @@
-export const SuitOfCardsArticlesData = [""];
+
 import styles from "../App.module.css";
 
 const SuitOfWandsFirstList = () => {
@@ -389,7 +389,7 @@ const SuitOfPentaclesSecondList = () => {
 };
 
 const SuitOfWandsArticle = {
-  SuitName: <h2 className={styles.title}>Suit of Wands</h2>,
+  SuitName: "Suit of Wands",
   SuitFirstTitle: "",
   SuitFirstArticle: (
     <p className={styles.paragraph}>
@@ -428,7 +428,7 @@ const SuitOfWandsArticle = {
 };
 
 const SuitOfCupsArticle = {
-  SuitName: <h2 className={styles.title}>Suit of Cups</h2>,
+  SuitName: "Suit of Cups",
   SuitFirstTitle: "",
   SuitFirstArticle: (
     <p className={styles.paragraph}>
@@ -466,7 +466,7 @@ const SuitOfCupsArticle = {
 };
 
 const SuitOfSwordsArticle = {
-  SuitName: <h2 className={styles.title}>Suit of Swords</h2>,
+  SuitName: "Suit of Swords",
   SuitFirstTitle: "",
   SuitFirstArticle: (
     <p className={styles.paragraph}>
@@ -541,7 +541,7 @@ const SuitOfPentaclesArticle = {
   SuitFourthArticle: <SuitOfPentaclesSecondList />,
 };
 
-export const SuitOfArticles = [
+export const SuitOfArticlesData= [
   SuitOfWandsArticle,
   SuitOfCupsArticle,
   SuitOfSwordsArticle,

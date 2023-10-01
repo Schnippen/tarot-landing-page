@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Article from "../components/Article";
 import Footer from "../components/Footer";
 import Separator from "../components/Separator";
@@ -6,7 +6,7 @@ import TarotMeaningsExpositionContainer from "../components/TarotMeaningsExposit
 import styles from "../App.module.css";
 import { TarotCardsMinorArcanaSuits } from "../data/TarotCardsData";
 import CardDisplayItem from "../components/CardDisplayItem";
-import { RoutesSuitMinorArcana } from "../data/TarotRoutesData";
+import { RoutesSuitMinorArcana, TarotDecks } from "../data/TarotRoutesData";
 import { Link } from "react-router-dom";
 
 //photos
@@ -21,6 +21,12 @@ function TarotMinorArcana() {
 
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
+useEffect(() => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  scrollToTop();
+}, []);
 
   return (
     <main className={styles.main}>
@@ -32,7 +38,7 @@ function TarotMinorArcana() {
             Within the Tarot deck, there are 78 cards divided into two main
             categories: the{" "}
             <Link
-              to="/major-arcana-tarot-card-meanings"
+              to={TarotDecks[0]}
               className={styles.Link}
               title="Major Arcana Cards List"
             >
@@ -49,7 +55,7 @@ function TarotMinorArcana() {
             </a>
             . While the{" "}
             <Link
-              to="/major-arcana-tarot-card-meanings"
+              to={TarotDecks[0]}
               className={styles.Link}
               title="Major Arcana Cards List"
             >
@@ -72,16 +78,7 @@ function TarotMinorArcana() {
             <Separator marginHeight={48} />
           </div>
           <h3 className={styles.title}>
-            A Journey through the{" "}
-            <a
-              className={styles.Link}
-              href="/#"
-              onClick={(e) => executeScroll(e)}
-              title="Minor Arcana Cards"
-            >
-              Minor Arcana
-            </a>{" "}
-            Suits in Tarot
+            A Journey through the Minor Arcana Suits in Tarot
           </h3>
           <p className={styles.paragraph}>
             The{" "}
@@ -193,7 +190,8 @@ function TarotMinorArcana() {
             circumstances effectively.
           </p>
         </Article>
-        <Article title="Minor Arcana">
+        <span ref={ref}></span>
+        <Article title="">
           <h2 className={styles.title} style={{ textAlign: "center" }}>
             Let's delve into the meanings of each suit and their respective
             cards:
@@ -210,7 +208,6 @@ function TarotMinorArcana() {
                   name={item.name}
                   href={item.href}
                 />
-                {console.log(TarotCardsMinorArcanaSuits)}
                 {TarotCardsMinorArcanaSuits.length === index + 1 ? (
                   <></>
                 ) : (
@@ -222,7 +219,7 @@ function TarotMinorArcana() {
         </Article>
         <span style={{ width: "100%", margin: "24px" }}></span>
         <TarotMeaningsExpositionContainer />
-        <span style={{ width: "100%", margin: "24px" }}></span> */
+        <span style={{ width: "100%", margin: "24px" }}></span>
       </div>
       <Footer />
     </main>

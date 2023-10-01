@@ -11,7 +11,8 @@ import AvailableSoon from "./screens/AvailableSoon";
 import TarotMeanings from "./screens/TarotMeanings";
 import TarotMajorArcana from "./screens/TarotMajorArcana";
 import TarotMinorArcana from "./screens/TarotMinorArcana";
-
+import SuitOf from "./screens/SuitOf";
+import { RoutesSuitMinorArcana } from "./data/TarotRoutesData";
 //import "dotenv/config";
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
   const navigateToHome = () => {
     navigate("/");
   };
+  const TarotDecks = [
+    "/major-arcana-tarot-card-meanings",
+    "/minor arcana-tarot-card-meanings",
+  ];
 
   return (
     <body className="App">
@@ -39,14 +44,14 @@ function App() {
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/available-soon" element={<AvailableSoon />} />
         <Route path="/tarot-card-meanings" element={<TarotMeanings />} />
-        <Route
-          path="/major-arcana-tarot-card-meanings"
-          element={<TarotMajorArcana />}
-        />
-        <Route
-          path="/minor arcana-tarot-card-meanings"
-          element={<TarotMinorArcana />}
-        />
+        <Route path={TarotDecks[0]} element={<TarotMajorArcana />} />
+        <Route path={TarotDecks[1]} element={<TarotMinorArcana />} />
+        {RoutesSuitMinorArcana.map((route, index) => (
+          <Route
+            path={route}
+            element={<SuitOf SuitNumber={index} key={route} />}
+          />
+        ))}
       </Routes>
     </body>
   );
