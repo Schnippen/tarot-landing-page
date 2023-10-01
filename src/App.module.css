@@ -63,7 +63,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .exposition_left {
@@ -180,6 +179,7 @@
 .panels_container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .panels_container_title {
   font-family: "Cinzel";
@@ -188,8 +188,11 @@
 }
 
 .panels_wrapper {
-  display: flex;
   padding: 24px 0;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  display: flex;
 }
 
 .panel {
@@ -389,7 +392,6 @@
     background-color: var(--brown);
     border-radius: 24px;
     box-shadow: var(--BoxShadow);
-    
   }
 
   .article_wrapper {
@@ -397,7 +399,7 @@
     background-color: var(--beige);
     border-radius: 24px;
   }
-  .paragraph{
+  .paragraph {
     list-style: inside;
   }
   .ArticleItem_list {

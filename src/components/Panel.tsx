@@ -5,6 +5,8 @@ import styles from "../components/Panel.module.css";
 import Separator from "./Separator";
 import { AnalyticsEvent } from "../utils/constants";
 import { analytics } from "../utils/mixpanel";
+import { useSpring, a } from "@react-spring/web";
+import { animated } from "react-spring";
 //analytics.event(AnalyticsEvent.first_card_pressed);
 //analytics.event(AnalyticsEvent.second_card_pressed)
 //analytics.event(AnalyticsEvent.third_card_pressed)
@@ -22,21 +24,25 @@ function Panel({ title, text, hue, analyticsNumber, ...props }: PanelTypes) {
     AnalyticsEvent.third_card_pressed,
   ];
   const [isFlipped, setIsFlipped] = useState(false);
+
+  const { transform, opacity } = useSpring({
+    opacity: isFlipped ? 1 : 0,
+    transform: `perspective(600px) rotateY(${isFlipped ? 180 : 0}deg)`,
+    config: { mass: 5, tension: 500, friction: 80 },
+  });
   return (
     <li
-      className={`${styles.card_container} ${
-        isFlipped ? styles.CardOpen : styles.CardClosed
-      }
-      `}
+      className={styles.container}
       onClick={(e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
         setIsFlipped(!isFlipped);
-        console.log("clicked");
         analytics.event(analyticsFunctionsArray[analyticsNumber]);
       }}
-      id={"card"}
       {...props}
     >
-      <div className={styles.card_back}>
+      <animated.div
+        className={`${styles.card} ${styles.back}`}
+        style={{ opacity: opacity.to((o) => 1 - o), transform }}
+      >
         <img
           src={CardBack}
           alt="Back of the card"
@@ -46,14 +52,21 @@ function Panel({ title, text, hue, analyticsNumber, ...props }: PanelTypes) {
             filter: `hue-rotate(${hue})`,
           }}
         />
-      </div>
-      <div className={styles.card_front}>
+      </animated.div>
+      <animated.div
+        className={`${styles.card} ${styles.front}`}
+        style={{
+          opacity,
+          transform,
+          rotateY: "180deg",
+        }}
+      >
         <div className={styles.panel_container}>
           <h2>{title}</h2>
           <Separator marginHeight={0} />
           <p>{text}</p>
         </div>
-      </div>
+      </animated.div>
     </li>
   );
 }
