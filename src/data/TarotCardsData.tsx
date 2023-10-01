@@ -589,7 +589,7 @@ export const TarotCardsDataAll: {
     tooltip: TarotCardNamesCard[8],
     description: (
       <p className={styles.paragraph}>
-        As we progress, we encounter
+        As we progress, we encounter{" "}
         <Link
           to={TarotRoutes[8]}
           className={styles.Link}
@@ -597,7 +597,14 @@ export const TarotCardsDataAll: {
         >
           Strength
         </Link>
-        , a card symbolizing inner power, courage, and resilience. Strength
+        , a card symbolizing inner power, courage, and resilience.{" "}
+        <Link
+          to={TarotRoutes[8]}
+          className={styles.Link}
+          title={TarotCardsMeaningSymbolism[8]}
+        >
+          Strength
+        </Link>{" "}
         calls upon us to tap into our inner strength, showing that gentleness
         and patience can overcome even the fiercest challenges, fostering
         balance and inner fortitude.
@@ -1251,7 +1258,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[28]}
         >
           Seven of Wands
-        </Link>
+        </Link>{" "}
         signifies defensiveness, courage, and standing your ground. It reminds
         you to defend your beliefs and principles, even when facing opposition.
       </p>
@@ -1282,7 +1289,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[29]}
         >
           Eight of Wands
-        </Link>
+        </Link>{" "}
         represents swiftness, progress, and forward momentum. This card suggests
         that things are moving quickly, and it's a good time to take action and
         make the most of opportunities.
@@ -1314,7 +1321,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[30]}
         >
           Nine of Wands
-        </Link>
+        </Link>{" "}
         symbolizing resilience, endurance, and determination. It encourages you
         to persevere in the face of challenges and trust that you have the
         strength to overcome obstacles.
@@ -1346,7 +1353,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[31]}
         >
           Ten of Wands
-        </Link>
+        </Link>{" "}
         signifies burden, responsibility, and carrying a heavy load. It reminds
         you to assess your commitments and consider whether it's time to
         delegate or let go of some responsibilities.
@@ -1378,7 +1385,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[32]}
         >
           Page of Wands
-        </Link>
+        </Link>{" "}
         represents youthful enthusiasm, exploration, and the pursuit of new
         interests. It encourages you to embrace your curiosity and approach life
         with a sense of adventure.
@@ -1410,7 +1417,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[33]}
         >
           Knight of Wands
-        </Link>
+        </Link>{" "}
         embodies action, ambition, and a fearless spirit. This card signifies a
         time when you're ready to charge forward with your goals and pursue your
         passions with vigor.
@@ -1474,7 +1481,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[35]}
         >
           King of Wands
-        </Link>
+        </Link>{" "}
         embodies vision, influence, and mastery. This card signifies someone who
         has achieved a high level of expertise in their field and can make
         significant positive changes through their leadership and creativity.
@@ -1506,7 +1513,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[36]}
         >
           Ace of Cups
-        </Link>
+        </Link>{" "}
         represents the wellspring of emotions and new beginnings in matters of
         the heart. It signifies the start of a deep emotional connection,
         whether in a relationship or a newfound sense of self-love.
@@ -1570,7 +1577,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[38]}
         >
           Three of Cups
-        </Link>
+        </Link>{" "}
         signifies celebration, joy, and gatherings with friends and loved ones.
         It encourages you to embrace moments of happiness, unity, and shared
         experiences.
@@ -1602,7 +1609,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[39]}
         >
           Four of Cups
-        </Link>
+        </Link>{" "}
         is a card of introspection, contemplation, and a sense of restlessness.
         It reminds you to reevaluate your emotions, be open to new experiences,
         and not take your blessings for granted.
@@ -1666,7 +1673,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[41]}
         >
           Six of Cups
-        </Link>
+        </Link>{" "}
         brings a wave of nostalgia, childhood memories, and innocence. It
         prompts you to reflect on your past, reconnect with the people who
         shaped your life, and find comfort in cherished memories.
@@ -1730,7 +1737,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[43]}
         >
           Eight of Cups
-        </Link>
+        </Link>{" "}
         signifies a journey of seeking fulfillment and emotional growth. It
         encourages you to leave behind what no longer serves you and embark on a
         quest for deeper meaning and satisfaction.
@@ -1801,7 +1808,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[45]}
         >
           Ten of Cups
-        </Link>
+        </Link>{" "}
         represents ultimate emotional fulfillment, harmony, and happy family
         life. It signifies a deep sense of love, unity, and domestic bliss.
       </p>
@@ -1832,7 +1839,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[46]}
         >
           Page of Cups
-        </Link>
+        </Link>{" "}
         exhibit creativity, intuition, and a gentle, imaginative spirit. This
         card encourages you to explore your artistic and emotional side, and to
         trust your instincts.
@@ -1864,7 +1871,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[47]}
         >
           Page of Cups
-        </Link>
+        </Link>{" "}
         personify romantic ideals, emotional pursuit, and the quest for love.
         This card signifies a period when you may be driven by your emotions and
         passions, seeking love or creative inspiration.
@@ -1896,7 +1903,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[48]}
         >
           Queen of Cups
-        </Link>
+        </Link>{" "}
         embodies compassion, intuition, and deep emotional understanding. This
         card represents a person who is nurturing, empathetic, and deeply
         connected to their feelings.
@@ -1928,7 +1935,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[49]}
         >
           Queen of Cups
-        </Link>
+        </Link>{" "}
         symbolizes emotional mastery, wisdom, and emotional leadership. This
         card represents a person who is emotionally balanced, empathetic, and
         able to provide guidance and support to others.
@@ -1960,7 +1967,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[50]}
         >
           Ace of Swords
-        </Link>
+        </Link>{" "}
         heralds clarity, fresh outlooks, and breakthroughs in thought. It marks
         the inception of a journey where you gain mental lucidity and cut
         through confusion to unearth truth and insight.
@@ -2024,7 +2031,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[52]}
         >
           Three of Swords
-        </Link>
+        </Link>{" "}
         signals heartbreak, sorrow, and emotional anguish. It implies a period
         of grief and loss but also serves as a reminder that the path to healing
         starts with acknowledging your emotions.
@@ -2056,7 +2063,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[53]}
         >
           Four of Swords
-        </Link>
+        </Link>{" "}
         signifies rest, recuperation, and introspection. It advises a pause, a
         chance to recharge, and an opportunity to reflect on your thoughts and
         actions prior to progress.
@@ -2120,7 +2127,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[55]}
         >
           Six of Swords
-        </Link>
+        </Link>{" "}
         marks a transition, an onward journey, and leaving turbulent waters
         behind. It suggests that you are progressing towards more tranquil and
         peaceful circumstances.
@@ -2184,7 +2191,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[57]}
         >
           Eight of Swords
-        </Link>
+        </Link>{" "}
         conveys confinement, self-imposed limitations, and the feeling of being
         ensnared by your thoughts. It encourages you to recognize that you
         possess the power to break free from mental constraints.
@@ -2216,7 +2223,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[58]}
         >
           Nine of Swords
-        </Link>
+        </Link>{" "}
         symbolizes anxiety, distress, and a troubled mind. It implies that your
         fears and concerns may be causing sleepless nights, but it's also a call
         to confront these worries and seek support.
@@ -2248,7 +2255,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[59]}
         >
           Ten of Swords
-        </Link>
+        </Link>{" "}
         denotes closure, metamorphosis, and reaching the lowest point. It
         represents a phase of profound transformation and an opportunity for
         rebirth from the ashes.
@@ -2280,7 +2287,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[60]}
         >
           Page of Swords
-        </Link>
+        </Link>{" "}
         embodies curiosity, intellectual growth, and a thirst for knowledge. It
         encourages us to explore new ideas, communicate openly, and embrace a
         youthful and inquisitive spirit.
@@ -2344,7 +2351,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[62]}
         >
           Queen of Swords
-        </Link>
+        </Link>{" "}
         embodies wisdom, clarity, and an analytical mindset. She encourages us
         to approach challenges with intelligence and reason while remaining fair
         and just.
@@ -2376,7 +2383,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[63]}
         >
           King of Swords
-        </Link>
+        </Link>{" "}
         represents authority, leadership, and mastery of the intellect. He
         reminds us to lead with integrity, make well-informed decisions, and
         embrace the responsibilities that come with leadership.
@@ -2408,7 +2415,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[64]}
         >
           Ace of Pentacles
-        </Link>
+        </Link>{" "}
         symbolizes new beginnings, material prosperity, and the potential for
         financial and material growth. It signifies a promising opportunity or a
         solid foundation upon which to build.
@@ -2472,7 +2479,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[66]}
         >
           Three of Pentacles
-        </Link>
+        </Link>{" "}
         represents collaboration, mastery, and the recognition of one's skills.
         It encourages us to work harmoniously with others to achieve shared
         goals and to take pride in our craftsmanship.
@@ -2504,7 +2511,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[67]}
         >
           Four of Pentacles
-        </Link>
+        </Link>{" "}
         signifies security, but it can also indicate possessiveness and a fear
         of loss. It prompts us to find a balance between financial stability and
         an open-hearted approach to life.
@@ -2536,7 +2543,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[68]}
         >
           Five of Pentacles
-        </Link>
+        </Link>{" "}
         represents hardship, financial struggles, and a sense of lack. It
         reminds us to seek help when needed and to remember that support and
         opportunities can be found even in difficult times.
@@ -2568,7 +2575,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[69]}
         >
           Six of Pentacles
-        </Link>
+        </Link>{" "}
         embodies generosity, charity, and the idea of giving and receiving. It
         encourages us to share our abundance with others and to be open to both
         offering and receiving help.
@@ -2600,7 +2607,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[70]}
         >
           Seven of Pentacles
-        </Link>
+        </Link>{" "}
         we find themes of patience and investment. It suggests that the seeds
         we've planted are beginning to grow, but it may take time before we reap
         the full rewards of our efforts.
@@ -2632,7 +2639,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[71]}
         >
           Eight of Pentacles
-        </Link>
+        </Link>{" "}
         represents dedication, craftsmanship, and the pursuit of mastery. It
         encourages us to hone our skills, work diligently, and take pride in the
         quality of our work.
@@ -2664,7 +2671,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[72]}
         >
           Nine of Pentacles
-        </Link>
+        </Link>{" "}
         signifies abundance, self-sufficiency, and the enjoyment of life's
         pleasures. It reminds us to savor the rewards of our hard work and to
         appreciate the finer things in life.
@@ -2696,7 +2703,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[73]}
         >
           Ten of Pentacles
-        </Link>
+        </Link>{" "}
         symbolizes wealth, legacy, and the fulfillment of material and family
         goals. It emphasizes the importance of family, tradition, and the
         long-term security of our investments.
@@ -2728,7 +2735,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[74]}
         >
           Page of Pentacles
-        </Link>
+        </Link>{" "}
         that embodies ambition, curiosity, and the pursuit of new opportunities.
         It encourages us to approach new ventures with a practical and studious
         mindset.
@@ -2760,7 +2767,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[75]}
         >
           Knight of Pentacles
-        </Link>
+        </Link>{" "}
         that exemplify reliability, practicality, and a steady approach to
         goals. It reminds us to be methodical in our pursuits and to take
         responsibility for our actions.
@@ -2792,7 +2799,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[76]}
         >
           Queen of Pentacles
-        </Link>
+        </Link>{" "}
         manifest nurturing energy, abundance, and a deep connection to the
         material world. She encourages us to care for ourselves and others while
         maintaining a strong sense of practicality.
@@ -2824,7 +2831,7 @@ export const TarotCardsDataAll: {
           title={TarotCardsMeaningSymbolism[77]}
         >
           King of Pentacles
-        </Link>
+        </Link>{" "}
         represents financial mastery, stability, and responsible leadership. He
         reminds us of the importance of managing our resources wisely and using
         our wealth to benefit both ourselves and our community.
@@ -2844,10 +2851,14 @@ export const TarotCardsDataAll: {
 
 export const MajorArcanaCardsData = TarotCardsDataAll.slice(0, 22);
 
-const SuitOfCups = [];
+const SuitOfWands = TarotCardsDataAll.slice(22, 36);
+const SuitOfCups = TarotCardsDataAll.slice(36, 50);
+const SuitOfSords = TarotCardsDataAll.slice(50, 64);
+const SuitOfPentacles = TarotCardsDataAll.slice(64, 78);
 
-const SuitOfWands = [];
-
-const SuitOfSords = [];
-
-const SuitOfPentacles = [];
+export const SuitOfAllCards = [
+  SuitOfWands,
+  SuitOfCups,
+  SuitOfSords,
+  SuitOfPentacles,
+];
