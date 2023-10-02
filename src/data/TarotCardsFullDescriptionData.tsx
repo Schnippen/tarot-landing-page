@@ -65,40 +65,74 @@ const Fool = {
 };
 
 const Magician = {
-    CardName: "The Magician",
-    alt: "Rider–Waite Tarot Card: The Magician",
-    tooltip: "The Magician Card",
-    SubTitle: (
-     <h2 className={styles.title}>Unlocking the Power of Manifestation</h2>  
-    ),
-    Introduction: (
-            <p className={styles.paragraph}>
-      The Magician card in the Rider-Waite Tarot deck is a captivating and powerful symbol of transformation and personal empowerment. Depicting a figure standing at a table adorned with various tools, the Magician embodies the ability to harness the energies of the universe to manifest desires and create positive change. In this article, we will explore the profound meanings and interpretations of the Magician card, uncovering its wisdom and significance in our journey of self-mastery.
+  CardName: "The Magician",
+  alt: "Rider–Waite Tarot Card: The Magician",
+  tooltip: "The Magician Card",
+  SubTitle: (
+    <h2 className={styles.title}>Unlocking the Power of Manifestation</h2>
+  ),
+  Introduction: (
+    <p className={styles.paragraph}>
+      The Magician card in the Rider-Waite Tarot deck is a captivating and
+      powerful symbol of transformation and personal empowerment. Depicting a
+      figure standing at a table adorned with various tools, the Magician
+      embodies the ability to harness the energies of the universe to manifest
+      desires and create positive change. In this article, we will explore the
+      profound meanings and interpretations of the Magician card, uncovering its
+      wisdom and significance in our journey of self-mastery.
     </p>
-    ),
-    SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
-      // Symbolism content for The Magician
-    ),
-    CardMeaning: "Card Meaning:",
-    CardMeaningArticle: (
-      <ul style={{ padding: "0px" }}>
-  <li className={styles.paragraph} style={{ margin: "16px 0" }}>
-    <strong>Personal Power and Mastery:</strong> The Magician embodies the potential within us to tap into our personal power and abilities. It encourages us to recognize that we have the capability to manifest our desires and shape our reality. By aligning our thoughts, emotions, and actions, we can harness our innate potential and create the life we envision.
-  </li>
-  <li className={styles.paragraph} style={{ margin: "16px 0" }}>
-    <strong>Transformation and Adaptability:</strong> The Magician represents the transformative energy within us that allows us to adapt to different situations and overcome challenges. It reminds us that we possess the necessary tools and resources to navigate through life's obstacles. Through conscious awareness and the utilization of our skills, we can transform difficulties into opportunities for growth.
-  </li>
-  <li className={styles.paragraph} style={{ margin: "16px 0" }}>
-    <strong>Creative Energy and Manifestation:</strong> This card signifies the importance of creative energy in the process of manifestation. The Magician teaches us to channel our imagination and creativity to bring our dreams into reality. By focusing our intentions and utilizing our talents, we can tap into the abundant energy of the universe to manifest our goals and aspirations.
-  </li>
-  <li className={styles.paragraph} style={{ margin: "16px 0" }}>
-    <strong>Divine Connection and Alignment:</strong> The Magician emphasizes the significance of aligning ourselves with higher forces and divine guidance. It highlights the importance of connecting with our spiritual essence and trusting in the universal energies that support us. By aligning our intentions with a higher purpose, we can access a limitless source of inspiration and guidance.
-  </li>
-</ul>
-
-    ),
-  },
+  ),
+  SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
+  Symbolism: (
+    <p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Magician is portrayed as a masterful
+      individual standing confidently with one hand raised towards the heavens
+      and the other pointing towards the ground. The tools on the table
+      represent the four elements: a wand symbolizing fire, a cup representing
+      water, a sword symbolizing air, and a pentacle representing earth. These
+      elements reflect the realms of intuition, emotions, intellect, and
+      material manifestation respectively, showcasing the Magician's mastery
+      over these aspects of life.
+    </p>
+  ),
+  CardMeaning: "Card Meaning:",
+  CardMeaningArticle: (
+    <ul style={{ padding: "0px" }}>
+      <li className={styles.paragraph} style={{ margin: "16px 0" }}>
+        <strong>Personal Power and Mastery:</strong> The Magician embodies the
+        potential within us to tap into our personal power and abilities. It
+        encourages us to recognize that we have the capability to manifest our
+        desires and shape our reality. By aligning our thoughts, emotions, and
+        actions, we can harness our innate potential and create the life we
+        envision.
+      </li>
+      <li className={styles.paragraph} style={{ margin: "16px 0" }}>
+        <strong>Transformation and Adaptability:</strong> The Magician
+        represents the transformative energy within us that allows us to adapt
+        to different situations and overcome challenges. It reminds us that we
+        possess the necessary tools and resources to navigate through life's
+        obstacles. Through conscious awareness and the utilization of our
+        skills, we can transform difficulties into opportunities for growth.
+      </li>
+      <li className={styles.paragraph} style={{ margin: "16px 0" }}>
+        <strong>Creative Energy and Manifestation:</strong> This card signifies
+        the importance of creative energy in the process of manifestation. The
+        Magician teaches us to channel our imagination and creativity to bring
+        our dreams into reality. By focusing our intentions and utilizing our
+        talents, we can tap into the abundant energy of the universe to manifest
+        our goals and aspirations.
+      </li>
+      <li className={styles.paragraph} style={{ margin: "16px 0" }}>
+        <strong>Divine Connection and Alignment:</strong> The Magician
+        emphasizes the significance of aligning ourselves with higher forces and
+        divine guidance. It highlights the importance of connecting with our
+        spiritual essence and trusting in the universal energies that support
+        us. By aligning our intentions with a higher purpose, we can access a
+        limitless source of inspiration and guidance.
+      </li>
+    </ul>
+  ),
+};,
 
   const Priestess={
     CardName: "The High Priestess",
@@ -114,7 +148,9 @@ const Magician = {
       // Introduction content for The High Priestess
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the High Priestess is depicted as a serene and enigmatic figure seated on a throne. She is often seen wearing a crown, holding a scroll, and surrounded by symbols of the moon and water. The pillars represent duality, with the black pillar symbolizing the conscious mind and the white pillar representing the subconscious mind. The veil draped over the High Priestess signifies the hidden mysteries and esoteric knowledge that she holds.
+    </p>
       // Symbolism content for The High Priestess
     ),
     CardMeaning: "Card Meaning:",
@@ -151,7 +187,9 @@ const Magician = {
       // Introduction content for The Empress
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Empress is depicted as a serene and beautiful figure sitting on a lush throne surrounded by a fertile landscape. Adorned with a crown and wearing a flowing gown, she represents the embodiment of feminine power. The Empress is often seen holding a scepter, symbolizing her authority and control over the natural world. In some interpretations, she is also depicted with a shield adorned with the symbol of Venus, representing love, beauty, and harmony.
+    </p>
       // Symbolism content for The Empress
     ),
     CardMeaning: "Card Meaning:",
@@ -187,7 +225,9 @@ const Magician = {
       // Introduction content for The Emperor
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Emperor is depicted as a regal figure seated on a magnificent throne, wearing a crown of authority and holding a scepter. His posture exudes confidence and determination. The Emperor's throne is adorned with rams' heads, representing action and initiative. The solid, stable structure behind him signifies his ability to create order and establish control.
+    </p>
       // Symbolism content for The Emperor
     ),
     CardMeaning: "Card Meaning:",
@@ -224,7 +264,9 @@ const Magician = {
       // Introduction content for The Hierophant
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Hierophant is often portrayed seated on a throne, wearing papal-like vestments and a triple-tiered crown. He holds a scepter in one hand, symbolizing his spiritual authority, and a set of keys in the other, representing the knowledge and wisdom he possesses. Two acolytes stand beside him, signifying the connection between the spiritual leader and his disciples.
+    </p>
       // Symbolism content for The Hierophant
     ),
     CardMeaning: "Card Meaning:",
@@ -260,7 +302,9 @@ const Magician = {
       // Introduction content for The Lovers
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Lovers card typically portrays a man and a woman standing in a garden, often with an angel or cupid above them. The figures are usually depicted beneath a radiant sun, symbolizing divine blessings. The card signifies the union of opposites, representing the merging of masculine and feminine energies. It also embodies the concept of choice, as the couple faces a decision that will shape their path forward.
+    </p>
       // Symbolism content for The Lovers
     ),
     CardMeaning: "Card Meaning:",
@@ -297,7 +341,9 @@ const Magician = {
       // Introduction content for The Chariot
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, The Chariot showcases a warrior holding a wand and adorned with a starry crown, symbolizing his connection to divine guidance. The chariot is pulled by two sphinxes, one black and one white, representing opposing forces that need to be balanced and harnessed. The warrior's armor signifies protection, and the laurel and stars symbolize victory and success.
+    </p>
       // Symbolism content for The Chariot
     ),
     CardMeaning: "Card Meaning:",
@@ -333,7 +379,9 @@ const Magician = {
       // Introduction content for Strength
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Strength card features a woman gently and fearlessly interacting with a mighty lion. Her calm demeanor and open hand symbolize the power of gentleness, compassion, and inner strength. The lion represents our primal instincts, desires, and fears. The card signifies the harmonious balance between our instinctual nature and our capacity to tame and channel it effectively.
+    </p>
       // Symbolism content for Strength
     ),
     CardMeaning: "Card Meaning:",
@@ -369,7 +417,9 @@ const Magician = {
       // Introduction content for The Hermit
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, The Hermit is depicted as a solitary figure standing atop a mountain peak, holding a lantern in one hand and a staff in the other. The staff represents spiritual authority and wisdom, while the lantern symbolizes the light of self-discovery and illumination. The mountain represents the journey towards self-realization and the challenges faced along the way.
+    </p>
       // Symbolism content for The Hermit
     ),
     CardMeaning: "Card Meaning:",
@@ -406,7 +456,9 @@ const Magician = {
       // Introduction content for Wheel of Fortune
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Wheel of Fortune card features a magnificent wheel with various symbols inscribed upon it. At the top of the wheel, we find the letters "T-A-R-O" representing the Tarot itself. The wheel is adorned with spiritual figures such as the Sphinx, representing wisdom, the serpent representing transformation, the Anubis-like figure representing divine guidance, and the eagle representing higher perspective. The wheel is surrounded by the four elements—earth, air, fire, and water—symbolizing the diverse aspects of life.
+    </p>
       // Symbolism content for Wheel of Fortune
     ),
     CardMeaning: "Card Meaning:",
@@ -442,7 +494,9 @@ const Magician = {
       // Introduction content for Justice
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Justice card showcases a figure seated on a throne, holding a sword in one hand and scales in the other. The figure wears a crown and is often depicted surrounded by pillars, symbolizing stability and structure. The sword represents the power of reason and discernment, while the scales represent the weighing of actions and consequences.
+    </p>
       // Symbolism content for Justice
     ),
     CardMeaning: "Card Meaning:",
@@ -478,7 +532,9 @@ const Magician = {
       // Introduction content for The Hanged Man
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Hanged Man card portrays a figure suspended in a state of suspension, often in the shape of a cross. This imagery represents the act of surrendering one's own desires, beliefs, or attachments to gain a fresh outlook on life. The Hanged Man's serene expression and calm demeanor suggest acceptance and a willingness to embrace the unknown. The tree on which the figure hangs symbolizes rootedness, stability, and the connection between the physical and spiritual realms.
+    </p>
       // Symbolism content for The Hanged Man
     ),
     CardMeaning: "Card Meaning:",
@@ -515,7 +571,9 @@ const Magician = {
       // Introduction content for Death
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Death card portrays a skeleton dressed in black armor, riding a white horse through a desolate land. The image is often accompanied by symbols of death, such as a setting sun, a flag, and a severed head. While these symbols may seem morbid, they represent the necessary end of one phase and the subsequent birth of another.
+    </p>
       // Symbolism content for Death
     ),
     CardMeaning: "Card Meaning:",
@@ -551,7 +609,9 @@ const Magician = {
       // Introduction content for Temperance
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Temperance card features an angel with wings, standing with one foot in water and the other on land. The angel gracefully pours liquid between two cups, symbolizing the blending and harmonizing of opposites. The water represents the realm of emotions, while the land symbolizes the physical world. The angel's presence signifies divine intervention and the need for a balanced approach to life's challenges.
+    </p>
       // Symbolism content for Temperance
     ),
     CardMeaning: "Card Meaning:",
@@ -587,7 +647,9 @@ const Magician = {
       // Introduction content for The Devil
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Devil card portrays a figure often associated with the devilish archetype. The devil is depicted with goat-like features, wings, and an inverted pentagram on his forehead. The chains binding the two figures in the card represent self-imposed limitations and the bondage of material desires. The card is a reminder of the illusionary nature of these attachments and the power to break free from them.
+    </p>
       // Symbolism content for The Devil
     ),
     CardMeaning: "Card Meaning:",
@@ -623,7 +685,9 @@ const Magician = {
       // Introduction content for The Tower
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Tower card in the Rider-Waite Tarot deck portrays a tall tower situated on a rocky cliff. Lightning strikes the tower, causing its roofs and walls to crumble and figures to fall from its windows. The imagery signifies both external and internal destruction, symbolizing the breaking down of old beliefs, structures, and patterns. Amidst the chaos, however, lies a glimmer of hope—a small crown symbolizing new beginnings and the liberation that comes with embracing change.
+    </p>
       // Symbolism content for The Tower
     ),
     CardMeaning: "Card Meaning:",
@@ -659,7 +723,9 @@ const Magician = {
       // Introduction content for The Star
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Star card features a naked woman kneeling on one knee. She holds two water jugs, one pouring water onto the land and the other into a body of water. Above her, a star-filled sky shines brightly, representing divine guidance and cosmic energy. The woman's pose symbolizes vulnerability, openness, and a willingness to receive the blessings of the universe.
+    </p>
       // Symbolism content for The Star
     ),
     CardMeaning: "Card Meaning:",
@@ -696,7 +762,9 @@ const Magician = {
       // Introduction content for The Moon
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Moon card, the moon shines brightly in the night sky, illuminating a winding path that leads towards the distant mountains. The presence of water symbolizes the depths of the subconscious mind, while the crayfish (lobster) emerging from it represents the hidden fears and anxieties that we often prefer to avoid. The two canines howling at the moon represent the duality of our conscious and unconscious selves. The Moon card often alludes to the fact that there is more to a situation than meets the eye, urging us to look beyond the surface and trust in our intuition.
+    </p>
       // Symbolism content for The Moon
     ),
     CardMeaning: "Card Meaning:",
@@ -731,7 +799,9 @@ const Magician = {
       // Introduction content for The Sun
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Sun card depicts a vibrant sun shining brightly in the sky. A child sits on a white horse, representing innocence and pure joy. Sunflowers surround them, symbolizing growth, vitality, and the abundance of life. The walled garden in the background signifies a safe and protected space where happiness can flourish. The Sun card embodies the power of positive energy and the nourishment it brings to our lives.
+    </p>
       // Symbolism content for The Sun
     ),
     CardMeaning: "Card Meaning:",
@@ -768,7 +838,9 @@ const Magician = {
       // Introduction content for Judgment
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Judgement card portrays an angel blowing a trumpet, symbolizing the call to rise and awaken. The figures below, rising from their graves, represent individuals undergoing a spiritual resurrection. The mountains in the background symbolize obstacles to overcome and the vast expanse of possibilities that lie ahead. Overall, the card represents the process of reflection, self-evaluation, and embracing a higher calling.
+    </p>
       // Symbolism content for Judgment
     ),
     CardMeaning: "Card Meaning:",
@@ -804,7 +876,9 @@ const Magician = {
       // Introduction content for The World
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The World card portrays a figure at the center of the card, surrounded by an oval wreath. This wreath symbolizes the cyclical nature of life and the eternal flow of energy. In each corner of the card, we find the four symbols of the zodiac, representing the four elements (earth, air, fire, and water), and the four corners of the physical world. The figure in the center is often depicted as androgynous, representing the balance and integration of masculine and feminine energies.
+    </p>
       // Symbolism content for The World
     ),
     CardMeaning: "Card Meaning:",
@@ -840,7 +914,9 @@ const Magician = {
       // Introduction content for Ace of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Ace of Wands portrays a hand holding a wand, with leaves and buds sprouting from it. The hand emerges from a vibrant garden, representing the fertile ground of possibilities and growth. The wand itself symbolizes creative energy, ambition, and the ability to take action. The leaves and buds represent the potential for growth and the blossoming of new ideas and passions.
+    </p>
       // Symbolism content for Ace of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -876,7 +952,9 @@ const Magician = {
       // Introduction content for Two of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Two of Wands portrays a figure standing on a castle or balcony, holding a wand in one hand and resting the other on the balustrade. The figure gazes into the distance, presenting an air of confidence and contemplation. The wand represents personal power, creativity, and the potential for growth. The castle symbolizes stability and ambition, while the expansive landscape signifies the vast possibilities that await us in our journey.
+    </p>
       // Symbolism content for Two of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -912,7 +990,9 @@ const Magician = {
       // Introduction content for Three of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Three of Wands depicts a figure standing on a cliff, overlooking expansive waters. The figure holds three wands firmly, symbolizing stability, ambition, and foresight. The ships sailing in the distance represent potential journeys and ventures. The scene is bathed in warm colors, signifying enthusiasm and optimism. The card embodies the idea of stepping into new territory and embracing the unknown with confidence and anticipation.
+    </p>
       // Symbolism content for Three of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -948,7 +1028,9 @@ const Magician = {
       // Introduction content for Four of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Four of Wands showcases a joyous celebration taking place amidst a beautiful landscape. The four wands stand tall, adorned with garlands, and forming an archway. The scene symbolizes the harmonious union of elements and the creation of a stable foundation for further growth. The flowers and ribbons symbolize joy, abundance, and the festive nature of the occasion.
+    </p>
       // Symbolism content for Four of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -984,7 +1066,9 @@ const Magician = {
       // Introduction content for Five of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Five of Wands illustrates five individuals holding wands, appearing to be engaged in a friendly or playful battle. The wands represent our passions, ambitions, and creative energies. The individuals' vibrant clothing and different stances symbolize the diversity of perspectives and approaches when faced with challenges. The scene reflects the notion of healthy competition and the need to channel conflicting energies constructively.
+    </p>
       // Symbolism content for Five of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -1018,7 +1102,9 @@ const Magician = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Six of Wands portrays a victorious figure riding a horse, surrounded by a jubilant crowd. The figure is often depicted holding a wand, representing personal power and creativity. The laurel wreath adorning their head symbolizes success and achievement. The crowd cheering in the background signifies recognition and admiration from others.
+    </p>
       // Symbolism content for Six of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -1054,7 +1140,9 @@ const Magician = {
       // Introduction content for Seven of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Seven of Wands portrays a lone figure standing on a hill, holding a wand upright as if in defense. The person appears to be facing a crowd of adversaries or challenges below. The higher ground symbolizes the advantage gained through asserting one's position, while the wands held by the opposition represent the obstacles or competition that must be overcome.
+    </p>
       // Symbolism content for Seven of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -1090,7 +1178,9 @@ const Magician = {
 
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Eight of Wands portrays eight wands flying through the sky against a clear backdrop. The wands are depicted in mid-air, moving swiftly towards their destination. This imagery signifies the unobstructed flow of energy and the potential for rapid progress. The absence of any obstacles or distractions in the background suggests a clear path ahead.
+    </p>
       // Symbolism content for Eight of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -1126,7 +1216,9 @@ const Magician = {
       // Introduction content for Nine of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the imagery of the Rider-Waite Tarot deck, the Nine of Wands portrays a figure standing tall, leaning on a solid wand. The figure appears to be battle-worn and guarded, as if defending their position. The eight wands behind them signify past struggles and challenges that they have successfully overcome, forming a protective barrier. The barren landscape represents the trials and tribulations encountered on the path to achievement.
+    </p>
       // Symbolism content for Nine of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -1162,7 +1254,9 @@ const Magician = {
       // Introduction content for Ten of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Ten of Wands features a figure struggling to carry a heavy bundle of ten wands. The person's posture reveals the strain and exhaustion caused by the burdens they bear. The landscape depicted in the background portrays a challenging journey, emphasizing the need for balance and strength.
+    </p>
       // Symbolism content for Ten of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -1198,7 +1292,9 @@ const Magician = {
       // Introduction content for Page of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Page of Wands is depicted as a young figure standing confidently with a wand in hand. The figure is dressed in bright and vibrant clothing, symbolizing their enthusiasm and eagerness. The wand itself represents the element of fire and signifies the creative energy and potential that the Page embodies. The barren landscape in the background signifies the untapped opportunities and potential that await the Page.
+    </p>
       // Symbolism content for Page of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -1234,7 +1330,9 @@ const Magician = {
       // Introduction content for Knight of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Knight of Wands is portrayed as a knight dressed in vibrant attire, riding on a horse. The knight holds a wand adorned with leaves and shoots. The horse represents strength, vitality, and forward movement, while the wand symbolizes creativity, inspiration, and action. The combination of these elements reflects the dynamic and passionate nature of the Knight of Wands.
+    </p>
       // Symbolism content for Knight of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -1269,7 +1367,9 @@ const Magician = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Queen of Wands radiates confidence and vitality. She sits upon her throne, adorned with sunflowers symbolizing warmth and abundance. In one hand, she holds a wand, representing her creative power and ability to manifest her desires. The black cat at her feet signifies her connection to intuition and her deep understanding of the unseen forces at play. The Queen of Wands exudes an aura of leadership and inspires those around her with her infectious enthusiasm.
+    </p>
       // Symbolism content for Queen of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -1305,7 +1405,9 @@ const Magician = {
       // Introduction content for King of Wands
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the King of Wands is portrayed as a mature figure seated on a throne adorned with lions and salamanders, symbolic of his fiery nature. He holds a wand representing power and creativity, and his regal attire signifies his authority and leadership. The landscape behind him is lush and vibrant, representing a fertile environment for growth and success.
+    </p>
       // Symbolism content for King of Wands
     ),
     CardMeaning: "Card Meaning:",
@@ -1342,7 +1444,9 @@ const AceOfCups = {
       // Introduction content for Ace of Cups
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Ace of Cups is depicted as a golden chalice overflowing with water, with a radiant hand emerging from the clouds above. The cup represents the vessel of emotions, love, and intuition, while the water flowing from it symbolizes the abundance and purity of emotions. The hand emerging from the heavens symbolizes divine blessings and the potential for spiritual connection.
+    </p>
       // Symbolism content for Ace of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1378,7 +1482,9 @@ const TwoOfCups = {
       // Introduction content for Two of Cups
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Two of Cups portrays two individuals coming together, holding cups and exchanging their emotions. The intertwined hands symbolize unity, harmony, and mutual respect. Above them, a caduceus, with its snakes and wings, represents balance and the healing power of love. This card radiates a sense of warmth, affection, and emotional fulfillment.
+    </p>
       // Symbolism content for Two of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1414,7 +1520,9 @@ const ThreeOfCups = {
       // Introduction content for Three of Cups
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Three of Cups showcases three women standing in a circle, each holding a chalice. They are often seen wearing crowns of flowers and dancing joyfully, symbolizing abundance, vitality, and the pleasure of being in the company of loved ones. The overflowing cups represent the abundance of emotions, love, and positive energy that is shared among the individuals present.
+    </p>
       // Symbolism content for Three of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1450,7 +1558,9 @@ const FourOfCups = {
       // Introduction content for Four of Cups
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Four of Cups card illustrates a person sitting in a contemplative posture, seemingly withdrawn from the world. Before them are three cups, representing opportunities or experiences that may be present in their life. However, their attention seems fixed on the fourth cup being offered to them through the hand from the cloud. The tree, representing stability and grounding, stands as a backdrop to this scene, implying the need for rootedness and reflection.
+    </p>
       // Symbolism content for Four of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1485,7 +1595,9 @@ const FiveOfCups = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Five of Cups depicts a figure standing before three spilled cups, symbolizing loss and disappointment. The figure's head is turned downward, emphasizing their focus on what has been lost, while two upright cups remain unnoticed in the background. A flowing river and a bridge represent the potential for emotional healing and the need to move forward.
+    </p>
       // Symbolism content for Five of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1521,7 +1633,9 @@ const SixOfCups = {
       // Introduction content for Six of Cups
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Six of Cups portrays two children, one offering a cup filled with flowers to the other. The scene is surrounded by vibrant and colorful surroundings, symbolizing the purity and innocence of childhood. The cups themselves represent emotions, memories, and the exchange of heartfelt experiences. The imagery invites us to reflect on the bonds we have formed and the significance of our past in shaping our present.
+    </p>
       // Symbolism content for Six of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1553,12 +1667,13 @@ const SevenOfCups = {
     Introduction: (
             <p className={styles.paragraph}>
       The Seven of Cups card in the Rider-Waite Tarot deck is a captivating and thought-provoking archetype that represents the realm of choices, dreams, and illusions. Depicting a figure surrounded by seven cups, each filled with different objects or symbols, this card symbolizes the challenges and opportunities that arise when faced with a multitude of options. In this article, we will explore the intriguing meanings and interpretations of the Seven of Cups card, shedding light on its significance in decision-making and navigating through the illusions of life.
-
     </p>
       // Introduction content for Seven of Cups
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Seven of Cups portrays a figure standing before a series of cups, each containing various objects or images. These cups represent different choices or desires that one may encounter. The objects within the cups range from material wealth and success to fantasy, love, and even illusions. The figure in the card is often depicted as being overwhelmed or lost in the myriad of options, reflecting the challenges of decision-making and discerning reality from mere illusions.
+    </p>
       // Symbolism content for Seven of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1593,7 +1708,9 @@ const EightOfCups = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Eight of Cups portrays a figure standing in front of a stack of cups, gazing at the moonlit landscape. The cups represent emotional fulfillment and the familiar aspects of our lives, while the figure's departure signifies the need to let go and move on to discover new horizons. The moon symbolizes the subconscious mind and intuition, urging us to follow our inner guidance on this transformative journey.
+    </p>
       // Symbolism content for Eight of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1628,7 +1745,9 @@ const NineOfCups =  {
       // Introduction content for Nine of Cups
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      Depicted as a figure sitting contentedly with a row of golden cups behind them, the Nine of Cups radiates a sense of satisfaction and happiness. The cups symbolize emotional fulfillment and spiritual abundance. The figure's crossed arms suggest a sense of self-satisfaction and contentment, indicating that their wishes and desires have been fulfilled.
+    </p>
       // Symbolism content for Nine of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1663,7 +1782,9 @@ const TenOfCups = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Ten of Cups portrays a picturesque scene of a loving couple and two children, standing together under a beautiful rainbow. The cups arranged in an arc above them symbolize abundance and emotional fulfillment. The rainbow represents the bridge between the earthly and spiritual realms, offering a sense of hope and divine blessings. The overall imagery conveys a sense of harmony, love, and lasting happiness.
+    </p>
       // Symbolism content for Ten of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1698,7 +1819,9 @@ const PageOfCups = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Page of Cups is depicted as a young figure, often seen holding a cup or a chalice. The figure stands by the shore, symbolizing the connection between the conscious and subconscious realms, as well as the ebb and flow of emotions. The fish popping out of the cup represents intuition, potential, and the emergence of new ideas. The Page's colorful attire and dreamy expression reflect the card's association with imagination and creative energy.
+    </p>
       // Symbolism content for Page of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1732,7 +1855,9 @@ const KnightOfCups = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Knight of Cups portrays a gallant knight on a white horse, holding a golden chalice adorned with a fish. The knight's armor is decorated with images of fish and waves, symbolizing the connection to the realm of emotions. The flowing river in the background represents the ebb and flow of feelings, while the lush green landscape signifies the fertile ground for creative expression and emotional exploration.
+    </p>
       // Symbolism content for Knight of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1768,7 +1893,9 @@ const QueenOfCups = {
       // Introduction content for Queen of Cups
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Queen of Cups is depicted as a serene and compassionate figure. She is often seen sitting near the water, symbolizing the realm of emotions, intuition, and the subconscious mind. The cup she holds is adorned with angelic figures, representing the connection between her emotional depth and divine guidance. The Queen's presence exudes tranquility and empathy, reflecting her ability to understand and embrace the emotions of others.
+    </p>
       // Symbolism content for Queen of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1803,7 +1930,9 @@ const KingOfCups = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The King of Cups is depicted as a mature and compassionate ruler seated on a throne adorned with intricate motifs of fish and water. He holds a golden cup, which represents the realm of emotions and intuition. The calm sea, often visible in the background, symbolizes the depths of the subconscious mind. The King's flowing robes and crown signify his authority and mastery over his own emotional realm.
+    </p>
       // Symbolism content for King of Cups
     ),
     CardMeaning: "Card Meaning:",
@@ -1839,7 +1968,9 @@ const AceOfSwords =  {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Ace of Swords portrays a hand emerging from a cloud, firmly grasping a single upright sword. The sword represents the power of the mind, intellect, and the ability to cut through illusions and gain clarity. The crown on top of the sword symbolizes victory, truth, and mental strength. The cloud signifies the realm of the spiritual and the inspiration that comes from higher realms of consciousness.
+    </p>
       // Symbolism content for Ace of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -1875,7 +2006,9 @@ const TwoOfSwords = {
 
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      Within the Rider-Waite Tarot deck, the Two of Swords showcases a blindfolded figure positioned in a seated stance. The figure is holding two crossed swords in front, forming a barrier. The blindfold represents a state of inner conflict or indecisiveness, while the crossed swords illustrate the opposing choices or perspectives we face. The calm body posture signifies the need for inner stillness and contemplation to find clarity.
+    </p>
       // Symbolism content for Two of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -1910,7 +2043,9 @@ const ThreeOfSwords = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Three of Swords card visually depicts a heart pierced by three swords, often accompanied by rain or dark clouds. The symbolism here is clear - the heart represents emotions, love, and vulnerability, while the swords represent pain, heartbreak, and the mental anguish that comes with emotional suffering.
+    </p>
       // Symbolism content for Three of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -1945,7 +2080,9 @@ The Four of Swords card in the Rider-Waite Tarot deck is a symbolic representati
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Four of Swords showcases a solitary figure lying on a stone slab within a church or temple-like setting. Above the figure, four swords are suspended, symbolizing the mental burdens or conflicts that one seeks to lay to rest. The atmosphere of the card conveys a sense of tranquility, inviting the viewer to embrace stillness and silence.
+    </p>
       // Symbolism content for Four of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -1980,7 +2117,9 @@ const FiveOfSwords = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Five of Swords portrays a figure standing triumphantly, holding three swords while two others lie abandoned on the ground. The atmosphere is tense and filled with a sense of defeat and dishonor. The defeated figures in the background suggest that victory has come at the expense of others. The stormy sky further emphasizes the discord and disharmony portrayed in this card.
+    </p>
       // Symbolism content for Five of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -2015,7 +2154,9 @@ const SixOfSwords = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Six of Swords portrays a figure, often accompanied by others, traveling in a small boat. The water beneath the boat is calm and serene, symbolizing a sense of emotional stability. The swords placed in the boat represent the challenges or burdens being left behind, while the figure in the boat embodies the resilience and willingness to move forward towards a better future.
+    </p>
       // Symbolism content for Six of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -2050,7 +2191,9 @@ const SevenOfSwords = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Seven of Swords portrays a figure sneaking away from a campsite, carrying five swords while two remain planted in the ground. The figure's demeanor suggests a secret mission or a calculated act of gathering resources. The card's imagery represents themes of stealth, deception, strategy, and calculated actions, inviting us to explore the complexities of our decision-making processes.
+    </p>
       // Symbolism content for Seven of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -2085,7 +2228,9 @@ const EightOfSwords ={
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Eight of Swords showcases a woman standing amidst a desolate landscape, blindfolded, and with her hands bound. Eight swords surround her, seemingly imprisoning her. The blindfold represents the limitations we place upon ourselves, often due to fear, self-doubt, or external pressures. The swords symbolize the thoughts and beliefs that keep us trapped, creating a mental prison from which we struggle to escape.
+    </p>
       // Symbolism content for Eight of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -2120,7 +2265,9 @@ const NineOfSwords ={
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Nine of Swords card portrays a figure in a state of distress, with their head in their hands, as if tormented by troubling thoughts. The surrounding swords symbolize the power of the mind and the thoughts that can haunt us. The dark, gloomy background signifies the heaviness and intensity of the emotional turmoil experienced by the individual.
+    </p>
       // Symbolism content for Nine of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -2155,7 +2302,9 @@ const TenOfSwords = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Ten of Swords card portrays a figure lying face down on the ground, with ten swords piercing their back. The scene is set against a gray and stormy sky, symbolizing the end of a challenging and painful chapter. The swords represent the burdens, challenges, and mental anguish that the figure has endured. However, the rising sun in the distance symbolizes hope, transformation, and the promise of new beginnings.
+    </p>
       // Symbolism content for Ten of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -2190,7 +2339,9 @@ const PageOfSwords = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Page of Swords is portrayed as a young person standing on a hilltop, holding a sword upright with both hands. The winds blow fiercely around them, indicating the presence of challenges and the need for mental agility. The page's focused gaze reveals their determination to explore new ideas and engage in intellectual pursuits. The feather on their cap signifies the power of clear and effective communication.
+    </p>
       // Symbolism content for Page of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -2225,7 +2376,9 @@ const KnightOfSwords = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Knight of Swords is portrayed as a valiant knight, dressed in armor, riding with great speed and purpose. He holds his sword high in the air, a symbol of his determination and intellectual sharpness. The turbulent clouds in the background represent the stormy nature of the knight's thoughts and ideas, as well as the challenges he may face on his path.
+    </p>
       // Symbolism content for Knight of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -2260,7 +2413,9 @@ const QueenOfSwords =  {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Queen of Swords is portrayed as a strong and composed woman seated on a throne, holding a sword upright in one hand. She is often depicted wearing a crown and a robe adorned with clouds and butterflies. The sword symbolizes the power of the mind and intellect, while the clouds represent her connection to higher wisdom. The butterflies symbolize transformation and the need to adapt to change.
+    </p>
       // Symbolism content for Queen of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -2295,7 +2450,9 @@ const KingOfSwords = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the King of Swords is depicted as a mature man sitting on a stone throne, wearing a robe adorned with butterflies (symbolizing transformation) and flowers (representing growth). He holds a sword upright in his right hand, symbolizing his ability to cut through confusion and seek truth. The clouds in the background indicate his elevated mental realms, while his stern expression signifies his commitment to justice and fairness.
+    </p>
       // Symbolism content for King of Swords
     ),
     CardMeaning: "Card Meaning:",
@@ -2331,7 +2488,9 @@ const AceOfPentacles = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Ace of Pentacles portrays a single pentacle emerging from a hand held in the air, symbolizing the offering of new opportunities and the potential for material success. The pentacle itself represents the physical realm, material possessions, and financial matters. Often surrounded by lush greenery or a blooming garden, the card conveys the fruitful outcomes that can arise from a grounded and practical approach to life.
+    </p>
       // Symbolism content for Ace of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2367,7 +2526,9 @@ const TwoOfPentacles = {
       // Introduction content for Two of Pentacles
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Two of Pentacles portrays a figure gracefully juggling two pentacles in an infinity symbol pattern. The infinity symbol signifies the eternal nature of change and the cyclical nature of life. The turbulent sea in the background represents the unpredictable nature of our circumstances, while the ships on the horizon symbolize the potential for new opportunities. The figure's colorful clothing further accentuates the need for adaptability and flexibility in our journey.
+    </p>
       // Symbolism content for Two of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2403,7 +2564,9 @@ const ThreeOfPentacles = {
       // Introduction content for Three of Pentacles
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Three of Pentacles portrays three figures gathered around a building site. One person, often depicted as a master craftsman, is shown working on the structure while the other two, representing apprentices or collaborators, observe and learn. This card embodies the concept of collaboration, mentorship, and the process of honing one's skills to achieve excellence. The architecture and construction elements symbolize the tangible results that can be achieved through persistence and dedication to one's craft.
+    </p>
       // Symbolism content for Three of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2439,7 +2602,9 @@ const FourOfPentacles = {
       // Introduction content for Four of Pentacles
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Four of Pentacles portrays a figure sitting on a throne, tightly clutching four pentacles. The posture of the figure suggests a protective nature, with feet and hands firmly planted on the ground, symbolizing a desire for stability and control. The pentacles themselves represent material possessions, wealth, and the earthly aspects of life.
+    </p>
       // Symbolism content for Four of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2474,7 +2639,9 @@ const FiveOfPentacles = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The imagery of the Five of Pentacles portrays two figures walking through a desolate, snowy landscape. One figure appears injured and wrapped in rags, while the other leans on a crutch. They pass by a stained-glass window of a church, symbolizing the potential solace and support that may be available to them. The card conveys a sense of isolation and vulnerability, yet it also offers a glimmer of hope and the possibility of overcoming adversity.
+    </p>
       // Symbolism content for Five of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2509,7 +2676,9 @@ const SixOfPentacles = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Six of Pentacles portrays a richly dressed individual distributing coins to two people standing before them. The figure represents a benefactor or someone who holds a position of power and abundance. The scales in their other hand symbolize the need for fairness and equity in the distribution of resources. The scene takes place in a city, signifying the interconnectedness of community and the importance of supporting each other.
+    </p>
       // Symbolism content for Six of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2544,7 +2713,9 @@ const SevenOfPentacles ={
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Seven of Pentacles portrays a figure leaning on a garden tool, gazing upon a pentacle-bearing plant. The garden represents our endeavors, while the pentacles symbolize material and worldly aspects of life, such as work, finances, and productivity. The figure's posture signifies a moment of contemplation, a time to pause and assess the progress and outcomes of our invested efforts.
+    </p>
       // Symbolism content for Seven of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2579,7 +2750,9 @@ const EightOfPentacles = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Eight of Pentacles portrays a focused individual diligently working on a bench, meticulously crafting pentacles. The presence of the bench signifies stability and grounding, while the pentacles represent material wealth, abundance, and the physical manifestations of our efforts. The card emphasizes the importance of honing one's skills and investing time and energy in the pursuit of excellence.
+    </p>
       // Symbolism content for Eight of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2614,7 +2787,9 @@ const NineOfPentacles = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      Within the imagery of the Rider-Waite Tarot deck, the Nine of Pentacles features a graceful and elegant figure standing amidst a lush garden filled with ripened grapes and blooming flowers. She is adorned in luxurious clothing, symbolizing her material success. In one hand, she holds a bird, representing her connection to nature and her ability to communicate with the world around her. The pentacles surrounding her signify material abundance and the rewards of her hard work.
+    </p>
       // Symbolism content for Nine of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2649,7 +2824,9 @@ const TenOfPentacles = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Ten of Pentacles portrays a scene of harmony and affluence. It depicts a family gathered in front of a grand estate, surrounded by lush gardens and architecture. The elderly figure signifies wisdom and the passing down of traditions, while children explore and play, representing the continuation of family lineage. The pentacles symbolize material wealth, stability, and the fruits of generations of hard work.
+    </p>
       // Symbolism content for Ten of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2684,7 +2861,9 @@ const PageOfPentacles =  {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Page of Pentacles is depicted as a young person standing in a lush garden, holding a golden pentacle. The garden symbolizes fertility, growth, and abundance, while the pentacle represents material possessions, resources, and the practical aspects of life. The Page's focused gaze towards the pentacle suggests a deep sense of curiosity and determination to learn and master the skills needed for success.
+    </p>
       // Symbolism content for Page of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2719,7 +2898,9 @@ const KnightOfPentacles = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The Knight of Pentacles is portrayed as a young knight dressed in armor, sitting on a sturdy horse amidst a fertile landscape. In one hand, he holds a pentacle, symbolizing material wealth and abundance, while the other hand rests firmly on the horse's reins, signifying control and stability. The knight's focused gaze and unwavering posture reflect determination and a commitment to duty.
+    </p>
       // Symbolism content for Knight of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2754,7 +2935,9 @@ const QueenOfPentacles = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      In the Rider-Waite Tarot deck, the Queen of Pentacles is depicted as an elegant figure seated on a luxurious throne. She is often surrounded by vibrant nature, symbolizing her connection to the earth and the physical realm. The pentacle in her hand represents material abundance, wealth, and the practical aspects of life. The Queen's nurturing and caring aura is reflected in her posture and surroundings, emphasizing her role as a provider and caretaker.
+    </p>
       // Symbolism content for Queen of Pentacles
     ),
     CardMeaning: "Card Meaning:",
@@ -2789,7 +2972,9 @@ const KingOfPentacles = {
     </p>
     ),
     SymbolismTitle: <h2 className={styles.title}>Card Symbolism</h2>,
-    Symbolism: (
+    Symbolism: (<p className={styles.paragraph}>
+      The King of Pentacles is depicted as a mature and authoritative figure seated comfortably on his throne, holding a golden pentacle in his hand. He is adorned in luxurious robes and his surroundings are abundant with lush greenery and blooming flowers, representing the fertile nature of his success. The pentacle symbolizes material possessions, wealth, and the earthly realm, symbolizing the King's connection to the physical world.
+    </p>
       // Symbolism content for King of Pentacles
     ),
     CardMeaning: "Card Meaning:",
