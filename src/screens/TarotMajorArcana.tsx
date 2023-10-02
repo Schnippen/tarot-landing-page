@@ -188,29 +188,6 @@ function TarotMajorArcana() {
 
 export default TarotMajorArcana;
 
-/* 
- Stay tuned as we navigate these new waters in the next part of our series. */
-/*  
-      (<p className={styles.paragraph}>
-        We now delve into<Link
-          to={TarotRoutes[1]}
-          className={styles.Link}
-          title={TarotCardsMeaningSymbolism[1]}
-        >
-          The Lovers
-        </Link>, a card symbolizing love, relationships, and choices. The Lovers card challenges us to make decisions that align with our values and desires, ultimately leading us on a path of emotional connection and harmony.
-      </p>
-    ),
-    href: (
-      <Link
-        to={TarotRoutes[1]}
-        className={styles.Link}
-        title={TarotCardsMeaningSymbolism[1]}
-      >
-        Full Tarot Meaning & Symbolism
-      </Link>
-    ),   */
-
 /*      <CardDisplayItem
        alt={TarotCardsDataAll[0].alt}
        tooltip={TarotCardsDataAll[0].tooltip}

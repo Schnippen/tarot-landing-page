@@ -12,7 +12,8 @@ import TarotMeanings from "./screens/TarotMeanings";
 import TarotMajorArcana from "./screens/TarotMajorArcana";
 import TarotMinorArcana from "./screens/TarotMinorArcana";
 import SuitOf from "./screens/SuitOf";
-import { RoutesSuitMinorArcana } from "./data/TarotRoutesData";
+import { RoutesSuitMinorArcana, TarotRoutes } from "./data/TarotRoutesData";
+import TarotCardFullDescription from "./screens/TarotCardFullDescription";
 //import "dotenv/config";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     "/major-arcana-tarot-card-meanings",
     "/minor arcana-tarot-card-meanings",
   ];
-
+  const pupa = ["/the-fool-meaning-major-arcana-tarot-card-meanings"];
   return (
     <body className="App">
       <header className={styles.header}>
@@ -52,9 +53,14 @@ function App() {
             element={<SuitOf SuitNumber={index} key={route} />}
           />
         ))}
+        <Route
+          path={TarotRoutes[0]}
+          element={<TarotCardFullDescription CardNumber={0} />}
+        />
       </Routes>
     </body>
   );
 }
 
 export default App;
+//NOW ALL THE 78 cards full description

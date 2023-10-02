@@ -21,12 +21,12 @@ function TarotMinorArcana() {
 
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
-  /* useEffect(() => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  scrollToTop();
-}, []); */
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    scrollToTop();
+  }, []);
 
   return (
     <main className={styles.main}>

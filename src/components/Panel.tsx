@@ -6,7 +6,6 @@ import Separator from "./Separator";
 import { AnalyticsEvent } from "../utils/constants";
 import { analytics } from "../utils/mixpanel";
 import { useSpring, a } from "@react-spring/web";
-import { animated } from "react-spring";
 //analytics.event(AnalyticsEvent.first_card_pressed);
 //analytics.event(AnalyticsEvent.second_card_pressed)
 //analytics.event(AnalyticsEvent.third_card_pressed)
@@ -39,7 +38,7 @@ function Panel({ title, text, hue, analyticsNumber, ...props }: PanelTypes) {
       }}
       {...props}
     >
-      <animated.div
+      <a.div
         className={`${styles.card} ${styles.back}`}
         style={{ opacity: opacity.to((o) => 1 - o), transform }}
       >
@@ -52,8 +51,8 @@ function Panel({ title, text, hue, analyticsNumber, ...props }: PanelTypes) {
             filter: `hue-rotate(${hue})`,
           }}
         />
-      </animated.div>
-      <animated.div
+      </a.div>
+      <a.div
         className={`${styles.card} ${styles.front}`}
         style={{
           opacity,
@@ -66,7 +65,7 @@ function Panel({ title, text, hue, analyticsNumber, ...props }: PanelTypes) {
           <Separator marginHeight={0} />
           <p>{text}</p>
         </div>
-      </animated.div>
+      </a.div>
     </li>
   );
 }
