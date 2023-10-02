@@ -6,7 +6,7 @@ import Separator from "../components/Separator";
 import TarotMeaningsExpositionContainer from "../components/TarotMeaningsExpositionContainer";
 import { TarotDecks } from "../data/TarotRoutesData";
 import styles from "../App.module.css";
-import { TarotCardsFullDescriptionData } from "../data/TarotCardsFullDescriptionData";
+import { TarotCardsAllFullDescriptionData } from "../data/TarotCardsFullDescriptionData";
 import { TarotCardsPhotosAll } from "../images/cards/TarotCardPhotos";
 import Card from "../components/Card";
 function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
@@ -30,7 +30,7 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
   return (
     <main className={styles.main}>
       <div className={styles.article_container}>
-        <Article title={TarotCardsFullDescriptionData[CardNumber].CardName}>
+        <Article title={TarotCardsAllFullDescriptionData[CardNumber].CardName}>
           <div
             style={{
               display: "flex",
@@ -40,42 +40,22 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
           >
             <Card img={TarotCardsPhotosAll[CardNumber]} />
           </div>
-          {TarotCardsFullDescriptionData[CardNumber].SubTitle}
-          {TarotCardsFullDescriptionData[CardNumber].Introduction}
+          {TarotCardsAllFullDescriptionData[CardNumber].SubTitle}
+          {TarotCardsAllFullDescriptionData[CardNumber].Introduction}
           <div style={{ width: "100%" }}>
             <Separator marginHeight={48} />
           </div>
-          {TarotCardsFullDescriptionData[CardNumber].SymbolismTitle}
-          {TarotCardsFullDescriptionData[CardNumber].Symbolism}
+          {TarotCardsAllFullDescriptionData[CardNumber].SymbolismTitle}
+          {TarotCardsAllFullDescriptionData[CardNumber].Symbolism}
         </Article>
         <span ref={ref}></span>
-        <Article title={TarotCardsFullDescriptionData[CardNumber].CardMeaning}>
-          {TarotCardsFullDescriptionData[CardNumber].CardMeaningArticle}
+        <Article
+          title={TarotCardsAllFullDescriptionData[CardNumber].CardMeaning}
+        >
+          {TarotCardsAllFullDescriptionData[CardNumber].CardMeaningArticle}
         </Article>
 
-        <Article title="">
-          <ul style={{ padding: "0px" }}>
-            <p className={styles.paragraph} style={{ textAlign: "center" }}>
-              The end of the{" "}
-              <Link
-                to={TarotDecks[1]}
-                className={styles.Link}
-                title="Major Arcana Cards List"
-              >
-                The Major Arcana
-              </Link>{" "}
-              marks the beginning of another journey -{" "}
-              <Link
-                to={TarotDecks[1]}
-                className={styles.Link}
-                title="Minor Arcana Cards List"
-              >
-                The Minor Arcana
-              </Link>
-              .
-            </p>
-          </ul>
-        </Article>
+        <Article title=""></Article>
       </div>
       <Footer />
     </main>
@@ -89,3 +69,25 @@ export default TarotCardFullDescription;
         <TarotMeaningsExpositionContainer />
         <span style={{ width: "100%", margin: "24px" }}></span> */
 }
+
+/*        <ul style={{ padding: "0px" }}>
+         <p className={styles.paragraph} style={{ textAlign: "center" }}>
+           The end of the{" "}
+           <Link
+             to={TarotDecks[1]}
+             className={styles.Link}
+             title="Major Arcana Cards List"
+           >
+             The Major Arcana
+           </Link>{" "}
+           marks the beginning of another journey -{" "}
+           <Link
+             to={TarotDecks[1]}
+             className={styles.Link}
+             title="Minor Arcana Cards List"
+           >
+             The Minor Arcana
+           </Link>
+           .
+         </p>
+       </ul>; */
