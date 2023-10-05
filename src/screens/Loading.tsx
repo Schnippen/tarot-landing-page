@@ -28,7 +28,7 @@ function Loading() {
   });
 
   return (
-    <main
+    <div
       style={{
         height: "100vh",
         width: "100vw",
@@ -77,7 +77,7 @@ function Loading() {
           <div style={{ position: "absolute", left: "165px" }}>{time}</div>
         </h1>
       </div>
-    </main>
+    </div>
   );
 }
 

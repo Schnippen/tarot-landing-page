@@ -13,4 +13,6 @@ export enum AnalyticsEvent {
   apple_store_pressed = "apple_store_pressed",
   go_to_home_page_available_soon = "go_to_home_page_available_soon",
   google_play_available_soon_pressed = "google_play_available_soon_pressed",
+  error_TarotCardFullDescription = "error_TarotCardFullDescription",
+  error_RoutesSuitMinorArcana = "error_RoutesSuitMinorArcana",
 }

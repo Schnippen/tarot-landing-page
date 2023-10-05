@@ -6,14 +6,14 @@ import { TarotRoutes } from "./TarotRoutesData";
 import { TarotCardNamesCard } from "./TarotCardsData";
 import { TarotDecks, RoutesSuitMinorArcana } from "./TarotRoutesData";
 {
-   <Link
-     to={TarotRoutes[2]}
-     className={styles.Link}
-     title={TarotCardNamesCard[2]}
-   >
-     The High Priestess
-   </Link>; 
-/*   <Link
+  <Link
+    to={TarotRoutes[3]}
+    className={styles.Link}
+    title={TarotCardNamesCard[3]}
+  >
+    The Empress
+  </Link>;
+  /*   <Link
     to={RoutesSuitMinorArcana[3]}
     className={styles.Link}
     title="The Suit of Pentacles List"
@@ -292,19 +292,33 @@ const Magician = () => {
         >
           The Magician
         </Link>{" "}
-        and The High Priestess represent two contrasting yet complementary
-        aspects of the spiritual journey. The Magician embodies the power of
-        action, focusing on taking initiative and manifesting one's desires.
-        With tools on the table before him, he signifies the ability to
-        transform ideas into reality through practical skills and
-        self-confidence.
+        and{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        represent two contrasting yet complementary aspects of the spiritual
+        journey. The Magician embodies the power of action, focusing on taking
+        initiative and manifesting one's desires. With tools on the table before
+        him, he signifies the ability to transform ideas into reality through
+        practical skills and self-confidence.
       </p>
       <p className={styles.paragraph}>
-        On the other hand, The High Priestess is a card of intuition and
-        mystery. She emphasizes the importance of introspection and the hidden
-        aspects of life. Her wisdom lies in the depths of the subconscious, and
-        she encourages us to trust our instincts and explore the unseen realms
-        of our inner selves. While{" "}
+        On the other hand,{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        is a card of intuition and mystery. She emphasizes the importance of
+        introspection and the hidden aspects of life. Her wisdom lies in the
+        depths of the subconscious, and she encourages us to trust our instincts
+        and explore the unseen realms of our inner selves. While{" "}
         <Link
           to={TarotRoutes[1]}
           className={styles.Link}
@@ -312,7 +326,15 @@ const Magician = () => {
         >
           The Magician
         </Link>{" "}
-        is about doing, The High Priestess is about being and deep knowing.
+        is about doing,{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        is about being and deep knowing.
       </p>
       <Separator />
       <h2 className={styles.title}>
@@ -465,14 +487,44 @@ const Priestess = () => {
         ):
       </h2>
       <p className={styles.paragraph}>
-        The High Priestess and The Empress both embody feminine energy and
-        intuition, but they do so with different focuses. The High Priestess
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        and{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
+        both embody feminine energy and intuition, but they do so with different
+        focuses.{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
         represents a deep connection to the mysteries of the unconscious mind
         and the hidden realms of knowledge. She signifies a profound intuitive
         understanding and the ability to access inner wisdom.
       </p>
       <p className={styles.paragraph}>
-        Conversely, The Empress card from the{" "}
+        Conversely,{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
+        card from the{" "}
         <Link
           to={TarotDecks[0]}
           className={styles.Link}
@@ -482,9 +534,23 @@ const Priestess = () => {
         </Link>{" "}
         embodies maternal love, fertility, and the abundance of the natural
         world. It signifies a nurturing and creative force that brings life and
-        growth. While The High Priestess emphasizes inner intuition and hidden
-        knowledge, The Empress highlights the generative and nurturing aspects
-        of life.
+        growth. While{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        emphasizes inner intuition and hidden knowledge,{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
+        highlights the generative and nurturing aspects of life.
       </p>
       <Separator />
       <h2 className={styles.title}>
@@ -515,17 +581,39 @@ const Priestess = () => {
         >
           Minor Arcana
         </Link>
-        , let's compare The High Priestess to The Seven of Cups. The High
-        Priestess represents a deep connection to the mysteries of the
-        unconscious mind and inner wisdom.
+        , let's compare{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        to The Seven of Cups.{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        represents a deep connection to the mysteries of the unconscious mind
+        and inner wisdom.
       </p>
       <p className={styles.paragraph}>
         Conversely, The Seven of Cups represents dreams, fantasies, and the
         exploration of various possibilities and desires. It signifies a need to
         make choices among multiple options, often with emotional or imaginative
-        elements. While The High Priestess emphasizes inner intuition, The Seven
-        of Cups encourages us to explore our inner desires and make choices
-        wisely.
+        elements. While{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        emphasizes inner intuition, The Seven of Cups encourages us to explore
+        our inner desires and make choices wisely.
       </p>
       <Separator />
       <h2 className={styles.title}>
@@ -556,8 +644,16 @@ const Priestess = () => {
         >
           Major Arcana
         </Link>
-        . The High Priestess represents a deep connection to the mysteries of
-        the unconscious mind and inner wisdom.
+        .{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        represents a deep connection to the mysteries of the unconscious mind
+        and inner wisdom.
       </p>
       <p className={styles.paragraph}>
         Conversely,{" "}
@@ -578,15 +674,29 @@ const Priestess = () => {
         >
           The Magician's
         </Link>{" "}
-        energy contrasts with the introspective and intuitive nature of The High
-        Priestess.
+        energy contrasts with the introspective and intuitive nature of T
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>
+        .
       </p>
       <p className={styles.paragraph}>
-        These comparisons help us understand how The High Priestess card relates
-        to themes of inner intuition and hidden knowledge. It encourages us to
-        trust our inner wisdom while recognizing the diverse energies associated
-        with abundance, dream exploration, and active manifestation in Tarot
-        readings.
+        These comparisons help us understand how{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        card relates to themes of inner intuition and hidden knowledge. It
+        encourages us to trust our inner wisdom while recognizing the diverse
+        energies associated with abundance, dream exploration, and active
+        manifestation in Tarot readings.
       </p>
     </>
   );
@@ -607,19 +717,64 @@ const Empress = () => {
         ):
       </h2>
       <p className={styles.paragraph}>
-        In the Tarot deck, The Empress and The High Priestess are both powerful
-        feminine archetypes, but they represent distinct aspects of the divine
-        feminine. The Empress embodies nurturing, abundance, and fertility. She
-        represents the creative force of nature, often associated with
-        motherhood and abundance in its physical form.
+        In the Tarot deck,{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
+        and{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        are both powerful feminine archetypes, but they represent distinct
+        aspects of the divine feminine.{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
+        embodies nurturing, abundance, and fertility. She represents the
+        creative force of nature, often associated with motherhood and abundance
+        in its physical form.
       </p>
       <p className={styles.paragraph}>
-        On the other hand, The High Priestess embodies the mystical, intuitive,
-        and hidden aspects of the feminine. She represents inner wisdom,
-        intuition, and the depths of the subconscious mind. While The Empress is
-        connected to external creation and abundance, The High Priestess delves
-        into the inner world, guiding us to explore our spiritual and intuitive
-        depths.
+        On the other hand,{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        embodies the mystical, intuitive, and hidden aspects of the feminine.
+        She represents inner wisdom, intuition, and the depths of the
+        subconscious mind. While{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
+        is connected to external creation and abundance,{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        delves into the inner world, guiding us to explore our spiritual and
+        intuitive depths.
       </p>
       <Separator />
       <h2 className={styles.title}>
@@ -650,7 +805,22 @@ const Empress = () => {
         >
           Minor Arcana
         </Link>
-        , we can compare The Empress to the Queen of Cups. The Empress
+        , we can compare{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
+        to the Queen of Cups.{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
         represents nurturing and fertility, often associated with the creation
         and growth of life. She signifies a deep connection to the earth and the
         ability to provide love, care, and abundance.
@@ -658,9 +828,16 @@ const Empress = () => {
       <p className={styles.paragraph}>
         In contrast, the Queen of Cups represents emotional depth, intuition,
         and compassion. She is in tune with her emotions and those of others,
-        often depicted with a cup that overflows with feelings. While The
-        Empress relates to physical abundance and creation, the Queen of Cups
-        emphasizes emotional richness and connection.
+        often depicted with a cup that overflows with feelings. While{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
+        relates to physical abundance and creation, the Queen of Cups emphasizes
+        emotional richness and connection.
       </p>
       <Separator />
       <h2 className={styles.title}>
@@ -683,9 +860,24 @@ const Empress = () => {
         ):
       </h2>
       <p className={styles.paragraph}>
-        Lastly, let's explore how The Empress compares to the Ten of Pentacles.
-        The Empress represents fertility and abundance, often linked to family
-        and generational wealth. She embodies the idea of a prosperous and
+        Lastly, let's explore how{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
+        compares to the Ten of Pentacles.{" "}
+        <Link
+          to={TarotRoutes[3]}
+          className={styles.Link}
+          title={TarotCardNamesCard[3]}
+        >
+          The Empress
+        </Link>{" "}
+        represents fertility and abundance, often linked to family and
+        generational wealth. She embodies the idea of a prosperous and
         harmonious home life.
       </p>
       <p className={styles.paragraph}>
@@ -836,20 +1028,42 @@ const Hierophant = () => {
         ):
       </h2>
       <p className={styles.paragraph}>
-        The Hierophant and The High Priestess both hold positions of spiritual
-        authority, but they represent distinct aspects of the divine and
-        esoteric. The Hierophant embodies traditional religious and societal
-        structures, representing organized religion, doctrines, and formal
-        rituals. He is a symbol of seeking spiritual guidance through
-        established institutions and teachings.
+        The Hierophant and{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        both hold positions of spiritual authority, but they represent distinct
+        aspects of the divine and esoteric. The Hierophant embodies traditional
+        religious and societal structures, representing organized religion,
+        doctrines, and formal rituals. He is a symbol of seeking spiritual
+        guidance through established institutions and teachings.
       </p>
       <p className={styles.paragraph}>
-        On the other hand, The High Priestess represents the intuitive,
-        mystical, and often hidden aspects of spirituality. She encourages a
-        deep connection with the subconscious mind and inner wisdom, emphasizing
-        the importance of intuition and inner guidance. While The Hierophant
-        relates to external spiritual authority, The High Priestess guides us to
-        explore the inner realms of spirituality and personal intuition.
+        On the other hand,{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        represents the intuitive, mystical, and often hidden aspects of
+        spirituality. She encourages a deep connection with the subconscious
+        mind and inner wisdom, emphasizing the importance of intuition and inner
+        guidance. While The Hierophant relates to external spiritual authority,
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        guides us to explore the inner realms of spirituality and personal
+        intuition.
       </p>
       <Separator />
       <h2 className={styles.title}>
@@ -1290,18 +1504,39 @@ const Hermit = () => {
         ):
       </h2>
       <p className={styles.paragraph}>
-        The Hermit and The High Priestess are both cards that emphasize
-        introspection and inner wisdom, but they do so from different
-        perspectives. The Hermit represents the need for solitude and
-        introspection to gain clarity and insight. It encourages seeking answers
-        within and taking time for self-discovery.
+        The Hermit and{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        are both cards that emphasize introspection and inner wisdom, but they
+        do so from different perspectives. The Hermit represents the need for
+        solitude and introspection to gain clarity and insight. It encourages
+        seeking answers within and taking time for self-discovery.
       </p>
       <p className={styles.paragraph}>
-        On the other hand, The High Priestess embodies intuition, mystery, and
-        the deep subconscious. She encourages us to trust our inner guidance and
-        explore the hidden realms of our psyche. While The Hermit focuses on
-        self-reflection through solitude, The High Priestess delves into the
-        mysteries of the unconscious mind and hidden knowledge.
+        On the other hand,{" "}
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        embodies intuition, mystery, and the deep subconscious. She encourages
+        us to trust our inner guidance and explore the hidden realms of our
+        psyche. While The Hermit focuses on self-reflection through solitude,
+        <Link
+          to={TarotRoutes[2]}
+          className={styles.Link}
+          title={TarotCardNamesCard[2]}
+        >
+          The High Priestess
+        </Link>{" "}
+        delves into the mysteries of the unconscious mind and hidden knowledge.
       </p>
       <Separator />
       <h2 className={styles.title}>
@@ -1835,6 +2070,95 @@ const Death = () => {
     </>
   );
 };
+const Temperance = () => {};
+const Devil = () => {
+  return (
+    <>
+      <h2 className={styles.title}>
+        The Devil vs. The Tower (
+        <Link
+          to={TarotDecks[0]}
+          className={styles.Link}
+          title="The Major Arcana Card List"
+        >
+          Major Arcana
+        </Link>
+        ):
+      </h2>
+      <p className={styles.paragraph}>
+        The Devil and The Tower are both{" "}
+        <Link
+          to={TarotDecks[0]}
+          className={styles.Link}
+          title="The Major Arcana Card List"
+        >
+          Major Arcana
+        </Link>{" "}
+        cards that convey intense and challenging energies, but they do so in
+        distinct ways. The Devil represents bondage, temptation, and the
+        entrapment of material desires. It signifies a struggle with earthly
+        attachments and the need for self-control to avoid falling into
+        unhealthy patterns.
+      </p>
+      <p className={styles.paragraph}>
+        Conversely, The Tower card embodies sudden, disruptive change and
+        upheaval. It signifies a moment of revelation or crisis that shakes the
+        foundations of one's life. While The Devil emphasizes the challenges of
+        temptation and bondage, The Tower represents a breaking free from
+        existing structures, even if it comes with discomfort.
+      </p>
+      <Separator />
+      <h2 className={styles.title}>
+        The Devil vs. The Five of Cups (Minor Arcana - Cups Suit):
+      </h2>
+      <p className={styles.paragraph}>
+        Transitioning to the Minor Arcana, let's compare The Devil to The Five
+        of Cups. The Devil represents bondage, temptation, and the entrapment of
+        material desires.
+      </p>
+      <p className={styles.paragraph}>
+        Conversely, The Five of Cups represents a sense of loss, disappointment,
+        and grieving over spilled cups. It signifies a period of mourning and
+        reflection on what has been lost. While The Devil emphasizes the
+        struggle with earthly attachments, The Five of Cups deals with emotional
+        processing and recovery from setbacks.
+      </p>
+      <Separator />
+      <h2 className={styles.title}>
+        The Devil vs. The Hierophant (
+        <Link
+          to={TarotDecks[0]}
+          className={styles.Link}
+          title="The Major Arcana Card List"
+        >
+          Major Arcana
+        </Link>
+        ):
+      </h2>
+      <p className={styles.paragraph}>
+        Now, let's explore how The Devil compares to The Hierophant card from
+        the Major Arcana. The Devil represents bondage, temptation, and the
+        entrapment of material desires.
+      </p>
+      <p className={styles.paragraph}>
+        Conversely, The Hierophant embodies spiritual guidance, tradition, and
+        the wisdom of established institutions. It signifies a connection to
+        religious or societal traditions and often represents a spiritual leader
+        or mentor. While The Devil focuses on earthly attachments and
+        temptation, The Hierophant highlights the importance of spiritual and
+        cultural traditions.
+      </p>
+      <p className={styles.paragraph}>
+        These comparisons help us understand how The Devil card relates to
+        themes of temptation and bondage. It encourages us to recognize and
+        address unhealthy patterns while acknowledging the diverse energies
+        associated with sudden upheaval, emotional healing, and spiritual
+        guidance in Tarot readings.
+      </p>
+    </>
+  );
+};
+
 const Tower = () => {
   return (
     <>
@@ -2554,6 +2878,30 @@ const World = () => {
   );
 };
 
-export const TarotCardsComparisionsData = [];
+const TarotCardsMajorArcanaComparisionData = [
+  Fool,
+  Magician,
+  Priestess,
+  Empress,
+  Emperor,
+  Hierophant,
+  Lovers,
+  Chariot,
+  Strength,
+  Hermit,
+  Fortune,
+  Justice,
+  Hanged,
+  Death,
+  Temperance,
+  Devil,
+  Tower,
+  Star,
+  Sun,
+  Judgement,
+  World,
+];
+
+export const TarotCardsComparisionsData = TarotCardsMajorArcanaComparisionData;
 
 export default TarotCardsComparisionsData;

@@ -9,6 +9,7 @@ import { TarotCardsAllFullDescriptionData } from "../data/TarotCardsFullDescript
 import { TarotCardsPhotosAll } from "../images/cards/TarotCardPhotos";
 import Card from "../components/Card";
 import { TarotRoutes } from "../data/TarotRoutesData";
+import TarotCardsComparisionsData from "../data/TarotCardsComparisionsData";
 
 function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
   const ref = useRef(null);
@@ -59,7 +60,7 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
         <TarotMeaningsExpositionContainer />
         <span style={{ width: "100%", margin: "24px" }}></span>
         <Article title="Card comparisons">
-          
+          {TarotCardsComparisionsData[CardNumber]()}
         </Article>
       </div>
       <Footer />

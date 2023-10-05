@@ -13,12 +13,18 @@ import TarotMajorArcana from "./screens/TarotMajorArcana";
 import TarotMinorArcana from "./screens/TarotMinorArcana";
 import SuitOf from "./screens/SuitOf";
 import { RoutesSuitMinorArcana, TarotRoutes } from "./data/TarotRoutesData";
-import TarotCardFullDescription from "./screens/TarotCardFullDescription";
+//import TarotCardFullDescription from "./screens/TarotCardFullDescription";
 //import "dotenv/config";
 import { lazy, Suspense } from "react";
 import NotFound from "./screens/NotFound";
 import Loading from "./screens/Loading";
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorScreen from "./screens/ErrorScreen";
 //const SHIT = lazy(() => import(""));
+const TarotCardFullDescription = React.lazy(
+  () => import("./screens/TarotCardFullDescription")
+);
+
 function App() {
   const navigate = useNavigate();
   const navigateToHome = () => {
@@ -53,23 +59,51 @@ function App() {
         {RoutesSuitMinorArcana.map((route, index) => (
           <Route
             path={route}
-            element={<SuitOf SuitNumber={index} key={route} />}
+            element={
+              <ErrorBoundary
+                FallbackComponent={ErrorScreen}
+                onReset={() => {
+                  navigate("/");
+                }}
+                onError={() => {
+                  analytics.event(AnalyticsEvent.error_RoutesSuitMinorArcana);
+                }}
+              >
+                <Suspense fallback={<Loading />}>
+                  <SuitOf SuitNumber={index} key={route} />
+                </Suspense>
+              </ErrorBoundary>
+            }
           />
         ))}
-        <Route
-          path={TarotRoutes[0]}
-          element={<TarotCardFullDescription CardNumber={0} />}
-        />
+
         {TarotRoutes.map((route, index) => (
           <Route
             path={route}
             element={
-              <TarotCardFullDescription CardNumber={index} key={route} />
+              <ErrorBoundary
+                FallbackComponent={ErrorScreen}
+                onReset={() => {
+                  navigate("/");
+                }}
+                onError={() => {
+                  analytics.event(
+                    AnalyticsEvent.error_TarotCardFullDescription
+                  );
+                }}
+              >
+                <Suspense fallback={<Loading />}>
+                  <TarotCardFullDescription CardNumber={index} key={route} />
+                </Suspense>
+              </ErrorBoundary>
             }
           />
         ))}
-        <Route path="/notfound" element={<NotFound />} />
-        <Route path="/loading" element={<Loading />} />
+        <Route path="*" element={<NotFound />} />
+        <Route
+          path={TarotRoutes[0]}
+          element={<TarotCardFullDescription CardNumber={0} />}
+        />
       </Routes>
     </body>
   );
@@ -77,15 +111,5 @@ function App() {
 
 export default App;
 //NOW ALL THE 78 cards full description
-/*  {
-   TarotRoutes.map((route, index) => (
-     <Route
-       path={route}
-       element={
-         <Suspense fallback={<div>Loading...</div>}>
-           <TarotCardFullDescription CardNumber={index} key={route} />
-         </Suspense>
-       }
-     />
-   ));
- } */
+/*  */
+//mixpanel log error onError={}
