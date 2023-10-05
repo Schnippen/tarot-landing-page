@@ -87,7 +87,7 @@ const TarotRoutes = [
   "/the-queen-of-pentacles-meaning-minor-arcana-tarot-card-meanings",
   "/the-king-of-pentacles-meaning-minor-arcana-tarot-card-meanings",
 ];
-const TarotCardNamesCard = [
+export const TarotCardNamesCard = [
   "The Fool Card",
   "The Magician Card",
   "The High Priestess Card",

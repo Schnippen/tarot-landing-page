@@ -58,7 +58,9 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
         <span style={{ width: "100%", margin: "24px" }}></span>
         <TarotMeaningsExpositionContainer />
         <span style={{ width: "100%", margin: "24px" }}></span>
-        <Article title="Read about other Cards"></Article>
+        <Article title="Card comparisons">
+          
+        </Article>
       </div>
       <Footer />
     </main>
