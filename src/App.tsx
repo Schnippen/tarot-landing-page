@@ -15,7 +15,10 @@ import SuitOf from "./screens/SuitOf";
 import { RoutesSuitMinorArcana, TarotRoutes } from "./data/TarotRoutesData";
 import TarotCardFullDescription from "./screens/TarotCardFullDescription";
 //import "dotenv/config";
-
+import { lazy, Suspense } from "react";
+import NotFound from "./screens/NotFound";
+import Loading from "./screens/Loading";
+//const SHIT = lazy(() => import(""));
 function App() {
   const navigate = useNavigate();
   const navigateToHome = () => {
@@ -57,6 +60,16 @@ function App() {
           path={TarotRoutes[0]}
           element={<TarotCardFullDescription CardNumber={0} />}
         />
+        {TarotRoutes.map((route, index) => (
+          <Route
+            path={route}
+            element={
+              <TarotCardFullDescription CardNumber={index} key={route} />
+            }
+          />
+        ))}
+        <Route path="/notfound" element={<NotFound />} />
+        <Route path="/loading" element={<Loading />} />
       </Routes>
     </body>
   );
@@ -64,3 +77,15 @@ function App() {
 
 export default App;
 //NOW ALL THE 78 cards full description
+/*  {
+   TarotRoutes.map((route, index) => (
+     <Route
+       path={route}
+       element={
+         <Suspense fallback={<div>Loading...</div>}>
+           <TarotCardFullDescription CardNumber={index} key={route} />
+         </Suspense>
+       }
+     />
+   ));
+ } */

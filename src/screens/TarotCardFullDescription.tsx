@@ -4,11 +4,12 @@ import Article from "../components/Article";
 import Footer from "../components/Footer";
 import Separator from "../components/Separator";
 import TarotMeaningsExpositionContainer from "../components/TarotMeaningsExpositionContainer";
-import { TarotDecks } from "../data/TarotRoutesData";
 import styles from "../App.module.css";
 import { TarotCardsAllFullDescriptionData } from "../data/TarotCardsFullDescriptionData";
 import { TarotCardsPhotosAll } from "../images/cards/TarotCardPhotos";
 import Card from "../components/Card";
+import { TarotRoutes } from "../data/TarotRoutesData";
+
 function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
   const ref = useRef(null);
 
@@ -20,12 +21,12 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
 
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
-  /*   useEffect(() => {
+  useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
     scrollToTop();
-  }, []); */
+  }, []);
 
   return (
     <main className={styles.main}>
@@ -54,8 +55,10 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
         >
           {TarotCardsAllFullDescriptionData[CardNumber].CardMeaningArticle}
         </Article>
-
-        <Article title=""></Article>
+        <span style={{ width: "100%", margin: "24px" }}></span>
+        <TarotMeaningsExpositionContainer />
+        <span style={{ width: "100%", margin: "24px" }}></span>
+        <Article title="Read about other Cards"></Article>
       </div>
       <Footer />
     </main>
@@ -91,3 +94,28 @@ export default TarotCardFullDescription;
            .
          </p>
        </ul>; */
+/*         {
+          CardNumber > 1 ? (
+            <Link
+              to={TarotRoutes[CardNumber - 1]}
+              className={styles.Link}
+              title="Previous Card"
+            >
+              Previous Card
+            </Link>
+          ) : null;
+        }
+        <Link to="/" className={styles.Link} title="Go to main page">
+          Go to main page
+        </Link>;
+        {
+          CardNumber === TarotCardsAllFullDescriptionData.length ? null : (
+            <Link
+              to={TarotRoutes[CardNumber + 1]}
+              className={styles.Link}
+              title="Next Card"
+            >
+              Next Card
+            </Link>
+          );
+        } */
