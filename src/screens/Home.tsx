@@ -6,11 +6,30 @@ import Panel from "../components/Panel";
 import Separator from "../components/Separator";
 import styles from "../App.module.css";
 import Article from "../components/Article";
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <main className={styles.main}>
       <Exposition />
       <div className={styles.article_container}>
+        <Article title={"Learn more about Tarot"}>
+          <Link
+            to="/major-arcana-tarot-card-meanings"
+            className={styles.Link}
+            title="Major Arcana Card List"
+          >
+            Major Arcana
+          </Link>
+          <Link
+            to="/minor arcana-tarot-card-meanings"
+            className={styles.Link}
+            title="Minor Arcana Card List"
+          >
+            Minor Arcana
+          </Link>
+          history of tarot
+        </Article>
         <article className={styles.panels_container}>
           <h2 className={styles.panels_container_title}>
             Why Choose our Tarot Reader App:

@@ -876,7 +876,7 @@ const KingOfCups = () => {
     </>
   );
 };
-/* const TarotCardsSuitOfCupsFullDescriptionData = [
+export const TarotCardsSuitOfCupsComparisionsData = [
   AceOfCups,
   TwoOfCups,
   ThreeOfCups,
@@ -891,4 +891,4 @@ const KingOfCups = () => {
   KnightOfCups,
   QueenOfCups,
   KingOfCups,
-]; */
+];

@@ -794,7 +794,7 @@ const KingOfPentacles = () => {
     </p>
   </>;
 };
-/* const TarotCardsSuitOfPentaclesFullDescriptionData = [
+ export const TarotCardsSuitOfPentaclesComparisionsData = [
   AceOfPentacles,
   TwoOfPentacles,
   ThreeOfPentacles,
@@ -809,4 +809,4 @@ const KingOfPentacles = () => {
   KnightOfPentacles,
   QueenOfPentacles,
   KingOfPentacles,
-]; */
+]; 

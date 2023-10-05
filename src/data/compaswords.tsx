@@ -240,7 +240,7 @@ const FourOfSwords = () => {
   );
 };
 
-const FiveOfPentacles = () => {
+const FiveOfSwords = () => {
   return (
     <>
       <h2 className={styles.title}>
@@ -830,7 +830,7 @@ const KingOfSwords = () => {
     </>
   );
 };
-/* const TarotCardsSuitOfSwordsFullDescriptionData = [
+export const TarotCardsSuitOfSwordsComparisionsData = [
   AceOfSwords,
   TwoOfSwords,
   ThreeOfSwords,
@@ -845,4 +845,4 @@ const KingOfSwords = () => {
   KnightOfSwords,
   QueenOfSwords,
   KingOfSwords,
-]; */
+];

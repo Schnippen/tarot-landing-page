@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import { TarotRoutes } from "./TarotRoutesData";
 import { TarotCardNamesCard } from "./TarotCardsData";
 import { TarotDecks, RoutesSuitMinorArcana } from "./TarotRoutesData";
+import { TarotCardsSuitOfPentaclesComparisionsData } from "./compapentacles";
+import { TarotCardsSuitOfCupsComparisionsData } from "./compacups";
+import { TarotCardsSuitOfSwordsComparisionsData } from "./compaswords";
+import { TarotCardsSuitOfWandsComparisionsData } from "./compawands";
 {
   <Link
     to={TarotRoutes[3]}
@@ -2902,6 +2906,12 @@ const TarotCardsMajorArcanaComparisionData = [
   World,
 ];
 
-export const TarotCardsComparisionsData = TarotCardsMajorArcanaComparisionData;
+export const TarotCardsComparisionsData =
+  TarotCardsMajorArcanaComparisionData.concat(
+    TarotCardsSuitOfWandsComparisionsData,
+    TarotCardsSuitOfCupsComparisionsData,
+    TarotCardsSuitOfSwordsComparisionsData,
+    TarotCardsSuitOfPentaclesComparisionsData
+  );
 
 export default TarotCardsComparisionsData;

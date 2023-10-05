@@ -16,7 +16,7 @@ function TarotMeanings() {
             <Link
               to="/the-fool-meaning-major-arcana-tarot-card-meanings"
               className={styles.Link}
-              title="The Fool"
+              title="History of Tarot"
             >
               a centuries-old system of divination
             </Link>

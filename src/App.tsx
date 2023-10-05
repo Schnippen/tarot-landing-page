@@ -20,7 +20,6 @@ import NotFound from "./screens/NotFound";
 import Loading from "./screens/Loading";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorScreen from "./screens/ErrorScreen";
-//const SHIT = lazy(() => import(""));
 const TarotCardFullDescription = React.lazy(
   () => import("./screens/TarotCardFullDescription")
 );
@@ -100,10 +99,6 @@ function App() {
           />
         ))}
         <Route path="*" element={<NotFound />} />
-        <Route
-          path={TarotRoutes[0]}
-          element={<TarotCardFullDescription CardNumber={0} />}
-        />
       </Routes>
     </body>
   );

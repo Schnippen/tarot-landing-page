@@ -865,7 +865,7 @@ const KingOfWands = () => {
     </>
   );
 };
-/* const TarotCardsSuitOfWandsFullDescriptionData = [
+export const TarotCardsSuitOfWandsComparisionsData = [
   AceOfWands,
   TwoOfWands,
   ThreeOfWands,
@@ -880,4 +880,4 @@ const KingOfWands = () => {
   KnightOfWands,
   QueenOfWands,
   KingOfWands,
-]; */
+];
