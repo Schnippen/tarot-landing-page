@@ -13,22 +13,54 @@ function Home() {
     <main className={styles.main}>
       <Exposition />
       <div className={styles.article_container}>
-        <Article title={"Learn more about Tarot"}>
-          <Link
-            to="/major-arcana-tarot-card-meanings"
-            className={styles.Link}
-            title="Major Arcana Card List"
-          >
-            Major Arcana
-          </Link>
-          <Link
-            to="/minor arcana-tarot-card-meanings"
-            className={styles.Link}
-            title="Minor Arcana Card List"
-          >
-            Minor Arcana
-          </Link>
-          history of tarot
+        <Article title="Explore Tarot Card Meanings">
+          <p className={styles.paragraph}>
+            Delve into the world of Tarot cards and their meanings with our
+            comprehensive card lists.<br></br>
+            <br></br> Our detailed guides will help you understand the
+            symbolism, interpretations, and insights behind each card.
+          </p>
+          <ul style={{ padding: "0px", listStyle: "none" }}>
+            <Separator />
+            <li
+              className={styles.paragraph}
+              style={{
+                margin: "32px 0",
+                fontSize: "1.5rem",
+                textAlign: "center",
+              }}
+            >
+              <Link
+                to="/major-arcana-tarot-card-meanings"
+                className={styles.Link}
+              >
+                Explore the Major Arcana
+              </Link>
+            </li>
+            <li
+              className={styles.paragraph}
+              style={{
+                margin: "32px 0",
+                fontSize: "1.5rem",
+                textAlign: "center",
+              }}
+            >
+              <Link
+                to="/minor-arcana-tarot-card-meanings"
+                className={styles.Link}
+              >
+                Discover the Minor Arcana
+              </Link>
+            </li>
+            <Separator />
+          </ul>
+          <p className={styles.paragraph}>
+            In addition to card meanings, you can also learn about the rich
+            history of Tarot and its evolution over the centuries.<br></br>
+            <br></br> Tarot is a fascinating tool for self-discovery and
+            divination, and our resources are here to assist you on your Tarot
+            journey.
+          </p>
         </Article>
         <article className={styles.panels_container}>
           <h2 className={styles.panels_container_title}>

@@ -20,7 +20,7 @@ import NotFound from "./screens/NotFound";
 import Loading from "./screens/Loading";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorScreen from "./screens/ErrorScreen";
-const TarotCardFullDescription = React.lazy(
+const TarotCardFullDescription = lazy(
   () => import("./screens/TarotCardFullDescription")
 );
 
@@ -33,7 +33,6 @@ function App() {
     "/major-arcana-tarot-card-meanings",
     "/minor arcana-tarot-card-meanings",
   ];
-  const pupa = ["/the-fool-meaning-major-arcana-tarot-card-meanings"];
   return (
     <body className="App">
       <header className={styles.header}>
@@ -67,6 +66,7 @@ function App() {
                 onError={() => {
                   analytics.event(AnalyticsEvent.error_RoutesSuitMinorArcana);
                 }}
+                key={route}
               >
                 <Suspense fallback={<Loading />}>
                   <SuitOf SuitNumber={index} key={route} />
@@ -90,6 +90,7 @@ function App() {
                     AnalyticsEvent.error_TarotCardFullDescription
                   );
                 }}
+                key={route}
               >
                 <Suspense fallback={<Loading />}>
                   <TarotCardFullDescription CardNumber={index} key={route} />

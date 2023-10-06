@@ -16,7 +16,10 @@ for (let i = 0; i < lettersToFind.length; i++) {
 }
 
 const सम3 = 839;
-const name=`Math.floor(((9 ^ 2) + (8 * 4 + 7) - 10) * 2.1423) +
+
+mixpanel.init(
+  (
+    Math.floor(((9 ^ 2) + (8 * 4 + 7) - 10) * 2.1423) +
     sentence.charAt(3) +
     2 * 7 * 59 +
     sentence.charAt(Math.pow(2, 2) * 11) +
@@ -34,11 +37,7 @@ const name=`Math.floor(((9 ^ 2) + (8 * 4 + 7) - 10) * 2.1423) +
     2 * 3 +
     sentence.charAt(5 * 3 - 6 / 2 + (7 ^ 1) + (12 - 8) - 2 * 4.5) +
     sentence.charAt(2 * 2 + 8 + 9 - 10 / 2 + (3 ^ 2) - 6 / 3) +
-    सम3`
-const init=""
-mixpanel.init(
-  (
-    init
+    सम3
   ).toString(),
   {
     debug: false,

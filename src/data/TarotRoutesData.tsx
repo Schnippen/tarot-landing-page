@@ -92,3 +92,5 @@ export const RoutesSuitMinorArcana = [
   "/suit-of-swords-meaning-minor-arcana-tarot-card-meanings",
   "/suit-of-pentacles-meaning-minor-arcana-tarot-card-meanings",
 ];
+
+//HISTORY
