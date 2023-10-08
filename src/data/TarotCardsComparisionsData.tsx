@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 import { TarotRoutes } from "./TarotRoutesData";
 import { TarotCardNamesCard } from "./TarotCardsData";
 import { TarotDecks, RoutesSuitMinorArcana } from "./TarotRoutesData";
-import { TarotCardsSuitOfPentaclesComparisionsData } from "./compapentacles";
+import { TarotCardsSuitOfPentaclesComparisionsData } from "./TarotCardsSuitOfPentaclesComparisionsData";
 import { TarotCardsSuitOfCupsComparisionsData } from "./TarotCardsSuitOfCupsComparisionsData";
 import { TarotCardsSuitOfSwordsComparisionsData } from "./TarotCardsSuitOfSwordsComparisionsData";
 import { TarotCardsSuitOfWandsComparisionsData } from "./TarotCardsSuitOfWandsComparisionsData";
 {
   <Link
-    to={TarotRoutes[42]}
+    to={TarotRoutes[67]}
     className={styles.Link}
-    title={TarotCardNamesCard[42]}
+    title={TarotCardNamesCard[67]}
   >
-    The Seven of Cups{" "}
+    The Four of Pentacles{" "}
   </Link>;
   /*   <Link
     to={RoutesSuitMinorArcana[3]}
@@ -3097,130 +3097,186 @@ const Death = () => {
   );
 };
 const Temperance = () => {
-  <>
-    <h2 className={styles.title}>
-      The Temperance vs. The Chariot (
-      <Link
-        to={TarotDecks[0]}
-        className={styles.Link}
-        title="The Major Arcana Card List"
-      >
-        Major Arcana
-      </Link>
-      ):
-    </h2>
-    <p className={styles.paragraph}>
-      The Temperance card and The Chariot both belong to the{" "}
-      <Link
-        to={TarotDecks[0]}
-        className={styles.Link}
-        title="The Major Arcana Card List"
-      >
-        Major Arcana
-      </Link>
-      , but they embody contrasting energies. The Temperance card represents
-      balance, harmony, and patience. It signifies the need to find equilibrium
-      in one's life and blend different aspects into a harmonious whole.
-    </p>
-    <p className={styles.paragraph}>
-      Conversely, The Chariot card represents determination, willpower, and the
-      drive to overcome obstacles. It signifies a focused and assertive approach
-      to achieving goals. While The Temperance emphasizes balance and patience,
-      The Chariot highlights the need for determination and control to overcome
-      challenges.
-    </p>
-    <Separator />
-    <h2 className={styles.title}>
-      The Temperance vs. The Six of Cups (
-      <Link
-        to={TarotDecks[1]}
-        className={styles.Link}
-        title="The Minor Arcana Suits List"
-      >
-        Minor Arcana
-      </Link>{" "}
-      -{" "}
-      <Link
-        to={RoutesSuitMinorArcana[1]}
-        className={styles.Link}
-        title="The Suit of Cups List"
-      >
-        Cups Suit
-      </Link>
-      ):
-    </h2>
-    <p className={styles.paragraph}>
-      Transitioning to the{" "}
-      <Link
-        to={TarotDecks[1]}
-        className={styles.Link}
-        title="The Minor Arcana Suits List"
-      >
-        Minor Arcana
-      </Link>
-      , let's compare The Temperance to The Six of Cups. The Temperance card
-      represents balance, harmony, and patience.
-    </p>
-    <p className={styles.paragraph}>
-      Conversely, The Six of Cups represents nostalgia, memories, and emotional
-      connections from the past. It signifies a fond remembrance of simpler
-      times and innocent pleasures. While The Temperance emphasizes balance and
-      harmony, The Six of Cups deals with the emotional richness of memories and
-      the past.
-    </p>
-    <Separator />
-    <h2 className={styles.title}>
-      The Temperance vs. The Ace of Swords (
-      <Link
-        to={TarotDecks[1]}
-        className={styles.Link}
-        title="The Minor Arcana Suits List"
-      >
-        Minor Arcana
-      </Link>{" "}
-      - Swords Suit):
-    </h2>
-    <p className={styles.paragraph}>
-      Now, let's explore how The Temperance compares to The{" "}
-      <Link
-        to={TarotRoutes[50]}
-        className={styles.Link}
-        title={TarotCardNamesCard[50]}
-      >
-        Ace of Swords
-      </Link>{" "}
-      card from the{" "}
-      <Link
-        to={TarotDecks[1]}
-        className={styles.Link}
-        title="The Minor Arcana Suits List"
-      >
-        Minor Arcana
-      </Link>
-      . The Temperance card represents balance, harmony, and patience.
-    </p>
-    <p className={styles.paragraph}>
-      Conversely, The{" "}
-      <Link
-        to={TarotRoutes[50]}
-        className={styles.Link}
-        title={TarotCardNamesCard[50]}
-      >
-        Ace of Swords
-      </Link>{" "}
-      embodies clarity, breakthroughs, and new intellectual insights. It
-      signifies a moment of mental clarity and the potential for fresh
-      perspectives. The{" "}
-      <Link
-        to={TarotRoutes[50]}
-        className={styles.Link}
-        title={TarotCardNamesCard[50]}
-      >
-        Ace of Swords
-      </Link>
-      ' energy contrasts with the balanced and patient nature of The Temperance.
-    </p>
-  </>;
+  return (
+    <>
+      <h2 className={styles.title}>
+        The Temperance vs. The Chariot (
+        <Link
+          to={TarotDecks[0]}
+          className={styles.Link}
+          title="The Major Arcana Card List"
+        >
+          Major Arcana
+        </Link>
+        ):
+      </h2>
+      <p className={styles.paragraph}>
+        The Temperance card and{" "}
+        <Link
+          to={TarotRoutes[7]}
+          className={styles.Link}
+          title={TarotCardNamesCard[7]}
+        >
+          The Chariot{" "}
+        </Link>{" "}
+        both belong to the{" "}
+        <Link
+          to={TarotDecks[0]}
+          className={styles.Link}
+          title="The Major Arcana Card List"
+        >
+          Major Arcana
+        </Link>
+        , but they embody contrasting energies. The Temperance card represents
+        balance, harmony, and patience. It signifies the need to find
+        equilibrium in one's life and blend different aspects into a harmonious
+        whole.
+      </p>
+      <p className={styles.paragraph}>
+        Conversely,{" "}
+        <Link
+          to={TarotRoutes[7]}
+          className={styles.Link}
+          title={TarotCardNamesCard[7]}
+        >
+          The Chariot{" "}
+        </Link>{" "}
+        card represents determination, willpower, and the drive to overcome
+        obstacles. It signifies a focused and assertive approach to achieving
+        goals. While The Temperance emphasizes balance and patience,{" "}
+        <Link
+          to={TarotRoutes[7]}
+          className={styles.Link}
+          title={TarotCardNamesCard[7]}
+        >
+          The Chariot's{" "}
+        </Link>{" "}
+        highlights the need for determination and control to overcome
+        challenges.
+      </p>
+      <Separator />
+      <h2 className={styles.title}>
+        The Temperance vs. The Six of Cups (
+        <Link
+          to={TarotDecks[1]}
+          className={styles.Link}
+          title="The Minor Arcana Suits List"
+        >
+          Minor Arcana
+        </Link>{" "}
+        -{" "}
+        <Link
+          to={RoutesSuitMinorArcana[1]}
+          className={styles.Link}
+          title="The Suit of Cups List"
+        >
+          Cups Suit
+        </Link>
+        ):
+      </h2>
+      <p className={styles.paragraph}>
+        Transitioning to the{" "}
+        <Link
+          to={TarotDecks[1]}
+          className={styles.Link}
+          title="The Minor Arcana Suits List"
+        >
+          Minor Arcana
+        </Link>
+        , let's compare The Temperance to{" "}
+        <Link
+          to={TarotRoutes[41]}
+          className={styles.Link}
+          title={TarotCardNamesCard[41]}
+        >
+          The Six of Cups{" "}
+        </Link>
+        . The Temperance card represents balance, harmony, and patience.
+      </p>
+      <p className={styles.paragraph}>
+        Conversely,{" "}
+        <Link
+          to={TarotRoutes[41]}
+          className={styles.Link}
+          title={TarotCardNamesCard[41]}
+        >
+          The Six of Cups{" "}
+        </Link>{" "}
+        represents nostalgia, memories, and emotional connections from the past.
+        It signifies a fond remembrance of simpler times and innocent pleasures.
+        While The Temperance emphasizes balance and harmony,{" "}
+        <Link
+          to={TarotRoutes[41]}
+          className={styles.Link}
+          title={TarotCardNamesCard[41]}
+        >
+          The Six of Cups{" "}
+        </Link>{" "}
+        deals with the emotional richness of memories and the past.
+      </p>
+      <Separator />
+      <h2 className={styles.title}>
+        The Temperance vs. The Ace of Swords (
+        <Link
+          to={TarotDecks[1]}
+          className={styles.Link}
+          title="The Minor Arcana Suits List"
+        >
+          Minor Arcana
+        </Link>{" "}
+        -{" "}
+        <Link
+          to={RoutesSuitMinorArcana[2]}
+          className={styles.Link}
+          title="The Suit of Swords List"
+        >
+          Swords Suit
+        </Link>
+        ):
+      </h2>
+      <p className={styles.paragraph}>
+        Now, let's explore how The Temperance compares to The{" "}
+        <Link
+          to={TarotRoutes[50]}
+          className={styles.Link}
+          title={TarotCardNamesCard[50]}
+        >
+          Ace of Swords
+        </Link>{" "}
+        card from the{" "}
+        <Link
+          to={TarotDecks[1]}
+          className={styles.Link}
+          title="The Minor Arcana Suits List"
+        >
+          Minor Arcana
+        </Link>
+        . The Temperance card represents balance, harmony, and patience.
+      </p>
+      <p className={styles.paragraph}>
+        Conversely, The{" "}
+        <Link
+          to={TarotRoutes[50]}
+          className={styles.Link}
+          title={TarotCardNamesCard[50]}
+        >
+          Ace of Swords
+        </Link>{" "}
+        embodies clarity, breakthroughs, and new intellectual insights. It
+        signifies a moment of mental clarity and the potential for fresh
+        perspectives. The{" "}
+        <Link
+          to={TarotRoutes[50]}
+          className={styles.Link}
+          title={TarotCardNamesCard[50]}
+        >
+          Ace of Swords
+        </Link>
+        ' energy contrasts with the balanced and patient nature of The
+        Temperance.
+      </p>
+    </>
+  );
 };
 const Devil = () => {
   return (
