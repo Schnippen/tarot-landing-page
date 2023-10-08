@@ -2160,7 +2160,7 @@ export const TarotCardsDataAll: {
   },
   {
     number: 54,
-    name: "Four of Swords: Rest and Recuperation",
+    name: "Five of Swords: Winning at Any Cost",
     image: TarotCardsPhotosAll[54],
     route: TarotRoutes[54],
     alt: TarotCardNamesCard[54],

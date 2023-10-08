@@ -7,15 +7,15 @@ import { TarotCardNamesCard } from "./TarotCardsData";
 import { TarotDecks, RoutesSuitMinorArcana } from "./TarotRoutesData";
 import { TarotCardsSuitOfPentaclesComparisionsData } from "./compapentacles";
 import { TarotCardsSuitOfCupsComparisionsData } from "./TarotCardsSuitOfCupsComparisionsData";
-import { TarotCardsSuitOfSwordsComparisionsData } from "./compaswords";
+import { TarotCardsSuitOfSwordsComparisionsData } from "./TarotCardsSuitOfSwordsComparisionsData";
 import { TarotCardsSuitOfWandsComparisionsData } from "./TarotCardsSuitOfWandsComparisionsData";
 {
   <Link
-    to={TarotRoutes[54]}
+    to={TarotRoutes[42]}
     className={styles.Link}
-    title={TarotCardNamesCard[54]}
+    title={TarotCardNamesCard[42]}
   >
-    The Five of Swords{" "}
+    The Seven of Cups{" "}
   </Link>;
   /*   <Link
     to={RoutesSuitMinorArcana[3]}
@@ -3028,8 +3028,16 @@ const Death = () => {
         </Link>{" "}
         represents a period of financial or material hardship. It often
         symbolizes feelings of lack or insecurity. While The Death card
-        emphasizes transformation and renewal, the Five of Pentacles relates to
-        the challenges that can arise from financial or material struggles.
+        emphasizes transformation and renewal, the{" "}
+        <Link
+          to={TarotRoutes[68]}
+          className={styles.Link}
+          title={TarotCardNamesCard[68]}
+        >
+          Five of Pentacles{" "}
+        </Link>{" "}
+        relates to the challenges that can arise from financial or material
+        struggles.
       </p>
       <Separator />
       <h2 className={styles.title}>
