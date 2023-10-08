@@ -8,14 +8,14 @@ import { TarotDecks, RoutesSuitMinorArcana } from "./TarotRoutesData";
 import { TarotCardsSuitOfPentaclesComparisionsData } from "./compapentacles";
 import { TarotCardsSuitOfCupsComparisionsData } from "./compacups";
 import { TarotCardsSuitOfSwordsComparisionsData } from "./compaswords";
-import { TarotCardsSuitOfWandsComparisionsData } from "./compawands";
+import { TarotCardsSuitOfWandsComparisionsData } from "./TarotCardsSuitOfWandsComparisionsData";
 {
   <Link
-    to={TarotRoutes[56]}
+    to={TarotRoutes[70]}
     className={styles.Link}
-    title={TarotCardNamesCard[56]}
+    title={TarotCardNamesCard[70]}
   >
-    Seven of Swords{" "}
+    Seven of Pentacles{" "}
   </Link>;
   /*   <Link
     to={RoutesSuitMinorArcana[3]}
@@ -3513,8 +3513,15 @@ const Tower = () => {
         embodies bondage, attachment, and the temptation to remain enslaved by
         material desires. It represents the chains that keep us bound to
         unhealthy patterns or addictions. While The Tower focuses on the
-        dramatic and often chaotic nature of change, The Devil highlights the
-        self-imposed limitations that can hinder personal growth.
+        dramatic and often chaotic nature of change,{" "}
+        <Link
+          to={TarotRoutes[15]}
+          className={styles.Link}
+          title={TarotCardNamesCard[15]}
+        >
+          The Devil{" "}
+        </Link>{" "}
+        highlights the self-imposed limitations that can hinder personal growth.
       </p>
       <Separator />
       <h2 className={styles.title}>
@@ -3842,7 +3849,13 @@ const Star = () => {
         ):
       </h2>
       <p className={styles.paragraph}>
-        Lastly, let's explore how The Star card compares to the{" "}
+        Lastly, let's explore how <Link
+    to={TarotRoutes[17]}
+    className={styles.Link}
+    title={TarotCardNamesCard[17]}
+  >
+    The Star{" "}
+  </Link> card compares to the{" "}
         <Link
           to={TarotRoutes[64]}
           className={styles.Link}
@@ -3850,7 +3863,13 @@ const Star = () => {
         >
           Ace of Pentacles{" "}
         </Link>{" "}
-        . The Star signifies hope and inspiration, often related to spiritual or
+        . <Link
+    to={TarotRoutes[17]}
+    className={styles.Link}
+    title={TarotCardNamesCard[17]}
+  >
+    The Star{" "}
+  </Link> signifies hope and inspiration, often related to spiritual or
         creative aspirations. It encourages us to follow our dreams and trust in
         the guidance of the universe.
       </p>
@@ -3865,7 +3884,13 @@ const Star = () => {
         </Link>{" "}
         represents a new material or financial opportunity. It often signifies
         the potential for prosperity and stability in the material realm. While
-        The Star focuses on inspiration and guidance, the{" "}
+        <Link
+    to={TarotRoutes[17]}
+    className={styles.Link}
+    title={TarotCardNamesCard[17]}
+  >
+    The Star{" "}
+  </Link> focuses on inspiration and guidance, the{" "}
         <Link
           to={TarotRoutes[64]}
           className={styles.Link}
@@ -3877,7 +3902,13 @@ const Star = () => {
         in the material world.
       </p>
       <p className={styles.paragraph}>
-        These comparisons illustrate how The Star card embodies the themes of
+        These comparisons illustrate how <Link
+    to={TarotRoutes[17]}
+    className={styles.Link}
+    title={TarotCardNamesCard[17]}
+  >
+    The Star{" "}
+  </Link> card embodies the themes of
         hope, inspiration, and guidance. It helps us understand the diverse
         qualities and interpretations associated with this card in Tarot
         readings, from finding hope in challenging times to the fulfillment of
