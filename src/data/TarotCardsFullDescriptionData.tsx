@@ -5609,6 +5609,7 @@ const TarotCardsMajorArcanaFullDescriptionData = [
   Devil,
   Tower,
   Star,
+  Moon,
   Sun,
   Judgement,
   World,

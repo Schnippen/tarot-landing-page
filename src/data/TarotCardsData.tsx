@@ -439,9 +439,9 @@ export const TarotCardsDataAll: {
       <p className={styles.paragraph}>
         Following{" "}
         <Link
-          to={TarotRoutes[0]}
+          to={TarotRoutes[1]}
           className={styles.Link}
-          title={TarotCardsMeaningSymbolism[0]}
+          title={TarotCardsMeaningSymbolism[1]}
         >
           The Fool
         </Link>
@@ -459,9 +459,9 @@ export const TarotCardsDataAll: {
     ),
     href: (
       <Link
-        to={TarotRoutes[0]}
+        to={TarotRoutes[1]}
         className={styles.Link}
-        title={TarotCardsMeaningSymbolism[0]}
+        title={TarotCardsMeaningSymbolism[1]}
       >
         Full Tarot Meaning & Symbolism
       </Link>
@@ -835,7 +835,7 @@ export const TarotCardsDataAll: {
     tooltip: TarotCardNamesCard[13],
     description: (
       <p className={styles.paragraph}>
-        Despite its ominous name,
+        Despite its ominous name,{" "}
         <Link
           to={TarotRoutes[13]}
           className={styles.Link}
@@ -973,9 +973,9 @@ export const TarotCardsDataAll: {
         </Link>
         , we find hope in{" "}
         <Link
-          to={TarotRoutes[16]}
+          to={TarotRoutes[17]}
           className={styles.Link}
-          title={TarotCardsMeaningSymbolism[16]}
+          title={TarotCardsMeaningSymbolism[17]}
         >
           The Star
         </Link>
