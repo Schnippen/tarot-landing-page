@@ -28,8 +28,6 @@ function SuitOf({ SuitNumber }: { SuitNumber: number }) {
     scrollToTop();
   }, []);
 
-  console.log(SuitNumber);
-  console.log(SuitOfArticlesData[SuitNumber]);
   return (
     <main className={styles.main}>
       <div className={styles.article_container}>

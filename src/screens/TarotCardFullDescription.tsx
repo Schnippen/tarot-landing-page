@@ -22,12 +22,12 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
 
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
-  /*   useEffect(() => {
+  useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
     scrollToTop();
-  }, []); */
+  }, []);
 
   return (
     <main className={styles.main}>

@@ -31,7 +31,7 @@ function App() {
   };
   const TarotDecks = [
     "/major-arcana-tarot-card-meanings",
-    "/minor arcana-tarot-card-meanings",
+    "/minor-arcana-tarot-card-meanings",
   ];
   return (
     <body className="App">

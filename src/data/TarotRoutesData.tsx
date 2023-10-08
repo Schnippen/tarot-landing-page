@@ -82,7 +82,7 @@ export const TarotRoutes = [
 //tarot history "/tarot-cards-history"
 export const TarotDecks = [
   "/major-arcana-tarot-card-meanings",
-  "/minor arcana-tarot-card-meanings",
+  "/minor-arcana-tarot-card-meanings",
 ];
 
 ///suit of four
