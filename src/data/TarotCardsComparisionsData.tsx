@@ -6,16 +6,16 @@ import { TarotRoutes } from "./TarotRoutesData";
 import { TarotCardNamesCard } from "./TarotCardsData";
 import { TarotDecks, RoutesSuitMinorArcana } from "./TarotRoutesData";
 import { TarotCardsSuitOfPentaclesComparisionsData } from "./compapentacles";
-import { TarotCardsSuitOfCupsComparisionsData } from "./compacups";
+import { TarotCardsSuitOfCupsComparisionsData } from "./TarotCardsSuitOfCupsComparisionsData";
 import { TarotCardsSuitOfSwordsComparisionsData } from "./compaswords";
 import { TarotCardsSuitOfWandsComparisionsData } from "./TarotCardsSuitOfWandsComparisionsData";
 {
   <Link
-    to={TarotRoutes[70]}
+    to={TarotRoutes[54]}
     className={styles.Link}
-    title={TarotCardNamesCard[70]}
+    title={TarotCardNamesCard[54]}
   >
-    Seven of Pentacles{" "}
+    The Five of Swords{" "}
   </Link>;
   /*   <Link
     to={RoutesSuitMinorArcana[3]}
@@ -3849,13 +3849,15 @@ const Star = () => {
         ):
       </h2>
       <p className={styles.paragraph}>
-        Lastly, let's explore how <Link
-    to={TarotRoutes[17]}
-    className={styles.Link}
-    title={TarotCardNamesCard[17]}
-  >
-    The Star{" "}
-  </Link> card compares to the{" "}
+        Lastly, let's explore how{" "}
+        <Link
+          to={TarotRoutes[17]}
+          className={styles.Link}
+          title={TarotCardNamesCard[17]}
+        >
+          The Star{" "}
+        </Link>{" "}
+        card compares to the{" "}
         <Link
           to={TarotRoutes[64]}
           className={styles.Link}
@@ -3863,15 +3865,17 @@ const Star = () => {
         >
           Ace of Pentacles{" "}
         </Link>{" "}
-        . <Link
-    to={TarotRoutes[17]}
-    className={styles.Link}
-    title={TarotCardNamesCard[17]}
-  >
-    The Star{" "}
-  </Link> signifies hope and inspiration, often related to spiritual or
-        creative aspirations. It encourages us to follow our dreams and trust in
-        the guidance of the universe.
+        .{" "}
+        <Link
+          to={TarotRoutes[17]}
+          className={styles.Link}
+          title={TarotCardNamesCard[17]}
+        >
+          The Star{" "}
+        </Link>{" "}
+        signifies hope and inspiration, often related to spiritual or creative
+        aspirations. It encourages us to follow our dreams and trust in the
+        guidance of the universe.
       </p>
       <p className={styles.paragraph}>
         Conversely, the{" "}
@@ -3885,12 +3889,13 @@ const Star = () => {
         represents a new material or financial opportunity. It often signifies
         the potential for prosperity and stability in the material realm. While
         <Link
-    to={TarotRoutes[17]}
-    className={styles.Link}
-    title={TarotCardNamesCard[17]}
-  >
-    The Star{" "}
-  </Link> focuses on inspiration and guidance, the{" "}
+          to={TarotRoutes[17]}
+          className={styles.Link}
+          title={TarotCardNamesCard[17]}
+        >
+          The Star{" "}
+        </Link>{" "}
+        focuses on inspiration and guidance, the{" "}
         <Link
           to={TarotRoutes[64]}
           className={styles.Link}
@@ -3902,17 +3907,18 @@ const Star = () => {
         in the material world.
       </p>
       <p className={styles.paragraph}>
-        These comparisons illustrate how <Link
-    to={TarotRoutes[17]}
-    className={styles.Link}
-    title={TarotCardNamesCard[17]}
-  >
-    The Star{" "}
-  </Link> card embodies the themes of
-        hope, inspiration, and guidance. It helps us understand the diverse
-        qualities and interpretations associated with this card in Tarot
-        readings, from finding hope in challenging times to the fulfillment of
-        emotional or material desires.
+        These comparisons illustrate how{" "}
+        <Link
+          to={TarotRoutes[17]}
+          className={styles.Link}
+          title={TarotCardNamesCard[17]}
+        >
+          The Star{" "}
+        </Link>{" "}
+        card embodies the themes of hope, inspiration, and guidance. It helps us
+        understand the diverse qualities and interpretations associated with
+        this card in Tarot readings, from finding hope in challenging times to
+        the fulfillment of emotional or material desires.
       </p>
     </>
   );
