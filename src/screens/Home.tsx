@@ -66,7 +66,7 @@ function Home() {
           <h2 className={styles.panels_container_title}>
             Why Choose our Tarot Reader App:
           </h2>
-          <div className={styles.panels_wrapper}>
+          <ul className={styles.panels_wrapper}>
             <Panel
               analyticsNumber={0}
               title="Trusted Expertise:"
@@ -84,7 +84,7 @@ function Home() {
               title="Accessible Anywhere, Anytime:"
               text="Whether you're at home or on the go, our Tarot Reader app is available to provide guidance whenever you need it."
             />
-          </div>
+          </ul>
         </article>
         <Article title="How it Works">
           <ArticleItem
