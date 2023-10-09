@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../src/images/tile1.png);
+  background-image: url(../src/images/tile1.webp);
 }
 
 .exposition_container {

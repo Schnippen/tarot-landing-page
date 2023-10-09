@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import CardBack from "../images/CardBack.jpg";
+import CardBack from "../images/CardBack.webp";
 import styles from "../components/Panel.module.css";
 import Separator from "./Separator";
 import { AnalyticsEvent } from "../utils/constants";
