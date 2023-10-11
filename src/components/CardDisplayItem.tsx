@@ -2,7 +2,6 @@ import React from "react";
 import Card from "./Card";
 import styles from "../App.module.css";
 import DisplayStyles from "./CardDisplayItem.module.css";
-import { Link } from "react-router-dom";
 
 const CardDisplayItem = ({
   alt,
@@ -32,9 +31,9 @@ const CardDisplayItem = ({
         <Card alt={alt} tooltip={tooltip} img={img} />
       </div>
       <div className={DisplayStyles.right_container}>
-        <h4 className={styles.title} style={{ textAlign: "center" }}>
+        <h3 className={styles.title} style={{ textAlign: "center" }}>
           {name}
-        </h4>
+        </h3>
         {paragraphElement}
         <p className={styles.paragraph} style={{ textAlign: "center" }}>
           {href}

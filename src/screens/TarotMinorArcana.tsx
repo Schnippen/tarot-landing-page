@@ -8,6 +8,7 @@ import { TarotCardsMinorArcanaSuits } from "../data/TarotCardsData";
 import CardDisplayItem from "../components/CardDisplayItem";
 import { RoutesSuitMinorArcana, TarotDecks } from "../data/TarotRoutesData";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 //photos
 function TarotMinorArcana() {
@@ -30,6 +31,28 @@ function TarotMinorArcana() {
 
   return (
     <main className={styles.main}>
+      <Helmet>
+        <title>Tarot Card Meanings - Minor Arcana</title>
+        <meta
+          name="description"
+          content="Explore the Minor Arcana: 56 cards, four suits, and their significance in practical matters and transitions during Tarot readings."
+        />
+        <meta
+          name="keywords"
+          content="Minor Arcana,
+Tarot Cards,
+Suits of Cards,
+Wands,
+Cups,
+Swords,
+Pentacles,
+Practical Matters,
+Tarot Readings,
+Transition Phase,
+Tarot Guidance"
+        />
+        <link rel="canonical" href={TarotDecks[1]} />
+      </Helmet>
       <div className={styles.article_container}>
         <Article title="Minor Arcana">
           <h2 className={styles.title}>About The Minor Arcana Cards</h2>

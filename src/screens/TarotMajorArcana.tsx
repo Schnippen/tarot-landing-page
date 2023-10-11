@@ -8,6 +8,7 @@ import styles from "../App.module.css";
 import CardDisplayItem from "../components/CardDisplayItem";
 import { MajorArcanaCardsData } from "../data/TarotCardsData";
 import { TarotDecks } from "../data/TarotRoutesData";
+import { Helmet } from "react-helmet-async";
 
 function TarotMajorArcana() {
   const ref = useRef(null);
@@ -29,6 +30,27 @@ function TarotMajorArcana() {
 
   return (
     <main className={styles.main}>
+      <Helmet>
+        <title>Tarot Card Meanings - Major Arcana</title>
+        <meta
+          name="description"
+          content="Explore the Major Arcana's symbolism and its role in personal growth and transformation. Discover 22 tarot cards that symbolize life events and spiritual lessons."
+        />
+        <meta
+          name="keywords"
+          content="Major Arcana Tarot Cards,
+Tarot Reading Meanings,
+Spiritual Lessons,
+Profound Transformations,
+Tarot Card Symbolism,
+Personal Growth and Transformation,
+Self-Discovery,
+Archetypal Energy,
+Tarot Card Interpretation,
+Tarot Card Reflection"
+        />
+        <link rel="canonical" href={TarotDecks[0]} />
+      </Helmet>
       <div className={styles.article_container}>
         <Article title="Major Arcana">
           <h2 className={styles.title}>About The Major Arcana Cards</h2>

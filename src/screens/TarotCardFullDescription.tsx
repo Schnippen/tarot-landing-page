@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import Article from "../components/Article";
 import Footer from "../components/Footer";
 import Separator from "../components/Separator";
@@ -8,20 +7,11 @@ import styles from "../App.module.css";
 import { TarotCardsAllFullDescriptionData } from "../data/TarotCardsFullDescriptionData";
 import { TarotCardsPhotosAll } from "../images/cards/TarotCardPhotos";
 import Card from "../components/Card";
-import { TarotRoutes } from "../data/TarotRoutesData";
 import TarotCardsComparisionsData from "../data/TarotCardsComparisionsData";
+import { Helmet } from "react-helmet-async";
+import { CardsMetaTagsData } from "../data/CardsMetaTagsData";
 
 function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
-  const ref = useRef(null);
-
-  const executeScroll = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ) => {
-    e.preventDefault();
-    // @ts-ignore
-
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
   useEffect(() => {
     const scrollToTop = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -31,6 +21,15 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
 
   return (
     <main className={styles.main}>
+      <Helmet>
+        <title>
+          {TarotCardsAllFullDescriptionData[CardNumber].tooltip + "Meaning"}
+        </title>
+        <meta
+          name="description"
+          content={CardsMetaTagsData[CardNumber]}
+        />
+      </Helmet>
       <div className={styles.article_container}>
         <Article title={TarotCardsAllFullDescriptionData[CardNumber].CardName}>
           <div
@@ -50,7 +49,7 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
           {TarotCardsAllFullDescriptionData[CardNumber].SymbolismTitle}
           {TarotCardsAllFullDescriptionData[CardNumber].Symbolism}
         </Article>
-        <span ref={ref}></span>
+
         <Article
           title={TarotCardsAllFullDescriptionData[CardNumber].CardMeaning}
         >
@@ -69,56 +68,3 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
 }
 
 export default TarotCardFullDescription;
-
-{
-  /* <span style={{ width: "100%", margin: "24px" }}></span>
-        <TarotMeaningsExpositionContainer />
-        <span style={{ width: "100%", margin: "24px" }}></span> */
-}
-
-/*        <ul style={{ padding: "0px" }}>
-         <p className={styles.paragraph} style={{ textAlign: "center" }}>
-           The end of the{" "}
-           <Link
-             to={TarotDecks[1]}
-             className={styles.Link}
-             title="Major Arcana Cards List"
-           >
-             The Major Arcana
-           </Link>{" "}
-           marks the beginning of another journey -{" "}
-           <Link
-             to={TarotDecks[1]}
-             className={styles.Link}
-             title="Minor Arcana Cards List"
-           >
-             The Minor Arcana
-           </Link>
-           .
-         </p>
-       </ul>; */
-/*         {
-          CardNumber > 1 ? (
-            <Link
-              to={TarotRoutes[CardNumber - 1]}
-              className={styles.Link}
-              title="Previous Card"
-            >
-              Previous Card
-            </Link>
-          ) : null;
-        }
-        <Link to="/" className={styles.Link} title="Go to main page">
-          Go to main page
-        </Link>;
-        {
-          CardNumber === TarotCardsAllFullDescriptionData.length ? null : (
-            <Link
-              to={TarotRoutes[CardNumber + 1]}
-              className={styles.Link}
-              title="Next Card"
-            >
-              Next Card
-            </Link>
-          );
-        } */

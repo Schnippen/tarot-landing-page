@@ -9,6 +9,11 @@ import { SuitOfAllCards } from "../data/TarotCardsData";
 import styles from "../App.module.css";
 import { TarotDecks } from "../data/TarotRoutesData";
 import { SuitOfArticlesData } from "../data/SuitOfCardsArticlesData";
+import { Helmet } from "react-helmet-async";
+import {
+  SuitsMetaTagsData,
+  SuitsNamesMetaTagsData,
+} from "../data/CardsMetaTagsData";
 
 function SuitOf({ SuitNumber }: { SuitNumber: number }) {
   const ref = useRef(null);
@@ -30,6 +35,10 @@ function SuitOf({ SuitNumber }: { SuitNumber: number }) {
 
   return (
     <main className={styles.main}>
+      <Helmet>
+        <title>{SuitsNamesMetaTagsData[SuitNumber]}</title>
+        <meta name="description" content={SuitsMetaTagsData[SuitNumber]} />
+      </Helmet>
       <div className={styles.article_container}>
         <Article title={SuitOfArticlesData[SuitNumber].SuitName}>
           {SuitOfArticlesData[SuitNumber].SuitFirstTitle}
