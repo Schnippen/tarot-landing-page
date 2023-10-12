@@ -7,7 +7,7 @@ import Separator from "../components/Separator";
 import TarotMeaningsExpositionContainer from "../components/TarotMeaningsExpositionContainer";
 import { SuitOfAllCards } from "../data/TarotCardsData";
 import styles from "../App.module.css";
-import { TarotDecks } from "../data/TarotRoutesData";
+import { RoutesSuitMinorArcana, TarotDecks } from "../data/TarotRoutesData";
 import { SuitOfArticlesData } from "../data/SuitOfCardsArticlesData";
 import { Helmet } from "react-helmet-async";
 import {
@@ -38,6 +38,7 @@ function SuitOf({ SuitNumber }: { SuitNumber: number }) {
       <Helmet>
         <title>{SuitsNamesMetaTagsData[SuitNumber]}</title>
         <meta name="description" content={SuitsMetaTagsData[SuitNumber]} />
+        <link rel="canonical" href={RoutesSuitMinorArcana[SuitNumber]} />
       </Helmet>
       <div className={styles.article_container}>
         <Article title={SuitOfArticlesData[SuitNumber].SuitName}>

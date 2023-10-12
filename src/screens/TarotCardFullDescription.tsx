@@ -10,6 +10,7 @@ import Card from "../components/Card";
 import TarotCardsComparisionsData from "../data/TarotCardsComparisionsData";
 import { Helmet } from "react-helmet-async";
 import { CardsMetaTagsData } from "../data/CardsMetaTagsData";
+import { TarotRoutes } from "../data/TarotRoutesData";
 
 function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
   useEffect(() => {
@@ -25,10 +26,8 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
         <title>
           {TarotCardsAllFullDescriptionData[CardNumber].tooltip + "Meaning"}
         </title>
-        <meta
-          name="description"
-          content={CardsMetaTagsData[CardNumber]}
-        />
+        <meta name="description" content={CardsMetaTagsData[CardNumber]} />
+        <link rel="canonical" href={TarotRoutes[CardNumber]} />
       </Helmet>
       <div className={styles.article_container}>
         <Article title={TarotCardsAllFullDescriptionData[CardNumber].CardName}>
