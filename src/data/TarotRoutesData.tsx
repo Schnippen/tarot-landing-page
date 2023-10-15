@@ -93,4 +93,6 @@ export const RoutesSuitMinorArcana = [
   "/suit-of-pentacles-meaning-minor-arcana-tarot-card-meanings",
 ];
 
+
+export const PagesRoutes=["/tarot-interpretation-app"]
 //HISTORY
