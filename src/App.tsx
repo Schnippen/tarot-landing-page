@@ -20,6 +20,7 @@ import NotFound from "./screens/NotFound";
 import Loading from "./screens/Loading";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorScreen from "./screens/ErrorScreen";
+import Page from "./screens/Page";
 const TarotCardFullDescription = lazy(
   () => import("./screens/TarotCardFullDescription")
 );
@@ -100,6 +101,24 @@ function App() {
           />
         ))}
         <Route path="*" element={<NotFound />} />
+        <Route
+          path="/tarot-interpretation-app"
+          element={
+            <ErrorBoundary
+              FallbackComponent={ErrorScreen}
+              onReset={() => {
+                navigate("/");
+              }}
+              onError={() => {
+                analytics.event(AnalyticsEvent.error_RoutesSuitMinorArcana);
+              }}
+            >
+              <Suspense fallback={<Loading />}>
+                <Page />
+              </Suspense>
+            </ErrorBoundary>
+          }
+        />
       </Routes>
     </body>
   );
