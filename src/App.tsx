@@ -37,7 +37,7 @@ function App() {
   return (
     <body className="App">
       <header className={styles.header}>
-        <h1
+        <h2
           className={styles.header_title}
           onClick={() => {
             navigateToHome();
@@ -45,7 +45,7 @@ function App() {
           }}
         >
           Tarot Reader
-        </h1>
+        </h2>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -102,7 +102,7 @@ function App() {
         ))}
         <Route path="*" element={<NotFound />} />
         <Route
-          path="/tarot-interpretation-app"
+          path=" "
           element={
             <ErrorBoundary
               FallbackComponent={ErrorScreen}

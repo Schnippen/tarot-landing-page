@@ -5,7 +5,7 @@ function Article({ title, children }: { title: string; children?: any }) {
   return (
     <article className={styles.article}>
       <div className={styles.article_wrapper}>
-        <h2 className={styles.article_title}>{title}</h2>
+        <h1 className={styles.article_title}>{title}</h1>
         {children}
       </div>
     </article>
