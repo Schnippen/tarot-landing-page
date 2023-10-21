@@ -96,3 +96,5 @@ export const RoutesSuitMinorArcana = [
 
 export const PagesRoutes=["/tarot-interpretation-app"]
 //HISTORY
+// /history-of-tarot
+//tarot card meanings major arcana

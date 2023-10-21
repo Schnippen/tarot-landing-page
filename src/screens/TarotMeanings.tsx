@@ -5,16 +5,27 @@ import Footer from "../components/Footer";
 import TarotMeaningsExpositionContainer from "../components/TarotMeaningsExpositionContainer";
 import Separator from "../components/Separator";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 function TarotMeanings() {
   return (
     <main className={styles.main}>
+      <Helmet>
+        <title>
+          Tarot Card Meanings - Explore the Enigmatic World of Tarot
+        </title>
+        <meta
+          name="description"
+          content="Explore the world of Tarot Card Meanings, a tool for personal insight and spiritual guidance through 78 unique cards."
+        ></meta>
+        <link rel="canonical" href="/tarot-card-meanings" />
+      </Helmet>
       <div className={styles.article_container}>
         <Article title="Tarot Card Meanings">
           <h2 className={styles.title}>About The Tarot Card Meanings</h2>
           <p className={styles.paragraph}>
             The Tarot,{" "}
             <Link
-              to="/the-fool-meaning-major-arcana-tarot-card-meanings"
+              to="/history-of-tarot"
               className={styles.Link}
               title="History of Tarot"
             >
@@ -132,14 +143,3 @@ function TarotMeanings() {
 }
 
 export default TarotMeanings;
-
-//links
-
-//tarot history
-//major arcana
-//minor arcana
-
-//EVENTO
-//tarot history
-//major arcana
-//minor arcana

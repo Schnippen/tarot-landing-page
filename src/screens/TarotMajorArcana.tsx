@@ -47,7 +47,7 @@ Personal Growth and Transformation,
 Self-Discovery,
 Archetypal Energy,
 Tarot Card Interpretation,
-Tarot Card Reflection"
+Tarot Card Reflection, tarot card meanings major arcana"
         />
         <link rel="canonical" href={TarotDecks[0]} />
       </Helmet>

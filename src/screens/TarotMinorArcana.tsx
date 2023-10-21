@@ -49,7 +49,7 @@ Pentacles,
 Practical Matters,
 Tarot Readings,
 Transition Phase,
-Tarot Guidance"
+Tarot Guidance,  tarot card meanings major arcana,  tarot card meanings minor arcana"
         />
         <link rel="canonical" href={TarotDecks[1]} />
       </Helmet>
