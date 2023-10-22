@@ -15,4 +15,5 @@ export enum AnalyticsEvent {
   google_play_available_soon_pressed = "google_play_available_soon_pressed",
   error_TarotCardFullDescription = "error_TarotCardFullDescription",
   error_RoutesSuitMinorArcana = "error_RoutesSuitMinorArcana",
+  error_RoutesPage = "error_RoutesPage",
 }

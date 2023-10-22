@@ -1,48 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Article from "../components/Article";
 import styles from "../App.module.css";
 import Footer from "../components/Footer";
 import TarotMeaningsExpositionContainer from "../components/TarotMeaningsExpositionContainer";
 
-import {
-  PageTarotInterpretationsAppTitle,
-  PageTarotInterpretationsApp,
-} from "../data/PageData";
+import { PageMetaData, PageDataTitles, PageData } from "../data/PageData";
 import { Helmet } from "react-helmet-async";
 import { PagesRoutes } from "../data/TarotRoutesData";
 
-function Page() {
+function Page({ indexNumber }: { indexNumber: number }) {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    scrollToTop();
+  }, []);
+
   return (
     <main className={styles.main}>
       <Helmet>
-        <title>Tarot Reader -The Tarot Interpretation App</title>
+        <title>{PageMetaData[indexNumber].title}</title>
         <meta
           name="description"
-          content="Unlock insights with Tarot Reader: Accurate tarot readings, card meanings, and spreads. Explore your destiny today!"
+          content={PageMetaData[indexNumber].description}
         />
-        <meta
-          name="keywords"
-          content="Tarot Reader app
-Tarot interpretation
-Tarot card meanings
-Tarot card spreads
-Personalized tarot readings
-Digital divination
-Question-based tarot
-Daily guidance
-Love and career advice
-Self-reflection
-Tarot guidance
-Destiny exploration
-Tarot wisdom
-Card interpretation
-Tarot insights"
-        />
+        <meta name="keywords" content={PageMetaData[indexNumber].keywords} />
         <link rel="canonical" href={PagesRoutes[0]} />
       </Helmet>
       <div className={styles.article_container}>
-        <Article title={PageTarotInterpretationsAppTitle}>
-          {Object.values(PageTarotInterpretationsApp)}
+        <Article title={PageDataTitles[indexNumber]}>
+          {Object.values(PageData[indexNumber])}
         </Article>
         <span style={{ width: "100%", margin: "24px" }}></span>
         <TarotMeaningsExpositionContainer />

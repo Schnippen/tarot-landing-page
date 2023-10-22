@@ -12,7 +12,11 @@ import TarotMeanings from "./screens/TarotMeanings";
 import TarotMajorArcana from "./screens/TarotMajorArcana";
 import TarotMinorArcana from "./screens/TarotMinorArcana";
 import SuitOf from "./screens/SuitOf";
-import { RoutesSuitMinorArcana, TarotRoutes } from "./data/TarotRoutesData";
+import {
+  PagesRoutes,
+  RoutesSuitMinorArcana,
+  TarotRoutes,
+} from "./data/TarotRoutesData";
 //import TarotCardFullDescription from "./screens/TarotCardFullDescription";
 //import "dotenv/config";
 import { lazy, Suspense } from "react";
@@ -100,25 +104,28 @@ function App() {
             }
           />
         ))}
+
+        {PagesRoutes.map((route, index) => (
+          <Route
+            path={route}
+            element={
+              <ErrorBoundary
+                FallbackComponent={ErrorScreen}
+                onReset={() => {
+                  navigate("/");
+                }}
+                onError={() => {
+                  analytics.event(AnalyticsEvent.error_RoutesPage);
+                }}
+              >
+                <Suspense fallback={<Loading />}>
+                  <Page key={route} indexNumber={index} />
+                </Suspense>
+              </ErrorBoundary>
+            }
+          />
+        ))}
         <Route path="*" element={<NotFound />} />
-        <Route
-          path=" "
-          element={
-            <ErrorBoundary
-              FallbackComponent={ErrorScreen}
-              onReset={() => {
-                navigate("/");
-              }}
-              onError={() => {
-                analytics.event(AnalyticsEvent.error_RoutesSuitMinorArcana);
-              }}
-            >
-              <Suspense fallback={<Loading />}>
-                <Page />
-              </Suspense>
-            </ErrorBoundary>
-          }
-        />
       </Routes>
     </body>
   );

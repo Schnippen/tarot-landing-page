@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import styles from "../App.module.css";
 import Separator from "../components/Separator";
+import { RoutesSuitMinorArcana, TarotDecks } from "./TarotRoutesData";
 
 <Link to={"/"} className={styles.Link} title={"Go to home page"}>
   Tarot Reader{" "}
 </Link>;
 
-export const PageTarotInterpretationsAppTitle =
+const PageTarotInterpretationsAppTitle =
   "Guide to Tarot Interpretation with Tarot Reader";
 
 export const PageTarotInterpretationsApp = {
@@ -190,3 +191,266 @@ export const PageTarotInterpretationsApp = {
     </>
   ),
 };
+
+const PageTarotHistoryTitle = "The History of Tarot";
+const PageTarotHistory = {
+  FirstParagraph: (
+    <>
+      <p className={styles.paragraph}>
+        The story of Tarot cards is a captivating journey through time, a tale
+        of mysticism, symbolism, and evolution.{" "}
+        <a
+          href="https://en.wikipedia.org/wiki/A._E._Waite"
+          className={styles.Link}
+          title="Dr. Arthur Edward Waite"
+          target="_blank"
+          rel="external"
+        >
+          {" "}
+          Dr. Arthur Edward Waite
+        </a>{" "}
+        (1857-1942), a renowned scholar of occultism, played a significant role
+        in unraveling the secrets of the Tarot.
+      </p>
+      <p className={styles.paragraph}>
+        Waite's remarkable works, including "The Holy Kabbalah" and "The Key to
+        the Tarot" (first published in England in 1910), demonstrated his deep
+        understanding of the Tarot's symbolism. He famously stated, "The true
+        tarot is symbolism; it speaks no other language and offers no other
+        signs." But what do these Tarot cards signify, and where did they
+        originate?
+      </p>
+      <p className={styles.paragraph}>
+        The precise origins of Tarot cards in antiquity remain shrouded in
+        mystery. In 1781, Court de Gebelin proposed a theory in his work, "Le
+        Monde Primitif," suggesting that Tarot cards had their roots in an
+        ancient Egyptian book known as "The Book of Thoth." Thoth, the Egyptian
+        Mercury, was credited with inventing the hieroglyphic system, and
+        Gebelin believed that the Tarot's wisdom was passed down from the
+        Egyptians and Gypsies.
+      </p>
+
+      <p className={styles.paragraph}>
+        Surprisingly, the emergence of Tarot cards in Europe predates Dr.
+        Waite's influential work by over five centuries. In the historical
+        records, a German monk named Johannes mentioned a card game called
+        "Ludas Cartarum" played in 1377, offering a glimpse of the Tarot's early
+        presence.
+      </p>
+
+      <p className={styles.paragraph}>
+        Covelluzzo, a fifteenth-century chronicler, added to the mystery by
+        documenting the introduction of card games in Viterbo in 1379, further
+        fueling the Tarot's enigmatic history.
+      </p>
+
+      <p className={styles.paragraph}>
+        In 1369, a decree issued by Charles VI of France made no mention of
+        playing cards. However, just 28 years later, the Prevot of Paris issued
+        an ordinance on January 22, 1397, forbidding working people from
+        engaging in various activities, including playing cards, except on
+        holidays. This marked the growing popularity of playing cards in Europe,
+        hinting at their historical significance.
+      </p>
+      <p className={styles.paragraph}>
+        It is widely believed that playing cards found their way to Europe in
+        the latter half of the fourteenth century, possibly originating in Italy
+        as a complete 78-card deck. This deck combined the common 56 cards,
+        known as the{" "}
+        <Link
+          to={TarotDecks[0]}
+          className={styles.Link}
+          title="The Major Arcana Suits List"
+        >
+          Major Arcana
+        </Link>
+        , with the 22 esoteric and emblematic Tarot cards, known as the{" "}
+        <Link
+          to={TarotDecks[1]}
+          className={styles.Link}
+          title="The Minor Arcana Suits List"
+        >
+          Minor Arcana
+        </Link>
+        , forming the 78-card Tarot pack we know today.
+      </p>
+      <p className={styles.paragraph}>
+        During the fifteenth century, Tarot cards were often hand-drawn or
+        painted for princely houses in Northern Italy and France. Subsequently,
+        they were reproduced through woodcuts, stencils, and copper engraving,
+        becoming more accessible to the masses.
+      </p>
+
+      <p className={styles.paragraph}>
+        In the sixteenth century, the Tarot of Marseilles gained popularity as a
+        modified Tarot pack. Today, we find historical relics in the archives of
+        renowned institutions like the Bibliotheque Nationale in Paris,
+        containing Major Arcana cards believed to be hand-painted around 1392.
+      </p>
+      <p className={styles.paragraph}>
+        The Pierpont Morgan Library in New York possesses 35 cards from a
+        78-card Tarot deck dating back to circa 1484, linked to Cardinal Ascanio
+        Maria Sforza or his mother Bianca Visconti Sforza.
+      </p>
+      <p className={styles.paragraph}>
+        Early European cards related to the Tarot pack include the Tarocchi of
+        Mantegna, the Tarocchi of Venice or Lombardi, the Tarocchino of Bologna,
+        and the Minchiate of Florence. These variations added depth and richness
+        to the evolving Tarot tradition.
+      </p>
+      <p className={styles.paragraph}>
+        Tarot decks contain 78 cards divided into two major groups: the 22{" "}
+        <Link
+          to={TarotDecks[0]}
+          className={styles.Link}
+          title="The Major Arcana Suits List"
+        >
+          Major Arcana
+        </Link>{" "}
+        and the 56{" "}
+        <Link
+          to={TarotDecks[1]}
+          className={styles.Link}
+          title="The Minor Arcana Suits List"
+        >
+          Lesser Arcana
+        </Link>{" "}
+        cards. The{" "}
+        <Link
+          to={TarotDecks[0]}
+          className={styles.Link}
+          title="The Major Arcana Suits List"
+        >
+          Major Arcana
+        </Link>
+        , from The Fool (Le Mat) to The World, carry deep symbolic meaning,
+        while the{" "}
+        <Link
+          to={TarotDecks[1]}
+          className={styles.Link}
+          title="The Minor Arcana Suits List"
+        >
+          Lesser Arcana
+        </Link>{" "}
+        is divided into four{" "}
+        <Link
+          to={RoutesSuitMinorArcana[2]}
+          className={styles.Link}
+          title="Suit of Swords Cards List"
+        >
+          suits—swords (spades)
+        </Link>{" "}
+        ,{" "}
+        <Link
+          to={RoutesSuitMinorArcana[0]}
+          className={styles.Link}
+          title="Suit of Wands Cards List"
+        >
+          batons or wands (clubs)
+        </Link>
+        ,{" "}
+        <Link
+          to={RoutesSuitMinorArcana[1]}
+          className={styles.Link}
+          title="Suit of Cups Cards List"
+        >
+          cups (hearts)
+        </Link>
+        ,{" "}
+        <Link
+          to={RoutesSuitMinorArcana[3]}
+          className={styles.Link}
+          title="Suit of Pentacles Cards List"
+        >
+          and coins or pentacles (diamonds)
+        </Link>{" "}
+        .
+      </p>
+      <p className={styles.paragraph}>
+        The Tarot's influence extends to modern playing cards, which evolved
+        from the medieval Tarot decks. As card playing gained popularity, the{" "}
+        <Link
+          to={TarotDecks[0]}
+          className={styles.Link}
+          title="The Major Arcana Suits List"
+        >
+          Major Arcana
+        </Link>{" "}
+        cards, except for The Fool (retained as the Joker), were dropped, and
+        the Cavalier and Page were merged into the modern Jack, resulting in the
+        standard deck of fifty-two cards.
+      </p>
+      <p className={styles.paragraph}>
+        Over the centuries, Tarot cards have intrigued scholars, occultists, and
+        enthusiasts. Important works by various authors have delved into
+        different aspects of Tarot cards, shedding light on their symbolism and
+        divinatory potential.
+      </p>
+      <p className={styles.paragraph}>
+        One pivotal moment in Tarot's history was the creation of the "Rider
+        Deck." Under Dr. Waite's guidance, the deck was designed by Miss Pamela
+        Colman Smith, an American artist and a fellow member of The Order of the
+        Golden Dawn. Her innovative approach presented all cards, including the
+        pip cards, in emblematic designs suitable for divination.
+      </p>
+      <p className={styles.paragraph}>
+        Tarot cards, with their colorful and intriguing history, continue to
+        hold a special place in the hearts of collectors, readers, and
+        enthusiasts. They offer a means of reflection, insight, and even
+        divination, with each card carrying a personal impact on the individual
+        who uses them.
+      </p>
+      <p className={styles.paragraph}>
+        Today, Tarot cards are more popular than ever, sought after by people
+        from all walks of life, from teenagers to professionals. They feature in
+        parties, luncheons, and even Hollywood gatherings, showcasing their
+        enduring allure and fascination.
+      </p>
+      <p className={styles.paragraph}>
+        The history of Tarot is a rich tapestry of mysticism and symbolism, and
+        it continues to evolve, shaping its own destiny in the hands of those
+        who seek to unlock its secrets.{" "}
+        <a
+          href="https://en.wikipedia.org/wiki/A._E._Waite"
+          className={styles.Link}
+          title="Dr. Arthur Edward Waite"
+          target="_blank"
+          rel="external"
+        >
+          Dr. Arthur Edward Waite's
+        </a>{" "}
+        contributions to this mystical realm are an essential part of this
+        intriguing story.
+      </p>
+    </>
+  ),
+};
+
+type TPageMetaData = {
+  [key: string]: string;
+};
+export const PageMetaData: TPageMetaData[] = [
+  {
+    title: "Tarot Reader - The Tarot Interpretation App",
+    description:
+      "Unlock insights with Tarot Reader: Accurate tarot readings, card meanings, and spreads. Explore your destiny today!",
+    keywords:
+      "Tarot Reader app Tarot interpretation Tarot card meanings Tarot card spreads Personalized tarot readings Digital divination Question-based tarot Daily guidance Love and career advice Self-reflection Tarot guidance Destiny exploration Tarot wisdom Card interpretation Tarot insights",
+  },
+  {
+    title: "Tarot Reader - The Tarot Interpretation App",
+    description:
+      "Unlock insights with Tarot Reader: Accurate tarot readings, card meanings, and spreads. Explore your destiny today!",
+    keywords:
+      "Tarot Reader app Tarot interpretation Tarot card meanings Tarot card spreads Personalized tarot readings Digital divination Question-based tarot Daily guidance Love and career advice Self-reflection Tarot guidance Destiny exploration Tarot wisdom Card interpretation Tarot insights",
+  },
+];
+
+//acumulated data
+export const PageDataTitles = [
+  PageTarotInterpretationsAppTitle,
+  PageTarotHistoryTitle,
+];
+export const PageData = [PageTarotInterpretationsApp, PageTarotHistory];
+
+//add meta data

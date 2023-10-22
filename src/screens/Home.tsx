@@ -61,6 +61,22 @@ function Home() {
             divination, and our resources are here to assist you on your Tarot
             journey.
           </p>
+
+          <ul style={{ padding: "0px", listStyle: "none" }}>
+            <Separator />
+            <li
+              className={styles.paragraph}
+              style={{
+                margin: "32px 0",
+                fontSize: "1.5rem",
+                textAlign: "center",
+              }}
+            >
+              <Link to="/history-of-tarot" className={styles.Link}>
+                The History of Tarot
+              </Link>
+            </li>
+          </ul>
         </Article>
         <article className={styles.panels_container}>
           <h2 className={styles.panels_container_title}>
