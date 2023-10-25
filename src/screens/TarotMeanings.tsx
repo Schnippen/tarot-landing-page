@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Article from "../components/Article";
 import styles from "../App.module.css";
 import Footer from "../components/Footer";
@@ -7,6 +7,13 @@ import Separator from "../components/Separator";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 function TarotMeanings() {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    scrollToTop();
+  }, []);
+
   return (
     <main className={styles.main}>
       <Helmet>

@@ -30,6 +30,18 @@ function Home() {
                 textAlign: "center",
               }}
             >
+              <Link to="/tarot-card-meanings" className={styles.Link}>
+                Tarot Cards Meanings
+              </Link>
+            </li>
+            <li
+              className={styles.paragraph}
+              style={{
+                margin: "32px 0",
+                fontSize: "1.5rem",
+                textAlign: "center",
+              }}
+            >
               <Link
                 to="/major-arcana-tarot-card-meanings"
                 className={styles.Link}

@@ -68,7 +68,7 @@ function Footer() {
         </p>
         <div style={{ display: "flex" }}>
           <Link
-            to="terms-of-service"
+            to="/terms-of-service"
             style={{ marginRight: "10px" }}
             onClick={() =>
               analytics.event(AnalyticsEvent.terms_of_service_pressed)
