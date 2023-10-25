@@ -64,7 +64,7 @@ function TarotMeanings() {
             </Link>
             and{" "}
             <Link
-              to="/minor arcana-tarot-card-meanings"
+              to="/minor-arcana-tarot-card-meanings"
               className={styles.Link}
               title="Minor Arcana Cards List"
             >
@@ -97,7 +97,7 @@ function TarotMeanings() {
             <div style={{ width: "100%", margin: "12px 0" }}></div>
             <li className={styles.paragraph}>
               <Link
-                to="/minor arcana-tarot-card-meanings"
+                to="/minor-arcana-tarot-card-meanings"
                 className={styles.Link}
                 title="Minor Arcana Cards List"
               >

@@ -3,7 +3,7 @@ import styles from "../App.module.css";
 import { RoutesSuitMinorArcana } from "./TarotRoutesData";
 const TarotDecks = [
   "/major-arcana-tarot-card-meanings",
-  "/minor arcana-tarot-card-meanings",
+  "/minor-arcana-tarot-card-meanings",
 ];
 const SuitOfWandsFirstList = () => {
   return (
