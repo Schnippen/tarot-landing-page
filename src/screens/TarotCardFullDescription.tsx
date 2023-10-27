@@ -24,7 +24,9 @@ function TarotCardFullDescription({ CardNumber }: { CardNumber: number }) {
     <main className={styles.main}>
       <Helmet>
         <title>
-          {TarotCardsAllFullDescriptionData[CardNumber].tooltip + "Meaning"}
+          {TarotCardsAllFullDescriptionData[CardNumber].tooltip +
+            " " +
+            "Meaning"}
         </title>
         <meta name="description" content={CardsMetaTagsData[CardNumber]} />
         <link rel="canonical" href={TarotRoutes[CardNumber]} />
