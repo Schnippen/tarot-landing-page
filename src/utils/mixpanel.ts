@@ -16,7 +16,6 @@ for (let i = 0; i < lettersToFind.length; i++) {
 }
 
 const सम3 = 839;
-
 mixpanel.init(
   Math.floor(((9 ^ 2) + (8 * 4 + 7) - 10) * 2.1423) +
     sentence.charAt(3) +

@@ -418,15 +418,17 @@
   }
   .terms_of_service_div_container {
     padding: 16px;
+    margin: 16px;
   }
   .terms_of_service_div {
-    width: 280px;
+    width: 100%;
   }
   .privacy_policy_div_container {
     padding: 16px;
+    margin: 16px;
   }
   .privacy_policy_div {
-    width: 280px;
+    width: 100%;
   }
 }
 
@@ -450,5 +452,17 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .terms_of_service_div {
+    width: 300px;
+  }
+  .privacy_policy_div {
+    width: 300px;
+  }
+  .footer_container {
+    margin: 24px 0;
+    width: 320px;
   }
 }
