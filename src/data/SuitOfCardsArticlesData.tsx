@@ -114,7 +114,7 @@ const SuitOfWandsSecondList = () => {
           involve intellectual analysis and strategic thinking.
         </li>
         <li className={styles.paragraph} style={{ margin: "16px 0" }}>
-          <strong>Personal Growth and Ambition (Wands)</strong> in Contrast to
+          <strong>Personal Growth and Ambition (Wands)</strong> in Contrast to{" "}
           <strong>
             Spiritual Journeys ({" "}
             <Link
